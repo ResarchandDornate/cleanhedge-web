@@ -1,0 +1,2367 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cleanhedge - Team Member Page</title>
+  <link rel="icon" href="assets/img/favicon.png">
+
+
+  <!-- CSS only -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <!-- fancybox -->
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+  <!-- style -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- responsive -->
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- color -->
+  <link rel="stylesheet" href="assets/css/color.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PB7M5VKN');</script>
+
+</head>
+
+<style>
+  /* Banner */
+  .parallax-banner {
+    /* background-image: url('assets/img/used/contact/contact-bnn.jpg'); */
+    background-image: url('assets/img/used/contact/office-resized.webp');
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    color: white;
+    /* padding-top: 250px; */
+    padding-top: 350px;
+  }
+
+  .banner-text p {
+    color: white;
+  }
+
+  /* Preloader */
+  .preloader {
+    background: white;
+  }
+
+  .team-detail-bio-content p {
+    color: #fff !important;
+  }
+
+  .preloader-logo {
+    width: 350px;
+    height: auto;
+    /* background: white; */
+  }
+
+  /* Team Member Section */
+  .ezy__team5 {
+    /* Bootstrap variables */
+    --bs-body-color: #212529;
+    --bs-body-bg: rgb(255, 255, 255);
+
+    /* Easy Frontend variables */
+    --ezy-theme-color: rgb(13, 110, 253);
+    --ezy-theme-color-rgb: 13, 110, 253;
+    --ezy-item-bg: #ffffff;
+    --ezy-item-shadow: 0px 4px 44px rgba(159, 190, 218, 0.37);
+    --ezy-rating-rgb: 255, 215, 0;
+
+    background: var(--bs-body-bg);
+    overflow: hidden;
+    /* padding: 60px 0; */
+  }
+
+  @media (min-width: 768px) {
+    /* .ezy__team5 {
+        padding: 100px 0;
+      } */
+  }
+
+  /* Gray Block Style */
+  .gray .ezy__team5,
+  .ezy__team5.gray {
+    /* Bootstrap variables */
+    --bs-body-bg: rgb(246, 246, 246);
+
+    /* Easy Frontend variables */
+    --ezy-item-bg: #f6f6f6;
+    --ezy-item-shadow: 0px 4px 44px rgba(199, 227, 252, 0.17);
+  }
+
+  /* Dark Gray Block Style */
+  .dark-gray .ezy__team5,
+  .ezy__team5.dark-gray {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(30, 39, 53);
+
+    /* Easy Frontend variables */
+    --ezy-item-bg: #283646;
+    --ezy-item-shadow: none;
+  }
+
+  /* Dark Block Style */
+  .dark .ezy__team5,
+  .ezy__team5.dark {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(11, 23, 39);
+
+    /* Easy Frontend variables */
+    --ezy-item-bg: #162231;
+    --ezy-item-shadow: none;
+  }
+
+  .ezy__team5-heading {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    color: var(--bs-body-color);
+  }
+
+  @media (min-width: 768px) {
+    .ezy__team5-heading {
+      font-size: 45px;
+      line-height: 45px;
+    }
+  }
+
+  .ezy__team5-sub-heading {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--bs-body-color);
+  }
+
+  .ezy__team5-item img {
+    border-radius: 15px;
+    padding: 8px;
+  }
+
+  .ezy__team5-content * {
+    color: var(--bs-body-color);
+  }
+
+  .ezy__team5-social-links a {
+    display: inline-block;
+    opacity: 0.6;
+    transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out, color 0.25s ease-in-out;
+  }
+
+  .ezy__team5-social-links a:hover {
+    transform: translateY(5px);
+    color: var(--bs-body-color);
+    opacity: 1;
+  }
+
+  .ezy__team5-rating span:not(.active) {
+    color: rgba(var(--ezy-rating-rgb), 0.2);
+  }
+
+  .ezy__team5-rating span.active {
+    color: rgba(var(--ezy-rating-rgb), 1);
+  }
+</style>
+
+<style>
+  .menu {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    .page-title {
+      padding: 108px 20px 20px !important;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .team-detail-photo {
+      width: 84% !important;
+    }
+
+    .team-detail-left {
+      width: 94% !important;
+      padding: 8px 24px 15px 23px !important;
+    }
+
+    .team-detail-boards {
+      margin-bottom: 13px !important;
+    }
+
+    .team-detail-right .person-title {
+      font-size: 23px !important;
+    }
+
+    .team-detail-right {
+      display: block !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .director-ready .team-detail img {
+      display: none !important;
+    }
+
+    .team-detail-right .person-title {
+      display: none !important;
+    }
+
+    .team-detail-boards {
+      margin-bottom: 7px !important;
+    }
+
+    .team-detail-bio {
+      margin-left: 13px !important;
+    }
+
+    .team-detail-bio-content p {
+      line-height: 21px !important;
+      font-size: 13px !important;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .director-ready .team-detail img {
+      width: 40% !important;
+    }
+
+    section#team {
+      padding: 30px 0 !important;
+    }
+
+    .director-ready .team-director {
+      height: 80vh !important;
+    }
+  }
+
+
+  /*  */
+  img.person-img {
+    border-radius: 6px;
+  }
+
+  .team {
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+  }
+
+  .director {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* height: 100vh; */
+    flex-wrap: wrap;
+  }
+
+  .boards {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.45s ease 0.05s;
+    /* max-height: 70px; */
+  }
+
+  .boards-title {
+    width: 100%;
+    color: #000000;
+    margin-bottom: 15px;
+    line-height: 26px;
+  }
+
+  .team-director {
+    padding: 0 30px;
+    box-sizing: border-box;
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .person {
+    /* width: calc(25% - 30px); */
+    /* width: 30%; */
+    width: 22%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.45s;
+    position: relative;
+  }
+
+  .person-details {
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    transition: 0.3s;
+  }
+
+  .person-img {
+    width: 100%;
+    /* height: 400px; */
+    height: 450px;
+  }
+
+  .person-title {
+    color: #000000;
+    font-size: 18px;
+  }
+
+  .person-desc,
+  .person-department {
+    color: rgb(0 0 0 / 88%);
+    margin-top: 10px;
+    margin-top: -17px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 8px;
+    padding-bottom: 10px;
+  }
+
+  .person-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+    gap: 50px;
+  }
+
+  .person-list:hover .person {
+    opacity: 0.6;
+  }
+
+  .person:hover {
+    opacity: 1 !important;
+  }
+
+  .person:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #459639;
+    content: "";
+    height: 0px;
+    transition: 0.45s;
+  }
+
+  .person:after {
+    content: "";
+    font-family: "Ionicons";
+    font-size: 36px;
+    color: #282828;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    flex-direction: column;
+    color: #fff;
+  }
+
+  .director-selected .boards {
+    max-height: 0px;
+  }
+
+  .director-selected .person {
+    opacity: 0 !important;
+    pointer-events: none;
+  }
+
+  .director-selected .person-list .person-selected {
+    opacity: 1 !important;
+  }
+
+  .director-selected .person-list .person-selected:before {
+    height: 100%;
+  }
+
+  .director-selected .person-list .person-selected .person-details {
+    margin-top: -40px;
+    opacity: 0;
+  }
+
+  .team-detail {
+    position: absolute;
+    width: calc(100% - 100px);
+    right: 80px;
+    top: 0;
+    height: 100%;
+    color: #fff;
+    transition: 0.15s;
+    opacity: 0;
+    visibility: hidden;
+    box-sizing: border-box;
+  }
+
+  .team-detail-bio-content p {
+    margin-bottom: 15px;
+    line-height: 25px;
+    font-size: 1.05em;
+  }
+
+  .team-detail-boards {
+    margin-bottom: 30px;
+  }
+
+  .team-detail-inner {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .team-detail-left {
+    /* position: relative; */
+    width: 650px;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .team-detail-left:before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgb(4 4 4 / 86%);
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .team-detail-left:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: linear-gradient(to right, rgba(40, 40, 40, 0) 9%, rgba(40, 40, 40, 0) 10%, rgba(40, 40, 40, 0) 38%, #282828 92%, #282828 100%);
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .team-detail-photo {
+    position: relative;
+    text-align: center;
+    z-index: 999;
+    width: 100%;
+    font-size: 0px;
+  }
+
+  .team-detail-photo img {
+    max-width: 100%;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+  }
+
+  .team-detail-right {
+    box-sizing: border-box;
+    width: calc(100% - 650px);
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 10%;
+    position: relative;
+    right: 0;
+    flex-wrap: wrap;
+  }
+
+  .team-detail-right .person-title {
+    /* font-family: "Yeseva One", cursive; */
+    font-size: 1.2em;
+    color: #ffffff;
+  }
+
+  .director-ready .team-detail {
+    transition: 0.45s ease 0.3s;
+    opacity: 1;
+    right: 0;
+    visibility: visible;
+  }
+
+  .director-ready .team-detail img {
+    width: 75%;
+  }
+
+  .director-ready .team-director {
+    height: 0px;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .director-ready .person-selected {
+    left: 0px !important;
+    top: 0px !important;
+    z-index: 99;
+    height: 100% !important;
+    width: 100px !important;
+    pointer-events: auto;
+  }
+
+  .director-ready .person-selected:after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .person-back:before {
+    height: 0px !important;
+  }
+
+  .person-details h2 {
+    padding-bottom: 12px;
+  }
+
+  .person-back .person-details {
+    margin-top: -15px !important;
+    transition-delay: 0.35s;
+    opacity: 1 !important;
+  }
+
+  .social {
+    margin-top: 15px;
+  }
+
+  .social a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 8px;
+  }
+
+  .social a:last-child {
+    margin-right: 0;
+  }
+
+  .my-name {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+
+  .team-detail-boards h2 {
+    padding-bottom: 0px !important;
+  }
+
+  @media only screen and (max-width: 2400px) and (min-width: 1400px) {
+    .container1 {
+      width: 100% !important;
+    }
+
+    .max-width {
+      width: 100% !important;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .team-detail-left {
+      width: 400px;
+      padding: 0 40px;
+      box-sizing: border-box;
+    }
+
+
+    .team-detail-right {
+      padding-right: 0;
+      width: calc(100% - 440px);
+    }
+
+    .person .person-title {
+      font-size: 1.7em;
+    }
+
+    .person-details {
+      padding: 0 10px;
+    }
+  }
+
+  @media (max-width: 970px) {
+    .team-detail-left {
+      width: 100%;
+      padding: 50px 50px 30px 50px;
+    }
+
+    .team-detail-left:after {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #212121 83%, #282828 100%);
+    }
+
+    .team-detail-right {
+      padding: 0 50px;
+      width: 100%;
+    }
+
+    .team-detail-boards {
+      text-align: center;
+    }
+
+    .director-ready .person-selected {
+      width: 50px !important;
+    }
+
+    .team-detail {
+      width: calc(100% - 50px);
+    }
+
+    .person {
+      width: calc(50% - 20px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .person {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    .boards {
+      margin-top: 50px;
+    }
+  }
+
+  .person.person-selected {
+    position: absolute !important;
+  }
+
+  .person-details p.person-desc,
+  .person-details p.person-department {
+    color: #000;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1502px) {
+    .header {
+      padding: 0 50px !important;
+    }
+
+    .about-mob {
+      width: max-content !important;
+    }
+
+    .contact-mob {
+      width: max-content !important;
+    }
+  }
+
+
+  @media (max-width: 767px) {
+    .mob-banner {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+    }
+
+    .page-title {
+      padding: 56px 0 56px !important;
+    }
+
+    .navbar {
+      height: 126px !important;
+    }
+
+    .bg-overlay:before {
+      height: 76% !important;
+    }
+  }
+
+  /* header */
+  @media (max-width: 767px) {
+    .navbar .navbar-brand img {
+      width: 217px !important;
+    }
+
+    .header .navbar,
+    .header .navbar>.container,
+    .header .navbar>.container-fluid,
+    .header-transparent .navbar,
+    .header-transparent .navbar>.container,
+    .header-transparent .navbar>.container-fluid {
+      height: 90px !important;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .has-children {
+      display: none !important;
+    }
+
+  }
+
+  @media (max-width: 991px) {
+    .not-children {
+      display: block !important;
+    }
+
+
+  }
+</style>
+
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PB7M5VKN" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- preloader -->
+  <div class="preloader">
+    <div class="logo-container">
+      <img src="assets/img/used/clean-hedge-logo-black.png" alt="Logo" class="preloader-logo spinning" />
+    </div>
+  </div>
+  <!-- preloader end -->
+
+  <!-- Header -->
+  <header class="two">
+
+    <!-- Topbar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-text">
+          <ul class="d-flex">
+            <li><a href="https://www.instagram.com/clean.hedge/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/clean-hedge"><i class="fa-brands fa-linkedin"></i></a></li>
+          </ul>
+          <div class="d-flex top-bar-mail">
+            <div class="d-flex align-items-center me-4">
+              <i>
+                <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.833252 10.7083C0.488074 10.7083 0.208252 10.9881 0.208252 11.3333C0.208252 11.6785 0.488074 11.9583 0.833252 11.9583H3.33325C3.67843 11.9583 3.95825 11.6785 3.95825 11.3333C3.95825 10.9881 3.67843 10.7083 3.33325 10.7083H0.833252Z"
+                    fill="#459639" />
+                  <path
+                    d="M0.833252 13.2083C0.488074 13.2083 0.208252 13.4881 0.208252 13.8333C0.208252 14.1785 0.488074 14.4583 0.833252 14.4583H5.83325C6.17843 14.4583 6.45825 14.1785 6.45825 13.8333C6.45825 13.4881 6.17843 13.2083 5.83325 13.2083H0.833252Z"
+                    fill="#459639" />
+                  <path
+                    d="M2.59071 2.24172L2.5 2.16667C2.757 1.81294 3.0305 1.55276 3.38422 1.29576C4.4795 0.5 6.04189 0.5 9.16667 0.5H10.8333C13.9581 0.5 15.5205 0.5 16.6157 1.29576C16.9695 1.55276 17.2214 1.78443 17.4784 2.13816L17.3737 2.24225L15.4505 4.16551C14.0491 5.56689 13.0416 6.5725 12.1726 7.23558C11.318 7.88758 10.6712 8.14908 9.99992 8.14908C9.3285 8.14908 8.68175 7.88758 7.82717 7.23558C6.95817 6.5725 5.95066 5.56689 4.54927 4.16551L2.92989 2.54612L2.59071 2.24172Z"
+                    fill="#459639" />
+                  <path
+                    d="M1.6665 8.00002C1.6665 5.80009 1.6665 4.37457 1.94419 3.34125L2.06971 3.45391L3.69904 5.08322C5.05926 6.44344 6.12525 7.50944 7.06879 8.22936C8.03456 8.96619 8.94517 9.39911 9.99975 9.39911C11.0543 9.39911 11.9649 8.96619 12.9307 8.22936C13.8742 7.50944 14.9402 6.44344 16.3004 5.08324L18.0527 3.33093C18.3332 4.36507 18.3332 5.79277 18.3332 8.00002C18.3332 11.1248 18.3332 12.6872 17.5374 13.7824C17.2804 14.1362 16.9693 14.4473 16.6156 14.7043C15.5203 15.5 13.9579 15.5 10.8332 15.5H9.1665C7.9762 15.5 7.0126 15.5 6.21518 15.456C6.95154 15.2834 7.49984 14.6224 7.49984 13.8334C7.49984 12.9129 6.75365 12.1667 5.83317 12.1667H4.77687C4.91868 11.9215 4.99984 11.6369 4.99984 11.3334C4.99984 10.4129 4.25365 9.66669 3.33317 9.66669H1.67251C1.6665 9.16577 1.6665 8.61294 1.6665 8.00002Z"
+                    fill="#459639" />
+                </svg>
+              </i>
+              <a href="mailto:info@clean-hedge.com">
+                <p><span class="__cf_email__">info@clean-hedge.com</span></p>
+              </a>
+            </div>
+            <div class="d-flex align-items-center">
+              <i>
+                <svg width="20" height="20" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.7917 4.23926C10.1532 4.23926 9.6355 4.75693 9.6355 5.39551V31.6038C9.6355 32.2424 10.1532 32.7601 10.7917 32.7601H26.2084C26.847 32.7601 27.3647 32.2424 27.3647 31.6038V5.39551C27.3647 4.75693 26.847 4.23926 26.2084 4.23926H10.7917ZM7.323 5.39551C7.323 3.47977 8.87601 1.92676 10.7917 1.92676H26.2084C28.1241 1.92676 29.6772 3.47977 29.6772 5.39551V31.6038C29.6772 33.5195 28.1241 35.0726 26.2084 35.0726H10.7917C8.87601 35.0726 7.323 33.5195 7.323 31.6038V5.39551Z"
+                    fill="#459639"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.8022 7.70801C15.8022 7.06943 16.3199 6.55176 16.9585 6.55176H20.0418C20.6804 6.55176 21.1981 7.06943 21.1981 7.70801C21.1981 8.34658 20.6804 8.86426 20.0418 8.86426H16.9585C16.3199 8.86426 15.8022 8.34658 15.8022 7.70801Z"
+                    fill="#459639"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14.2605 29.291C14.2605 28.6525 14.7782 28.1348 15.4167 28.1348H21.5834C22.222 28.1348 22.7397 28.6525 22.7397 29.291C22.7397 29.9296 22.222 30.4473 21.5834 30.4473H15.4167C14.7782 30.4473 14.2605 29.9296 14.2605 29.291Z"
+                    fill="#459639"></path>
+                </svg>
+              </i>
+              <a href="callto:+91-73 044 06 336">
+                <p>+91-73 044 06 336</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Item  -->
+    <div class="container">
+      <div class="menu-bar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/img/used/clean-hedge-logo-black-1.png" alt="" style="width: 300px;" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul class="navbar-links">
+            <li class="navbar-dropdown">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="navbar-dropdown has-children">
+              <a href="javascript:void(0)" style="cursor: auto;" class="active-link">About</a>
+              <ul class="dropdown">
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="team-members.html">Team Members</a></li>
+              </ul>
+            </li>
+            <li class="navbar-dropdown has-children">
+              <a href="javascript:void(0)" style="cursor: auto;">Services</a>
+              <ul class="dropdown">
+                <li><a href="open-access.html">Solar Open Access</a></li>
+                <li><a href="solar-rooftop.html">Solar Rooftop</a></li>
+                <li><a href="solar-inroof.html">Solar InRoof</a></li>
+                <li><a href="bess.html">Solar + BESS</a></li>
+                <li><a href="green-certification.html">Green Certification</a></li>
+              </ul>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="contact.html">Contact Us</a>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="https://blog.clean-hedge.com/" target="_blank">Blogs</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="search-style d-flex align-items-center">
+          <a href="javascript:void(0)" class="search-btn">
+            <svg height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
+              <g id="_12" data-name="12">
+                <path
+                  d="m21.71 20.29-2.83-2.82a9.52 9.52 0 1 0 -1.41 1.41l2.82 2.83a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zm-17.71-8.79a7.5 7.5 0 1 1 7.5 7.5 7.5 7.5 0 0 1 -7.5-7.5z">
+                </path>
+              </g>
+            </svg>
+          </a>
+          <a class="header-button newsbox button" href="#">Request a Quote</a>
+        </div>
+        <div class="bar-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Header  -->
+    <div class="mobile-nav hmburger-menu" id="mobile-nav" style="display:block;">
+      <div class="res-log">
+        <a href="index.html">
+          <img src="assets/img/used/clean-hedge-logo-black.png" alt="" style="width: 300px;" />
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="menu-item-has-children"><a href="javascript:void(0)" style="cursor: auto;">About</a>
+          <ul class="sub-menu">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="team-members.html">Team Members</a></li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children"><a href="javascript:void(0)" style="cursor: auto;">Services</a>
+          <ul class="sub-menu">
+            <li><a href="open-access.html">Solar Open Access</a></li>
+            <li><a href="solar-rooftop.html">Solar Rooftop</a></li>
+            <li><a href="solar-inroof.html">Solar InRoof</a></li>
+            <li><a href="bess.html">Solar + BESS</a></li>
+            <li><a href="green-certification.html">Green Certification</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="https://blog.clean-hedge.com/" target="_blank">Blogs</a></li>
+      </ul>
+
+      <a href="JavaScript:void(0)" id="res-cross"></a>
+
+      <div class="about-energix">
+        <div class="d-flex align-items-center top-bar-mail">
+          <div class="d-flex align-items-center">
+            <i>
+              <svg width="20" height="20" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M10.7917 4.23926C10.1532 4.23926 9.6355 4.75693 9.6355 5.39551V31.6038C9.6355 32.2424 10.1532 32.7601 10.7917 32.7601H26.2084C26.847 32.7601 27.3647 32.2424 27.3647 31.6038V5.39551C27.3647 4.75693 26.847 4.23926 26.2084 4.23926H10.7917ZM7.323 5.39551C7.323 3.47977 8.87601 1.92676 10.7917 1.92676H26.2084C28.1241 1.92676 29.6772 3.47977 29.6772 5.39551V31.6038C29.6772 33.5195 28.1241 35.0726 26.2084 35.0726H10.7917C8.87601 35.0726 7.323 33.5195 7.323 31.6038V5.39551Z"
+                  fill="white"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15.8022 7.70801C15.8022 7.06943 16.3199 6.55176 16.9585 6.55176H20.0418C20.6804 6.55176 21.1981 7.06943 21.1981 7.70801C21.1981 8.34658 20.6804 8.86426 20.0418 8.86426H16.9585C16.3199 8.86426 15.8022 8.34658 15.8022 7.70801Z"
+                  fill="white"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M14.2605 29.291C14.2605 28.6525 14.7782 28.1348 15.4167 28.1348H21.5834C22.222 28.1348 22.7397 28.6525 22.7397 29.291C22.7397 29.9296 22.222 30.4473 21.5834 30.4473H15.4167C14.7782 30.4473 14.2605 29.9296 14.2605 29.291Z"
+                  fill="white"></path>
+              </svg>
+            </i>
+            <a href="tel:+91-73 044 06 336">
+              <p>+91-73 044 06 336</p>
+            </a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center top-bar-mail">
+          <div class="d-flex align-items-center">
+            <i>
+              <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.833252 10.7083C0.488074 10.7083 0.208252 10.9881 0.208252 11.3333C0.208252 11.6785 0.488074 11.9583 0.833252 11.9583H3.33325C3.67843 11.9583 3.95825 11.6785 3.95825 11.3333C3.95825 10.9881 3.67843 10.7083 3.33325 10.7083H0.833252Z"
+                  fill="white"></path>
+                <path
+                  d="M0.833252 13.2083C0.488074 13.2083 0.208252 13.4881 0.208252 13.8333C0.208252 14.1785 0.488074 14.4583 0.833252 14.4583H5.83325C6.17843 14.4583 6.45825 14.1785 6.45825 13.8333C6.45825 13.4881 6.17843 13.2083 5.83325 13.2083H0.833252Z"
+                  fill="white"></path>
+                <path
+                  d="M2.59071 2.24172L2.5 2.16667C2.757 1.81294 3.0305 1.55276 3.38422 1.29576C4.4795 0.5 6.04189 0.5 9.16667 0.5H10.8333C13.9581 0.5 15.5205 0.5 16.6157 1.29576C16.9695 1.55276 17.2214 1.78443 17.4784 2.13816L17.3737 2.24225L15.4505 4.16551C14.0491 5.56689 13.0416 6.5725 12.1726 7.23558C11.318 7.88758 10.6712 8.14908 9.99992 8.14908C9.3285 8.14908 8.68175 7.88758 7.82717 7.23558C6.95817 6.5725 5.95066 5.56689 4.54927 4.16551L2.92989 2.54612L2.59071 2.24172Z"
+                  fill="white"></path>
+                <path
+                  d="M1.6665 8.00002C1.6665 5.80009 1.6665 4.37457 1.94419 3.34125L2.06971 3.45391L3.69904 5.08322C5.05926 6.44344 6.12525 7.50944 7.06879 8.22936C8.03456 8.96619 8.94517 9.39911 9.99975 9.39911C11.0543 9.39911 11.9649 8.96619 12.9307 8.22936C13.8742 7.50944 14.9402 6.44344 16.3004 5.08324L18.0527 3.33093C18.3332 4.36507 18.3332 5.79277 18.3332 8.00002C18.3332 11.1248 18.3332 12.6872 17.5374 13.7824C17.2804 14.1362 16.9693 14.4473 16.6156 14.7043C15.5203 15.5 13.9579 15.5 10.8332 15.5H9.1665C7.9762 15.5 7.0126 15.5 6.21518 15.456C6.95154 15.2834 7.49984 14.6224 7.49984 13.8334C7.49984 12.9129 6.75365 12.1667 5.83317 12.1667H4.77687C4.91868 11.9215 4.99984 11.6369 4.99984 11.3334C4.99984 10.4129 4.25365 9.66669 3.33317 9.66669H1.67251C1.6665 9.16577 1.6665 8.61294 1.6665 8.00002Z"
+                  fill="white"></path>
+              </svg>
+            </i>
+            <a href="mailto:info@clean-hedge.com">
+              <p><span class="__cf_email__" data-cfemail="">info@clean-hedge.com</span></p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner parallax-banner">
+    <div class="container">
+      <div class="banner-text">
+        <h2>Team Members</h2>
+        <p>Meet our Members</p>
+        <ul class="page-breadcrumb">
+          <li><a href="index.html"><i class="fa-solid fa-house pe-2"></i>Home</a></li>
+          <li>Team Member</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Management Team Section -->
+  <div id="app">
+    <section id="team" class="team">
+      <div class="container1 max-width">
+        <div class="row heading mb-40">
+          <div :class="['director', isSelected ? 'director-selected':'', isReady ? 'director-ready':'']">
+            <div class="team-director">
+              <div class="boards">
+                <!-- <span class="heading__subtitle">Key Management Person</span> -->
+                <!-- <h2 class="boards-title" style="font-size: 30px;">Management Team</h2> -->
+                <h2 class="boards-title" style="font-size: 30px;">Our Directors</h2>
+              </div>
+              <div class="person-list">
+                <div class="person" v-for="(person,index) in persons" @click="selectPerson(index,$event)"><img
+                    class="person-img" :src="person.photo">
+                  <div class="person-details">
+                    <h2 class="person-title my-name">{{person.name}}</h2>
+                    <p class="person-desc my-desc">{{person.title}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-detail">
+              <div class="team-detail-inner" v-if="isOk">
+                <div class="team-detail-left" :style=`background-image:url(${selectedPersonData.photo})`>
+                  <div class="team-detail-photo"><img :src="selectedPersonData.photo" alt="">
+                  </div>
+                </div>
+                <div class="team-detail-right">
+                  <div class="team-detail-bio" style="margin-left: 31px;">
+                    <div class="team-detail-boards">
+                      <h2 class="person-title">{{selectedPersonData.name}}</h2>
+                      <p class="person-desc">{{selectedPersonData.title}}</p>
+                      <div class="social">
+                        <a href="selectedPersonData.social.linkedin" target="_blank" class="ion-social-linkedin"></a>
+                      </div>
+                    </div>
+                    <div class="team-detail-bio-content" v-html="selectedPersonData.bio">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Team Members -->
+  <section class="ezy__portfolio3 light">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-6 text-center">
+          <p class="ezy__portfolio3-sub-heading mb-4">Team Members</p>
+        </div>
+        <div class="col-md-12 text-center mt-4">
+          <button class="btn m-1 ezy__portfolio3-btn-filter active" data-filter="all">All</button>
+          <button class="btn m-1 ezy__portfolio3-btn-filter" data-filter="finance">Accounts, Finance & General</button>
+          <button class="btn m-1 ezy__portfolio3-btn-filter" data-filter="design">Design & Engineering</button>
+          <button class="btn m-1 ezy__portfolio3-btn-filter" data-filter="projects">Projects</button>
+          <button class="btn m-1 ezy__portfolio3-btn-filter" data-filter="operations">Operation & Maintenance</button>
+          <button class="btn m-1 ezy__portfolio3-btn-filter" data-filter="marketing">Marketing & Sales</button>
+        </div>
+      </div>
+      <div class="row text-center">
+        <!-- <div class="col-md-6 col-lg-4"> -->
+
+        <!-- Finance  -->
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="finance">
+            <img src="assets/images/team/new/team6.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Yash Bajaj</h5>
+              <p class="mb-0">Accounts, Finance & General</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="finance">
+            <img src="assets/images/team/new/nitin.png" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Nitin Kumar</h5>
+              <p class="mb-0">Accounts, Finance & General</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="finance">
+            <img src="assets/images/team/new/atul.png" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Atul Sharma</h5>
+              <p class="mb-0">Accounts, Finance & General</p>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="finance">
+            <img src="assets/images/team/new/amit.png" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Amit Pandere</h5>
+              <p class="mb-0">Accounts, Finance & General</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="finance">
+            <img src="assets/images/team/new/team-24.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Saurabh Barange</h5>
+              <p class="mb-0">Admin</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Design  -->
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="design">
+            <img src="assets/images/team/new/team8.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Kurush Karanjia</h5>
+              <p class="mb-0">Design & Engineering</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="design">
+            <img src="assets/images/team/new/team7.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Manthan Rathod</h5>
+              <p class="mb-0">Design & Engineering</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Projects -->
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="projects">
+            <img src="assets/images/team/new/preeti.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Preeti Shimpi</h5>
+              <p class="mb-0">Projects</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="projects">
+            <img src="assets/images/team/new/juned.png" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Junaid Sheikh</h5>
+              <p class="mb-0">Projects</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="projects">
+            <img src="assets/images/team/new/neelam.png" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Neelam Ramalingaiah</h5>
+              <p class="mb-0">Projects</p>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="projects">
+            <img src="assets/images/team/new/sudeep.png" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Sudeep Namdev</h5>
+              <p class="mb-0">Projects</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="projects">
+            <img src="assets/images/team/new/yarrangulla.png" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Yarranagula Varendar</h5>
+              <p class="mb-0">Projects</p>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="projects">
+            <img src="assets/images/team/new/akshay2.png" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Akshay Bharane</h5>
+              <p class="mb-0">Projects</p>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="projects">
+            <img src="assets/images/team/new/abhijeet.png" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Abhijeet Kumar</h5>
+              <p class="mb-0">Projects</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="projects">
+            <img src="assets/images/team/new/tushar-deshmukh.jpg" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Tushar Deshmukh</h5>
+              <p class="mb-0">Projects</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="projects">
+            <img src="assets/images/team/new/himanshu.png" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Himanshu Ghatge</h5>
+              <p class="mb-0">Projects</p>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="projects">
+            <img src="assets/images/team/new/avinash.png" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Avinash Kohale</h5>
+              <p class="mb-0">Projects</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="projects">
+            <img src="assets/images/team/new/team-14.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Avinash Bhalekar</h5>
+              <p class="mb-0">Projects</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="projects">
+            <img src="assets/images/team/new/team-15.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Shreyas Bagwe</h5>
+              <p class="mb-0">Projects</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="projects">
+            <img src="assets/images/team/new/team-17.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Dhananjay Chauhan</h5>
+              <p class="mb-0">Projects</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="projects">
+            <img src="assets/images/team/new/team-18.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Pawan Pathak</h5>
+              <p class="mb-0">Projects</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="projects">
+            <img src="assets/images/team/new/team-20.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Roshan Pathe</h5>
+              <p class="mb-0">Projects</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="projects">
+            <img src="assets/images/team/new/team-23.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Sameer Sheikh</h5>
+              <p class="mb-0">Projects</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="projects">
+            <img src="assets/images/team/new/team-25.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Sumit Bang</h5>
+              <p class="mb-0">Projects</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Operations -->
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="operations">
+            <img src="assets/images/team/new/team5.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Vishal Raut</h5>
+              <p class="mb-0">Operation & Maintenance</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="operations">
+            <img src="assets/images/team/new/team2.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Kamlesh Digarse</h5>
+              <p class="mb-0">Operation & Maintenance</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="operations">
+            <img src="assets/images/team/new/team3.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Ashok Kale</h5>
+              <p class="mb-0">Operation & Maintenance</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="operations">
+            <img src="assets/images/team/new/team1.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Tushar Dhote</h5>
+              <p class="mb-0">Operation & Maintenance</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="operations">
+            <img src="assets/images/team/new/yash-kinkar.png" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Yash Kinkar</h5>
+              <p class="mb-0">Operation & Maintenance</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="operations">
+            <img src="assets/images/team/new/yash-barrange.png" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Yash Barrange</h5>
+              <p class="mb-0">Operation & Maintenance</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="operations">
+            <img src="assets/images/team/new/team-16.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Atul Mali</h5>
+              <p class="mb-0">Operation & Maintenance</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="operations">
+            <img src="assets/images/team/new/team-21.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Amar Sartape</h5>
+              <p class="mb-0">Operation & Maintenance</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="operations">
+            <img src="assets/images/team/new/team-22.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Hemant Chopade</h5>
+              <p class="mb-0">Operation & Maintenance</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Marketing -->
+        <!-- <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="marketing">
+            <img src="assets/images/team/new/prashant.png" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Prashant Rajput</h5>
+              <p class="mb-0">Marketing & Sales</p>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="marketing">
+            <img src="assets/images/team/new/manoj.png" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Manoj Vanjare</h5>
+              <p class="mb-0">Marketing & Sales</p>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="marketing">
+            <img src="assets/images/team/new/team10.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Shenaz Haveliwala</h5>
+              <p class="mb-0">Marketing & Sales</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="projects">
+            <img src="assets/images/team/new/manudesh.png" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Manudesh Dongare</h5>
+              <p class="mb-0">Projects</p>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ezy__portfolio3-item mt-4 mt-lg-5" data-category="marketing">
+            <img src="assets/images/team/new/team-26.webp" alt="" class="img-fluid ezy__portfolio3-img" />
+            <div class="ezy__portfolio3-content mt-4">
+              <h5 class="mb-1">Tadasmi Koul</h5>
+              <p class="mb-0">Marketing & Sales</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .ezy__portfolio3 {
+      --bs-body-color: #373572;
+      --bs-body-bg: rgb(255, 255, 255);
+      --ezy-theme-color: rgb(13, 110, 253);
+      --ezy-theme-color-rgb: 13, 110, 253;
+      --ezy-popup-bg-rgb: 2239, 244, 253;
+      background-color: var(--bs-body-bg);
+      overflow: hidden;
+      padding: 60px 0;
+    }
+
+    @media (min-width: 768px) {
+      .ezy__portfolio3 {
+        padding: 0px 0px 100px;
+      }
+    }
+
+    .gray .ezy__portfolio3,
+    .ezy__portfolio3.gray {
+      --bs-body-bg: rgb(246, 246, 246);
+      --ezy-popup-bg-rgb: 246, 246, 246;
+    }
+
+    .dark-gray .ezy__portfolio3,
+    .ezy__portfolio3.dark-gray {
+      --bs-body-color: #ffffff;
+      --bs-body-bg: rgb(30, 39, 53);
+      --ezy-popup-bg-rgb: 30, 39, 53;
+    }
+
+    .dark .ezy__portfolio3,
+    .ezy__portfolio3.dark {
+      --bs-body-color: #ffffff;
+      --bs-body-bg: rgb(11, 23, 39);
+      --ezy-popup-bg-rgb: 22, 34, 49;
+    }
+
+    .ezy__portfolio3-heading {
+      color: #666;
+      font-size: 16px;
+    }
+
+    .ezy__portfolio3-sub-heading {
+      font-weight: 800;
+      text-transform: capitalize;
+      font-size: 30px;
+      color: #000;
+    }
+
+    .ezy__portfolio3-item {
+      border-radius: 12px;
+      overflow: hidden;
+      opacity: 1;
+      transform: scale(1);
+      transition: all 0.4s ease;
+    }
+
+    /* .ezy__portfolio3-item.hide {
+      opacity: 0;
+      transform: scale(0.95);
+      pointer-events: none;
+    }
+
+    .ezy__portfolio3-item.show {
+      opacity: 1;
+      transform: scale(1);
+      pointer-events: auto;
+    } */
+
+    .ezy__portfolio3-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .ezy__portfolio3-img {
+      border-radius: 12px;
+      /* max-width: 250px; */
+      max-width: 350px;
+      max-height: 400px;
+    }
+
+    .ezy__portfolio3-content * {
+      /* color: var(--bs-body-color); */
+      color: black;
+    }
+
+    .ezy__portfolio3-btn-filter {
+      /* padding: 7px 20px;
+      border-color: var(--ezy-theme-color);
+      color: var(--ezy-theme-color);
+      background: none;
+      transition: all 0.3s ease; */
+      background-color: #459639;
+      color: white;
+      font-weight: bold;
+      padding: 20px 25px;
+      border-radius: 70px;
+      margin-left: 20px;
+      border: 3px solid white;
+      box-shadow: none;
+    }
+
+    .ezy__portfolio3-btn-filter:hover,
+    .ezy__portfolio3-btn-filter.active {
+      color: green;
+      background-color: white;
+      border: 3px solid green;
+      box-shadow: none;
+    }
+  </style>
+
+  <script>
+    const filterButtons = document.querySelectorAll('.ezy__portfolio3-btn-filter');
+    // Get all the items (which have the data-category attribute)
+    const items = document.querySelectorAll('.ezy__portfolio3-item');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Set active button
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        const filter = button.getAttribute('data-filter');
+
+        items.forEach(item => {
+          // Get the parent column (the '.col-md-6.col-lg-4' div)
+          const column = item.parentElement;
+          const match = filter === 'all' || item.getAttribute('data-category') === filter;
+
+          // Show or hide the entire column
+          if (match) {
+            column.style.display = 'block'; // Show the column
+          } else {
+            column.style.display = 'none';  // Hide the column and remove it from the layout
+          }
+        });
+      });
+    });
+  </script>
+
+  <!-- <script>
+    const filterButtons = document.querySelectorAll('.ezy__portfolio3-btn-filter');
+    const items = document.querySelectorAll('.ezy__portfolio3-item');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        const filter = button.getAttribute('data-filter');
+
+        items.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script> -->
+
+  <!-- Footer -->
+  <footer class="gap no-bottom one" style="background-image:url(assets/img/used/home-page/footer-banner-final.jpeg)">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-md-6">
+          <div class="logo">
+            <a href="javascript:void(0)">
+              <img src="assets/img/used/clean-hedge-logo-white.png" alt="" style="width: 300px;">
+            </a>
+
+            <p>CleanHedge Verde Private Limited operates at the intersection of solar innovation, energy storage, and
+              sustainable
+              infrastructure—driving India’s transition to a cleaner, smarter energy future.</p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-12">
+          <div class="about-energix">
+            <h6>Resources</h6>
+            <div class="line"></div>
+            <ul class="link-style">
+              <li><i class="fa-solid fa-caret-right"></i><a href="index.html">Home</a></li>
+              <li><i class="fa-solid fa-caret-right"></i><a href="about-us.html">About Us</a></li>
+              <li><i class="fa-solid fa-caret-right"></i><a href="contact.html">Contact Us </a></li>
+              <li><i class="fa-solid fa-caret-right"></i><a href="https://blog.clean-hedge.com/" target="_blank">Blogs
+                </a></li>
+              <!-- <li class="pb-0"><i class="fa-solid fa-caret-right"></i><a href="contact.html">Contact Us </a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-5 col-md-6">
+          <div class="about-energix">
+            <h6>Contact Information</h6>
+            <div class="line"></div>
+            <div class="d-flex align-items-center top-bar-mail">
+              <div class="d-flex align-items-center">
+                <i>
+                  <svg width="20" height="20" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.7917 4.23926C10.1532 4.23926 9.6355 4.75693 9.6355 5.39551V31.6038C9.6355 32.2424 10.1532 32.7601 10.7917 32.7601H26.2084C26.847 32.7601 27.3647 32.2424 27.3647 31.6038V5.39551C27.3647 4.75693 26.847 4.23926 26.2084 4.23926H10.7917ZM7.323 5.39551C7.323 3.47977 8.87601 1.92676 10.7917 1.92676H26.2084C28.1241 1.92676 29.6772 3.47977 29.6772 5.39551V31.6038C29.6772 33.5195 28.1241 35.0726 26.2084 35.0726H10.7917C8.87601 35.0726 7.323 33.5195 7.323 31.6038V5.39551Z"
+                      fill="#459639"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.8022 7.70801C15.8022 7.06943 16.3199 6.55176 16.9585 6.55176H20.0418C20.6804 6.55176 21.1981 7.06943 21.1981 7.70801C21.1981 8.34658 20.6804 8.86426 20.0418 8.86426H16.9585C16.3199 8.86426 15.8022 8.34658 15.8022 7.70801Z"
+                      fill="#459639"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M14.2605 29.291C14.2605 28.6525 14.7782 28.1348 15.4167 28.1348H21.5834C22.222 28.1348 22.7397 28.6525 22.7397 29.291C22.7397 29.9296 22.222 30.4473 21.5834 30.4473H15.4167C14.7782 30.4473 14.2605 29.9296 14.2605 29.291Z"
+                      fill="#459639"></path>
+                  </svg>
+                </i>
+                <a href="callto:+91-73 044 06 336">
+                  <p>+91-73 044 06 336</p>
+                </a>
+              </div>
+            </div>
+            <div class="d-flex align-items-center top-bar-mail">
+              <div class="d-flex align-items-center">
+                <i>
+                  <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.833252 10.7083C0.488074 10.7083 0.208252 10.9881 0.208252 11.3333C0.208252 11.6785 0.488074 11.9583 0.833252 11.9583H3.33325C3.67843 11.9583 3.95825 11.6785 3.95825 11.3333C3.95825 10.9881 3.67843 10.7083 3.33325 10.7083H0.833252Z"
+                      fill="#459639"></path>
+                    <path
+                      d="M0.833252 13.2083C0.488074 13.2083 0.208252 13.4881 0.208252 13.8333C0.208252 14.1785 0.488074 14.4583 0.833252 14.4583H5.83325C6.17843 14.4583 6.45825 14.1785 6.45825 13.8333C6.45825 13.4881 6.17843 13.2083 5.83325 13.2083H0.833252Z"
+                      fill="#459639"></path>
+                    <path
+                      d="M2.59071 2.24172L2.5 2.16667C2.757 1.81294 3.0305 1.55276 3.38422 1.29576C4.4795 0.5 6.04189 0.5 9.16667 0.5H10.8333C13.9581 0.5 15.5205 0.5 16.6157 1.29576C16.9695 1.55276 17.2214 1.78443 17.4784 2.13816L17.3737 2.24225L15.4505 4.16551C14.0491 5.56689 13.0416 6.5725 12.1726 7.23558C11.318 7.88758 10.6712 8.14908 9.99992 8.14908C9.3285 8.14908 8.68175 7.88758 7.82717 7.23558C6.95817 6.5725 5.95066 5.56689 4.54927 4.16551L2.92989 2.54612L2.59071 2.24172Z"
+                      fill="#459639"></path>
+                    <path
+                      d="M1.6665 8.00002C1.6665 5.80009 1.6665 4.37457 1.94419 3.34125L2.06971 3.45391L3.69904 5.08322C5.05926 6.44344 6.12525 7.50944 7.06879 8.22936C8.03456 8.96619 8.94517 9.39911 9.99975 9.39911C11.0543 9.39911 11.9649 8.96619 12.9307 8.22936C13.8742 7.50944 14.9402 6.44344 16.3004 5.08324L18.0527 3.33093C18.3332 4.36507 18.3332 5.79277 18.3332 8.00002C18.3332 11.1248 18.3332 12.6872 17.5374 13.7824C17.2804 14.1362 16.9693 14.4473 16.6156 14.7043C15.5203 15.5 13.9579 15.5 10.8332 15.5H9.1665C7.9762 15.5 7.0126 15.5 6.21518 15.456C6.95154 15.2834 7.49984 14.6224 7.49984 13.8334C7.49984 12.9129 6.75365 12.1667 5.83317 12.1667H4.77687C4.91868 11.9215 4.99984 11.6369 4.99984 11.3334C4.99984 10.4129 4.25365 9.66669 3.33317 9.66669H1.67251C1.6665 9.16577 1.6665 8.61294 1.6665 8.00002Z"
+                      fill="#459639"></path>
+                  </svg>
+                </i>
+                <a href="mailto:info@clean-hedge.com">
+                  <p><span class="__cf_email__">info@clean-hedge.com</span></p>
+                </a>
+              </div>
+            </div>
+            <div class="d-flex top-bar-mail align-items-center mb-0">
+              <i class="foot-address-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10 5.58319C8.59053 5.58319 7.44385 6.72991 7.44385 8.13936C7.44385 9.54882 8.59053 10.6955 10 10.6955C11.4095 10.6955 12.5562 9.54882 12.5562 8.13936C12.5562 6.72991 11.4095 5.58319 10 5.58319Z"
+                    fill="#459639"></path>
+                  <path
+                    d="M15.9814 2.47758C14.3837 0.879883 12.2595 0 10 0C7.74055 0 5.61629 0.879883 4.01863 2.47758C2.4209 4.07531 1.54102 6.19953 1.54102 8.45895C1.54102 13.0298 5.86289 16.8315 8.18476 18.874C8.50738 19.1578 8.78602 19.4029 9.00793 19.6102C9.28609 19.8701 9.64297 20 9.99996 20C10.3569 20 10.7139 19.87 10.992 19.6103C11.214 19.4029 11.4926 19.1579 11.8152 18.874C14.1371 16.8316 18.4589 13.0298 18.4589 8.45898C18.4589 6.19953 17.5791 4.07531 15.9814 2.47758ZM10 11.8671C7.94449 11.8671 6.27226 10.1948 6.27226 8.13934C6.27226 6.08383 7.94449 4.4116 10 4.4116C12.0555 4.4116 13.7277 6.08383 13.7277 8.13934C13.7277 10.1948 12.0555 11.8671 10 11.8671Z"
+                    fill="#459639"></path>
+                </svg>
+              </i>
+              <p>88/B, Nariman Bhavan, Nariman Point, <br> Mumbai, Maharashtra 400021
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row contact-footer">
+        <div class="col-lg-12">
+          <div class="contact-info two">
+            <div class="d-flex align-items-center">
+              <i>
+                <svg width="46" height="46" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.833252 10.7083C0.488074 10.7083 0.208252 10.9881 0.208252 11.3333C0.208252 11.6785 0.488074 11.9583 0.833252 11.9583H3.33325C3.67843 11.9583 3.95825 11.6785 3.95825 11.3333C3.95825 10.9881 3.67843 10.7083 3.33325 10.7083H0.833252Z"
+                    fill="#459639"></path>
+                  <path
+                    d="M0.833252 13.2083C0.488074 13.2083 0.208252 13.4881 0.208252 13.8333C0.208252 14.1785 0.488074 14.4583 0.833252 14.4583H5.83325C6.17843 14.4583 6.45825 14.1785 6.45825 13.8333C6.45825 13.4881 6.17843 13.2083 5.83325 13.2083H0.833252Z"
+                    fill="#459639"></path>
+                  <path
+                    d="M2.59071 2.24172L2.5 2.16667C2.757 1.81294 3.0305 1.55276 3.38422 1.29576C4.4795 0.5 6.04189 0.5 9.16667 0.5H10.8333C13.9581 0.5 15.5205 0.5 16.6157 1.29576C16.9695 1.55276 17.2214 1.78443 17.4784 2.13816L17.3737 2.24225L15.4505 4.16551C14.0491 5.56689 13.0416 6.5725 12.1726 7.23558C11.318 7.88758 10.6712 8.14908 9.99992 8.14908C9.3285 8.14908 8.68175 7.88758 7.82717 7.23558C6.95817 6.5725 5.95066 5.56689 4.54927 4.16551L2.92989 2.54612L2.59071 2.24172Z"
+                    fill="#459639"></path>
+                  <path
+                    d="M1.6665 8.00002C1.6665 5.80009 1.6665 4.37457 1.94419 3.34125L2.06971 3.45391L3.69904 5.08322C5.05926 6.44344 6.12525 7.50944 7.06879 8.22936C8.03456 8.96619 8.94517 9.39911 9.99975 9.39911C11.0543 9.39911 11.9649 8.96619 12.9307 8.22936C13.8742 7.50944 14.9402 6.44344 16.3004 5.08324L18.0527 3.33093C18.3332 4.36507 18.3332 5.79277 18.3332 8.00002C18.3332 11.1248 18.3332 12.6872 17.5374 13.7824C17.2804 14.1362 16.9693 14.4473 16.6156 14.7043C15.5203 15.5 13.9579 15.5 10.8332 15.5H9.1665C7.9762 15.5 7.0126 15.5 6.21518 15.456C6.95154 15.2834 7.49984 14.6224 7.49984 13.8334C7.49984 12.9129 6.75365 12.1667 5.83317 12.1667H4.77687C4.91868 11.9215 4.99984 11.6369 4.99984 11.3334C4.99984 10.4129 4.25365 9.66669 3.33317 9.66669H1.67251C1.6665 9.16577 1.6665 8.61294 1.6665 8.00002Z"
+                    fill="#459639"></path>
+                </svg>
+              </i>
+              <h3>Subscribe to our newsletter.</h3>
+            </div>
+            <form>
+              <input type="text" name="email" placeholder="Enter your email address...">
+              <button class="button foot-btn2">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© Copyright 2025 | CleanHedge Verde Private Limited | All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- mobile-search -->
+  <div class="mobile-search">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-11">
+          <form>
+            <label>What are you looking for?</label>
+            <div class="d-flex search-bar">
+              <input type="text" placeholder="Type Here to Search">
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </div>
+        <div class="col-1 d-flex justify-content-end align-items-center">
+          <div class="search-cross-btn">
+            <i class="fa fa-times"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- mobile-search end -->
+
+  <!-- Popup Form Integration -->
+  <div class="latterbox" id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
+    <script src='https://www.google.com/recaptcha/api.js' async defer>
+    </script>
+    <form class="request-quote-form" id='webform868496000001580012' action='https://crm.zoho.in/crm/WebToLeadForm'
+      name=WebToLeads868496000001580012 method='POST'
+      onSubmit='javascript:document.charset="UTF-8"; return checkMandatory868496000001580012()' accept-charset='UTF-8'
+      class="request-quote-form">
+      <input type='text' style='display:none;' name='xnQsjsdp'
+        value='bf8d7be9c2fcc5b9380db2cd7fe7817047ab2de69ca3101113800fac0a914373'>
+      </input>
+      <input type='hidden' name='zc_gad' id='zc_gad' value=''>
+      </input>
+      <input type='text' style='display:none;' name='xmIwtLD'
+        value='0c20e58fc6db7768670c551bea89ef83d86ee647903e7559e58d53227cfb984b0fcc03adaeeea7fd0d0229a5981dfd5f'>
+      </input>
+      <input type='text' style='display:none;' name='actionType' value='TGVhZHM='>
+      </input>
+      <input type='text' style='display:none;' name='returnURL' value='null'>
+      </input>
+
+      <h3>Request a Quote</h3>
+      <input type="text" name="First Name" placeholder="First Name*" required>
+      <input type="text" name="Last Name" placeholder="Last Name*" required>
+      <input type="text" name="Company" placeholder="Company Name*" required>
+      <input type="text" name="Mobile" placeholder="Mobile Number*" required>
+      <input type="text" name="Email" placeholder="Email Address*" required>
+      <input type="text" name='City' placeholder="City">
+      <div class="dropdown-wrapper">
+        <select class="nice-select dw" id='LEADCF12' name="LEADCF11" onChange='addAriaSelected868496000001580012()'>
+          <option value="">Current Electricity Bill Amount</option>
+          <option>Rs. 1.20 Lakhs - Rs. 6 Lakhs</option>
+          <option>Rs. 6 Lakhs - Rs. 60 lakhs</option>
+          <option>Rs. 60 Lakhs+</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <input type="text" class="other-input" id="otherCity2" placeholder="Electricity Bill Amount"
+        style="margin-top: 0px !important;" />
+      <textarea placeholder="Message"></textarea>
+
+      <div class='zcwf_row'>
+        <div class='zcwf_col_lab'>
+        </div>
+        <div class='zcwf_col_fld'>
+          <div class='g-recaptcha' data-sitekey='6LcUjbErAAAAAFuO86Ym-EieZhIO20Di8c9njRxP' data-theme='light'
+            data-callback='rccallback868496000001580012' captcha-verified='false' id='recap868496000001580012'>
+          </div>
+          <div id='recapErr868496000001580012' style='font-size:12px;color:red;visibility:hidden;'>Captcha validation
+            failed. If you are not a robot then please try again.</div>
+        </div>
+      </div>
+      <input type='text' type='hidden' style='display: none;' name='aG9uZXlwb3Q' value='' />
+
+      <button class="button" name="LEADCF8">Send Message</button>
+
+      <div class='zcwf_row wfrm_fld_dpNn'>
+        <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'>
+          <label for='LEADCF10'>Deal Source</label>
+        </div>
+        <div class='zcwf_col_fld'>
+          <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false' aria-haspopup='listbox' id='LEADCF10'
+            onChange='addAriaSelected868496000001580012()' aria-required='false' aria-label='LEADCF10' name='LEADCF10'>
+            <option value='-None-'>-None-</option>
+            <option value='Advertisement'>Advertisement</option>
+            <option value='Google&#x20;ads'>Google ads</option>
+            <option value='New&#x20;research'>New research</option>
+            <option value='Channel&#x20;Partner&#x20;&#x28;CP&#x29;'>Channel Partner &#x28;CP&#x29;</option>
+            <option value='Ornate'>Ornate</option>
+            <option value='Online&#x20;Software'>Online Software</option>
+            <option value='Personal&#x20;Ref'>Personal Ref</option>
+            <option value='Event'>Event</option>
+            <option value='Cold&#x20;Call'>Cold Call</option>
+            <option value='Employee&#x20;Referral'>Employee Referral</option>
+            <option value='External&#x20;Referral'>External Referral</option>
+            <option value='Online&#x20;Store'>Online Store</option>
+            <option value='Partner'>Partner</option>
+            <option value='Public&#x20;Relations'>Public Relations</option>
+            <option value='Sales&#x20;Email&#x20;Alias'>Sales Email Alias</option>
+            <option value='Seminar&#x20;Partner'>Seminar Partner</option>
+            <option value='Internal&#x20;Seminar'>Internal Seminar</option>
+            <option value='Trade&#x20;Show'>Trade Show</option>
+            <option value='Web&#x20;Download'>Web Download</option>
+            <option value='Web&#x20;Research'>Web Research</option>
+            <option value='Chat'>Chat</option>
+            <option selected value='Website&#x20;Form'>Website Form</option>
+          </select>
+          <div class='zcwf_col_help'>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .wfrm_fld_dpNn {
+          display: none;
+        }
+
+        .dw {
+          background-color: #fafafa !important;
+          padding-left: 30px !important;
+          border: 1px solid #c1c1c1 !important;
+          position: relative !important;
+        }
+      </style>
+
+      <script>
+        function addAriaSelected868496000001580012() {
+          var optionElem = event.target;
+          var previousSelectedOption = optionElem.querySelector('[aria-selected=true]');
+          if (previousSelectedOption) {
+            previousSelectedOption.removeAttribute('aria-selected');
+          }
+          optionElem.querySelectorAll('option')[optionElem.selectedIndex].ariaSelected = 'true';
+        }
+        /* Do not remove this code. */
+        function rccallback868496000001580012() {
+          if (document.getElementById('recap868496000001580012') != undefined) {
+            document.getElementById('recap868496000001580012').setAttribute('captcha-verified', true);
+          }
+          if (document.getElementById('recapErr868496000001580012') != undefined && document.getElementById('recapErr868496000001580012').style.visibility == 'visible') {
+            document.getElementById('recapErr868496000001580012').style.visibility = 'hidden';
+          }
+        }
+        function reCaptchaAlert868496000001580012() {
+          var recap = document.getElementById('recap868496000001580012');
+          if (recap != undefined && recap.getAttribute('captcha-verified') == 'false') {
+            document.getElementById('recapErr868496000001580012').style.visibility = 'visible';
+            return false;
+          }
+          return true;
+        }
+        function validateEmail868496000001580012() {
+          var form = document.forms['WebToLeads868496000001580012'];
+          var emailFld = form.querySelectorAll('[ftype=email]');
+          var i;
+          for (i = 0; i < emailFld.length; i++) {
+            var emailVal = emailFld[i].value;
+            if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
+              var atpos = emailVal.indexOf('@');
+              var dotpos = emailVal.lastIndexOf('.');
+              if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
+                alert('Please enter a valid email address. ');
+                emailFld[i].focus();
+                return false;
+              }
+            }
+          }
+          return true;
+        }
+        function checkMandatory868496000001580012() {
+          var mndFileds = new Array('First Name', 'Last Name', 'Email', 'Mobile');
+          var fldLangVal = new Array('First\x20Name', 'Last\x20Name', 'Email', 'Mobile');
+          for (i = 0; i < mndFileds.length; i++) {
+            var fieldObj = document.forms['WebToLeads868496000001580012'][mndFileds[i]];
+            if (fieldObj) {
+              if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
+                if (fieldObj.type == 'file') {
+                  alert('Please select a file to upload.');
+                  fieldObj.focus();
+                  return false;
+                }
+                alert(fldLangVal[i] + ' cannot be empty.');
+                fieldObj.focus();
+                return false;
+              }
+              else if (fieldObj.nodeName == 'SELECT') {
+                if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+                  alert(fldLangVal[i] + ' cannot be none.');
+                  fieldObj.focus();
+                  return false;
+                }
+              }
+              else if (fieldObj.type == 'checkbox') {
+                if (fieldObj.checked == false) {
+                  alert('Please accept  ' + fldLangVal[i]);
+                  fieldObj.focus();
+                  return false;
+                }
+              }
+              try {
+                if (fieldObj.name == 'Last Name') {
+                  name = fieldObj.value;
+                }
+              }
+              catch (e) { }
+            }
+          }
+          if (!validateEmail868496000001580012()) {
+            return false;
+          }
+          if (!reCaptchaAlert868496000001580012()) {
+            return false;
+          }
+          var urlparams = new URLSearchParams(window.location.search);
+          if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) {
+            var webform = document.getElementById('webform868496000001580012');
+            var service = urlparams.get('service');
+            var smarturlfield = document.createElement('input');
+            smarturlfield.setAttribute('type', 'hidden');
+            smarturlfield.setAttribute('value', service);
+            smarturlfield.setAttribute('name', 'service');
+            webform.appendChild(smarturlfield);
+          }
+          document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+        }
+        function tooltipShow868496000001580012(el) {
+          var tooltip = el.nextElementSibling;
+          var tooltipDisplay = tooltip.style.display;
+          if (tooltipDisplay == 'none') {
+            var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+            for (i = 0; i < allTooltip.length; i++) {
+              allTooltip[i].style.display = 'none';
+            }
+            tooltip.style.display = 'block';
+          }
+          else {
+            tooltip.style.display = 'none';
+          }
+        }
+      </script>
+      <!-- Do not remove this --- Analytics Tracking code starts -->
+      <script id='wf_anal'
+        src='https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=9de97f5e0bd2b245278ec27c9cfabf7bfa84ee5ee4a62ad008c669998ee527af52148917e73dacdc6f5538edfb0728b2gidd5113da09cda64ae1a94f02bdb7dc6f6c10bbb243bd2a293a624c8642c4d7491gid88073b8d1088ecde3328b1aa73ea1b02aadde1abdc56e98896d271480a6ccb56gid4d2825887b48010f811ded7c857920c1257e1380f414199da82570eccbe4622d&tw=8c71e05614ae1fa06aabddc0994bb1116ac9ea3e2aa644abd228c570d9ea033c'>
+        </script>
+      <!-- Do not remove this --- Analytics Tracking code ends. -->
+
+    </form>
+    <div class="latterbox-cross-btn">
+      <i class="fa fa-times"></i>
+    </div>
+  </div>
+
+  <!-- WhatsApp Widget -->
+  <div class="wa-widget" id="waWidget">
+    <div class="wa-header">
+      <span>CleanHedge</span>
+      <div class="wa-close" onclick="toggleWidget()">×</div>
+    </div>
+
+    <div class="wa-body">
+      <div class="wa-message">
+        Hello! Lets connect to reduce my electricity bill by half.
+      </div>
+    </div>
+
+    <div class="wa-footer">
+      <a href="https://wa.me/917304406336?text=Hello!%0ALets%20connect%20to%20reduce%20my%20electricity%20bill%20by%20half."
+        target="_blank">Open Chat</a>
+    </div>
+  </div>
+
+  <!-- Floating Button -->
+  <div class="wa-float" onclick="toggleWidget()">
+    <img src="assets/img/used/whatsapp.svg" />
+  </div>
+
+  <style>
+    /* Floating WhatsApp Button */
+    .wa-float {
+      position: fixed;
+      bottom: 100px;
+      right: 15px;
+      background: #25D366;
+      color: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+      z-index: 9999;
+      opacity: 0;
+      transform: translateY(20px);
+      pointer-events: none;
+      transition: all 0.35s ease;
+    }
+
+    .wa-float.show {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .wa-float img {
+      width: 34px;
+    }
+
+    /* Chat Widget Box */
+    .wa-widget {
+      position: fixed;
+      bottom: 20px;
+      right: 85px;
+      width: 320px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      display: none;
+      z-index: 9999;
+    }
+
+    .wa-header {
+      background: #459639;
+      color: #fff;
+      padding: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .wa-header span {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .wa-close {
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .wa-body {
+      padding: 16px;
+      background: #ECE5DD;
+    }
+
+    .wa-message {
+      background: #fff;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 14px;
+      line-height: 1.4;
+      display: inline-block;
+      max-width: 90%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .wa-footer {
+      padding: 14px;
+      background: #fff;
+      border-top: 1px solid #eee;
+    }
+
+    .wa-footer a {
+      display: block;
+      background: #459639;
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media(max-width: 1199px) {
+      .wa-float {
+        width: 50px;
+        height: 50px;
+        bottom: 85px
+      }
+    }
+
+    @media(max-width: 576px) {
+      .wa-widget {
+        width: 250px;
+      }
+
+      .wa-body {
+        padding: 15px 10px;
+      }
+
+      .wa-message {
+        padding: 10px 10px;
+        max-width: 100%;
+      }
+    }
+  </style>
+
+  <!-- progress -->
+  <div id="progress" style="background: #459639 !important">
+    <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
+  </div>
+
+  <!-- Script -->
+
+  <!-- Preloader -->
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        document.querySelector('.preloader').style.opacity = '0';
+        document.querySelector('.preloader').style.visibility = 'hidden';
+      }, 2000); // 2000ms = 2 seconds
+    });
+  </script>
+
+  <!-- Dropdown Field -->
+  <!-- Footer Contact Form -->
+  <script>
+    const dropdown1 = document.getElementById('LEADCF11');
+    const otherInput1 = document.getElementById('otherCity1');
+
+    dropdown1.addEventListener('change', function () {
+      if (this.value === 'other') {
+        otherInput1.style.display = 'block';
+      } else {
+        otherInput1.style.display = 'none';
+      }
+    });
+
+    dropdown1.addEventListener('click', function () {
+      this.classList.toggle('up');
+    });
+  </script>
+
+  <!-- Upper Contact Form -->
+  <script>
+    const dropdown2 = document.getElementById('LEADCF12');
+    const otherInput2 = document.getElementById('otherCity2');
+
+    dropdown2.addEventListener('change', function () {
+      if (this.value === 'other') {
+        otherInput2.style.display = 'block';
+      } else {
+        otherInput2.style.display = 'none';
+      }
+    });
+
+    dropdown2.addEventListener('click', function () {
+      this.classList.toggle('up');
+    });
+  </script>
+
+  <!-- jQuery -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap Js -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <!-- fancybox -->
+  <script src="assets/js/jquery.fancybox.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.2.1/vue-resource.min.js"></script>
+
+  <!-- Google Custom Search API -->
+  <!-- <script async src="https://cse.google.com/cse.js?cx=f0a85bf65894041a4">
+</script> -->
+  </script>
+  <!-- Google Custom Search API -->
+
+  <script>
+    /*========== Pre Loading ==========*/
+    $(window).on('load', function () {
+      // Debugging: Check if the window load event is firing.
+      console.log('Window loaded.');
+
+      // Debugging: Check if the preloader element exists.
+      var $preloader = $(".preloader");
+      console.log('Preloader element:', $preloader);
+
+      // Hide and remove the preloader.
+      $preloader.fadeOut(1000, function () {
+        $preloader.remove();
+        // Debugging: Check if the preloader is removed.
+        console.log('Preloader removed.');
+      });
+    });
+  </script>
+
+  <script>
+    // Add smooth scroll behavior when clicking on links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+
+  <script>
+    const persons = [
+      {
+        name: "Mr. Vipul Joisher",
+        photo:
+          "assets/images/team/vipul-joisher.webp",
+        title: "Director",
+        bio:
+          "<p>With 20 Years Of Experience In The Food Processing Industry And 15 Years Of Experience In Renewables, Mr. Joisher Has Demonstrated Excellence In Project Execution, Land Procurement, And Government Policy Advocacy. Mr. Joisher's Aditya Green Energy Group, Which He Founded with Mr. Jayesh Bajaj And Leads, Has Commissioned More Than 1,000 Rooftop Projects And Over 150 Ground-Mounted Utility-Scale Projects covering more than 1,000 MW.</p>",
+        social: {
+          facebook: "#",
+          twitter: "https://twitter.com/knyttneve",
+          linkedin: "#"
+        }
+      },
+      {
+        name: "Mr. Jayesh Bajaj",
+        photo:
+          "assets/images/team/jayesh-bajaj2.jpg",
+        title: "Director",
+        bio:
+          "<p>Mr. Bajaj Has Over 20 Years Of Experience In Retail Marketing And Has Successfully Launched And Managed Multiple Telecom Brands In The Latur And Nearby Regions. He Is The Founder And Head Of Execution At Aditya Green Energy Group, Which Has Commissioned More Than 1,000 Rooftop Projects And Over 150 Ground-Mounted Utility-Scale Projects. Mr. Bajaj's Contribution Has Been Instrumental In Commissioning Over 1,000 MW Of Solar Projects</p>",
+        social: {
+          facebook: "#",
+          twitter: "https://twitter.com/knyttneve",
+          linkedin: "#"
+        }
+      },
+      {
+        name: "Mr. Aditya Goel",
+        photo:
+          "assets/images/team/aditya-goel.webp",
+        title: "Director",
+        bio:
+          "<p>Mr. Aditya Goel completed his Engineering from IIT Varanasi in 2008. His entrepreneurial journey extends over 17 years of experience in the Auto, Solar, and Energy Storage sectors.He has embarked upon the mission to establish Solar Energy as an aﬀordable and cost-eﬀective ‘Plurality of Power’ by starting Ornate Solar in 2014, which is now a INR 400 crore business, and Inverted Energy in 2018, which is now a INR 100+ crore business.</p>",
+        social: {
+          facebook: "#",
+          twitter: "https://twitter.com/knyttneve",
+          linkedin: "#"
+        }
+      },
+
+      {
+        name: "Mr. Rohan Kilachand",
+        photo:
+          "assets/images/team/rohan-khilachand.webp",
+        title: "Director",
+        bio:
+          "<p>Mr. Kilachand has over 17+ Years Of Experience  in manufacturing and business turnaround across sectors such as Oil & Gas, Sugar Manufacturing, Power Generation, Industrial Alcohol, Chemical Storage, And Private Equity. </p>",
+        social: {
+          facebook: "#",
+          twitter: "https://twitter.com/knyttneve",
+          linkedin: "#"
+        }
+      }
+
+    ];
+
+    const app = new Vue({
+      el: "#app",
+      data() {
+        return {
+          persons: persons,
+          selectedPersonIndex: null,
+          isSelected: false,
+          selectedPerson: null,
+          inlineStyles: null,
+          isReady: false,
+          isOk: false,
+          selectedPersonData: {
+            name: null,
+            title: null,
+            photo: null,
+            social: {
+              facebook: null,
+              twitter: null,
+              linkedin: null
+            }
+          }
+        };
+      },
+      methods: {
+        selectPerson(index, el) {
+          if (!this.isOk) {
+            this.selectedPersonIndex = index;
+            this.isSelected = true;
+            el.target.parentElement.className == "person-details"
+              ? (this.selectedPerson = el.target.parentElement.parentElement)
+              : (this.selectedPerson = el.target.parentElement);
+
+            this.selectedPerson.classList.add("person-selected");
+            this.selectedPerson.setAttribute(
+              "style",
+              `width:${this.selectedPerson.offsetWidth}px;`
+            );
+            this.selectedPersonData = this.persons[index];
+            window.setTimeout(() => {
+              this.inlineStyles = `width:${this.selectedPerson.offsetWidth}px;height:${this.selectedPerson.offsetHeight}px;left:${this.selectedPerson.offsetLeft}px;top:${this.selectedPerson.offsetTop}px;position:fixed`;
+              this.selectedPerson.setAttribute("style", this.inlineStyles);
+            }, 400);
+            window.setTimeout(() => {
+              this.isReady = true;
+              this.isOk = true;
+            }, 420);
+          } else {
+            this.reset();
+          }
+        },
+        reset() {
+          this.isReady = false;
+          window.setTimeout(() => {
+            this.selectedPerson.classList.add("person-back");
+          }, 280);
+          window.setTimeout(() => {
+            this.selectedPerson.setAttribute("style", "");
+          }, 340);
+          window.setTimeout(() => {
+            this.isSelected = false;
+            this.selectedPerson.classList.remove("person-back", "person-selected");
+            this.isOk = false;
+          }, 400);
+        }
+      }
+    });
+
+  </script>
+
+  </div>
+
+  <!-- After scroll whatsapp widget -->
+  <script>
+    function toggleWidget() {
+      const widget = document.getElementById("waWidget");
+      widget.style.display = widget.style.display === "block" ? "none" : "block";
+    }
+
+    const waButton = document.querySelector(".wa-float");
+    const showAfter = 120;
+
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > showAfter) {
+        waButton.classList.add("show");
+      } else {
+        waButton.classList.remove("show");
+      }
+    });
+  </script>
+
+</body>

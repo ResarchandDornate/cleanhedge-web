@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanHedge - BESS Page</title>
+  <link rel="icon" href="assets/img/favicon.png">
+
+  <!-- CSS only -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <!-- fancybox -->
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+  <!-- style -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- responsive -->
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- color -->
+  <link rel="stylesheet" href="assets/css/color.css">
+
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PB7M5VKN');</script>
+
+</head>
+
+<style>
+  /* Banner */
+  .parallax-banner {
+    background-image: url('assets/img/used/iStock/home-page-p4-final.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding-top: 350px;
+  }
+
+  .banner-text p {
+    color: white;
+  }
+
+  @media (min-width: 769px) and (max-width: 1399px) {
+    .banner-text p {
+      width: 80% !important;
+    }
+  }
+
+  /* Preloader */
+  .preloader {
+    background: white;
+  }
+
+  .preloader-logo {
+    width: 350px;
+    height: auto;
+  }
+
+  /* About Us Section */
+  @media(min-width: 992px) {
+    .bess-about-pc {
+      display: block;
+    }
+
+    .bess-about-mob {
+      display: none;
+    }
+  }
+
+  @media(max-width: 991px) {
+    .bess-about-pc {
+      display: none;
+    }
+
+    .bess-about-mob {
+      display: block;
+    }
+
+    .heading h2 {
+      padding-bottom: 40px;
+      padding-top: 20px;
+    }
+  }
+
+  .para2-line {
+    margin-top: 30px;
+  }
+
+  /* Benefits Section */
+  .team-info p {
+    font-size: 18px;
+  }
+
+  .solar-pv:hover p {
+    color: white
+  }
+
+  .solar-pv:hover i {
+    background-color: white;
+  }
+
+  .solar-pv:hover i svg {
+    color: #459639
+  }
+
+  .solar-pv img {
+    height: 110px;
+    width: 110px
+  }
+
+  .solar-pv {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .solar-pv:before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: calc(7% + 0px) calc(50% - 60px);
+  }
+
+  /* First card */
+  .row .col-xl-4:nth-child(1) .feature1::before {
+    background-image: url('assets/img/used/bess/high-energy-density-white-bg.png');
+    background-color: rgb(69, 150, 57);
+  }
+
+  /* Second card */
+  .feature2::before {
+    background-image: url('assets/img/used/bess/intelligent-thermal-management-white-bg.png');
+    background-color: rgb(69, 150, 57);
+    background-position: calc(7% + 0px) calc(45% - 60px);
+  }
+
+  /* Third card */
+  .feature3::before {
+    background-image: url('assets/img/used/bess/industry-leading-safety-white-bg.png');
+    background-color: rgb(69, 150, 57);
+    background-position: calc(7% + 0px) calc(45% - 60px);
+  }
+
+  /* 4th card */
+  .feature4::before {
+    background-image: url('assets/img/used/bess/turnkey-compatibility-white-bg.png');
+    background-color: rgb(69, 150, 57);
+    background-position: calc(7% + 0px) calc(45% - 60px);
+  }
+
+  .feature5::before {
+    background-image: url('assets/img/used/bess/modular-architecture-white-bg.png');
+    background-color: rgb(69, 150, 57);
+    background-position: calc(7% + 0px) calc(45% - 60px);
+  }
+
+  .feature6::before {
+    background-image: url('assets/img/used/bess/global-compliance-white-bg.png');
+    background-color: rgb(69, 150, 57);
+    background-position: calc(7% + 0px) calc(45% - 60px);
+  }
+
+  /* Benefits Section */
+  input:checked+.tab-label::after {
+    background-color: white;
+    color: #459639;
+  }
+
+  /* Table Section */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  th {
+    background-color: #459639;
+    color: white
+  }
+
+
+  /* heading */
+  @media (max-width: 480px) {
+    .heading h2 {
+      font-size: 32px !important;
+    }
+  }
+
+  @media (max-width: 993px) {
+    .heading h2 {
+      font-size: 32px !important;
+    }
+  }
+
+  /* form font heading */
+  @media (max-width: 480px) {
+    .request-quote .heading h2 {
+      font-size: 32px !important;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .request-quote .heading h2 {
+      font-size: 32px !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .solar-pv {
+      padding-top: 40px !important;
+    }
+  }
+
+  /* tabs gap */
+  @media (max-width: 991px) {
+    .tabs {
+      margin-top: -60px;
+    }
+  }
+</style>
+
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PB7M5VKN" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- preloader -->
+  <div class="preloader">
+    <div class="logo-container">
+      <img src="assets/img/used/clean-hedge-logo-black.png" alt="Logo" class="preloader-logo spinning" />
+    </div>
+  </div>
+  <!-- preloader end -->
+
+  <!-- Header -->
+  <header class="two">
+
+    <!-- Topbar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-text">
+          <ul class="d-flex">
+            <li><a href="https://www.instagram.com/clean.hedge/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/clean-hedge"><i class="fa-brands fa-linkedin"></i></a></li>
+          </ul>
+          <div class="d-flex top-bar-mail">
+            <div class="d-flex align-items-center me-4">
+              <i>
+                <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.833252 10.7083C0.488074 10.7083 0.208252 10.9881 0.208252 11.3333C0.208252 11.6785 0.488074 11.9583 0.833252 11.9583H3.33325C3.67843 11.9583 3.95825 11.6785 3.95825 11.3333C3.95825 10.9881 3.67843 10.7083 3.33325 10.7083H0.833252Z"
+                    fill="#459639" />
+                  <path
+                    d="M0.833252 13.2083C0.488074 13.2083 0.208252 13.4881 0.208252 13.8333C0.208252 14.1785 0.488074 14.4583 0.833252 14.4583H5.83325C6.17843 14.4583 6.45825 14.1785 6.45825 13.8333C6.45825 13.4881 6.17843 13.2083 5.83325 13.2083H0.833252Z"
+                    fill="#459639" />
+                  <path
+                    d="M2.59071 2.24172L2.5 2.16667C2.757 1.81294 3.0305 1.55276 3.38422 1.29576C4.4795 0.5 6.04189 0.5 9.16667 0.5H10.8333C13.9581 0.5 15.5205 0.5 16.6157 1.29576C16.9695 1.55276 17.2214 1.78443 17.4784 2.13816L17.3737 2.24225L15.4505 4.16551C14.0491 5.56689 13.0416 6.5725 12.1726 7.23558C11.318 7.88758 10.6712 8.14908 9.99992 8.14908C9.3285 8.14908 8.68175 7.88758 7.82717 7.23558C6.95817 6.5725 5.95066 5.56689 4.54927 4.16551L2.92989 2.54612L2.59071 2.24172Z"
+                    fill="#459639" />
+                  <path
+                    d="M1.6665 8.00002C1.6665 5.80009 1.6665 4.37457 1.94419 3.34125L2.06971 3.45391L3.69904 5.08322C5.05926 6.44344 6.12525 7.50944 7.06879 8.22936C8.03456 8.96619 8.94517 9.39911 9.99975 9.39911C11.0543 9.39911 11.9649 8.96619 12.9307 8.22936C13.8742 7.50944 14.9402 6.44344 16.3004 5.08324L18.0527 3.33093C18.3332 4.36507 18.3332 5.79277 18.3332 8.00002C18.3332 11.1248 18.3332 12.6872 17.5374 13.7824C17.2804 14.1362 16.9693 14.4473 16.6156 14.7043C15.5203 15.5 13.9579 15.5 10.8332 15.5H9.1665C7.9762 15.5 7.0126 15.5 6.21518 15.456C6.95154 15.2834 7.49984 14.6224 7.49984 13.8334C7.49984 12.9129 6.75365 12.1667 5.83317 12.1667H4.77687C4.91868 11.9215 4.99984 11.6369 4.99984 11.3334C4.99984 10.4129 4.25365 9.66669 3.33317 9.66669H1.67251C1.6665 9.16577 1.6665 8.61294 1.6665 8.00002Z"
+                    fill="#459639" />
+                </svg>
+              </i>
+              <a href="mailto:info@clean-hedge.com">
+                <p><span class="__cf_email__">info@clean-hedge.com</span></p>
+              </a>
+            </div>
+            <div class="d-flex align-items-center">
+              <i>
+                <svg width="20" height="20" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.7917 4.23926C10.1532 4.23926 9.6355 4.75693 9.6355 5.39551V31.6038C9.6355 32.2424 10.1532 32.7601 10.7917 32.7601H26.2084C26.847 32.7601 27.3647 32.2424 27.3647 31.6038V5.39551C27.3647 4.75693 26.847 4.23926 26.2084 4.23926H10.7917ZM7.323 5.39551C7.323 3.47977 8.87601 1.92676 10.7917 1.92676H26.2084C28.1241 1.92676 29.6772 3.47977 29.6772 5.39551V31.6038C29.6772 33.5195 28.1241 35.0726 26.2084 35.0726H10.7917C8.87601 35.0726 7.323 33.5195 7.323 31.6038V5.39551Z"
+                    fill="#459639"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.8022 7.70801C15.8022 7.06943 16.3199 6.55176 16.9585 6.55176H20.0418C20.6804 6.55176 21.1981 7.06943 21.1981 7.70801C21.1981 8.34658 20.6804 8.86426 20.0418 8.86426H16.9585C16.3199 8.86426 15.8022 8.34658 15.8022 7.70801Z"
+                    fill="#459639"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14.2605 29.291C14.2605 28.6525 14.7782 28.1348 15.4167 28.1348H21.5834C22.222 28.1348 22.7397 28.6525 22.7397 29.291C22.7397 29.9296 22.222 30.4473 21.5834 30.4473H15.4167C14.7782 30.4473 14.2605 29.9296 14.2605 29.291Z"
+                    fill="#459639"></path>
+                </svg>
+              </i>
+              <a href="callto:+91-73 044 06 336">
+                <p>+91-73 044 06 336</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Item  -->
+    <div class="container">
+      <div class="menu-bar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/img/used/clean-hedge-logo-black-1.png" alt="" style="width: 300px;" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul class="navbar-links">
+            <li class="navbar-dropdown">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="navbar-dropdown has-children">
+              <a href="javascript:void(0)" style="cursor: auto;">About</a>
+              <ul class="dropdown">
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="team-members.html">Team Members</a></li>
+              </ul>
+            </li>
+            <li class="navbar-dropdown has-children">
+              <a href="javascript:void(0)" style="cursor: auto;" class="active-link">Services</a>
+              <ul class="dropdown">
+                <li><a href="open-access.html">Solar Open Access</a></li>
+                <li><a href="solar-rooftop.html">Solar Rooftop</a></li>
+                <li><a href="solar-inroof.html">Solar InRoof</a></li>
+                <li><a href="bess.html">Solar + BESS</a></li>
+                <li><a href="green-certification.html">Green Certification</a></li>
+              </ul>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="contact.html">Contact Us</a>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="https://blog.clean-hedge.com/" target="_blank">Blogs</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="search-style d-flex align-items-center">
+          <a href="javascript:void(0)" class="search-btn">
+            <svg height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
+              <g id="_12" data-name="12">
+                <path
+                  d="m21.71 20.29-2.83-2.82a9.52 9.52 0 1 0 -1.41 1.41l2.82 2.83a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zm-17.71-8.79a7.5 7.5 0 1 1 7.5 7.5 7.5 7.5 0 0 1 -7.5-7.5z">
+                </path>
+              </g>
+            </svg>
+          </a>
+          <a class="header-button newsbox button" href="#">Request a Quote</a>
+        </div>
+        <div class="bar-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Header  -->
+    <div class="mobile-nav hmburger-menu" id="mobile-nav" style="display:block;">
+      <div class="res-log">
+        <a href="index.html">
+          <img src="assets/img/used/clean-hedge-logo-black.png" alt="" style="width: 300px;" />
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li class="menu-item-has-children"><a href="javascript:void(0)" style="cursor: auto;">Services</a>
+          <ul class="sub-menu">
+            <li><a href="open-access.html">Solar Open Access</a></li>
+            <li><a href="solar-rooftop.html">Solar Rooftop</a></li>
+            <li><a href="solar-inroof.html">Solar InRoof</a></li>
+            <li><a href="bess.html">Solar + BESS</a></li>
+            <li><a href="green-certification.html">Green Certification</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="https://blog.clean-hedge.com/" target="_blank">Blogs</a></li>
+      </ul>
+
+      <a href="JavaScript:void(0)" id="res-cross"></a>
+
+      <div class="about-energix">
+        <div class="d-flex align-items-center top-bar-mail">
+          <div class="d-flex align-items-center">
+            <i>
+              <svg width="20" height="20" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M10.7917 4.23926C10.1532 4.23926 9.6355 4.75693 9.6355 5.39551V31.6038C9.6355 32.2424 10.1532 32.7601 10.7917 32.7601H26.2084C26.847 32.7601 27.3647 32.2424 27.3647 31.6038V5.39551C27.3647 4.75693 26.847 4.23926 26.2084 4.23926H10.7917ZM7.323 5.39551C7.323 3.47977 8.87601 1.92676 10.7917 1.92676H26.2084C28.1241 1.92676 29.6772 3.47977 29.6772 5.39551V31.6038C29.6772 33.5195 28.1241 35.0726 26.2084 35.0726H10.7917C8.87601 35.0726 7.323 33.5195 7.323 31.6038V5.39551Z"
+                  fill="white"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15.8022 7.70801C15.8022 7.06943 16.3199 6.55176 16.9585 6.55176H20.0418C20.6804 6.55176 21.1981 7.06943 21.1981 7.70801C21.1981 8.34658 20.6804 8.86426 20.0418 8.86426H16.9585C16.3199 8.86426 15.8022 8.34658 15.8022 7.70801Z"
+                  fill="white"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M14.2605 29.291C14.2605 28.6525 14.7782 28.1348 15.4167 28.1348H21.5834C22.222 28.1348 22.7397 28.6525 22.7397 29.291C22.7397 29.9296 22.222 30.4473 21.5834 30.4473H15.4167C14.7782 30.4473 14.2605 29.9296 14.2605 29.291Z"
+                  fill="white"></path>
+              </svg>
+            </i>
+            <a href="tel:+91-73 044 06 336">
+              <p>+91-73 044 06 336</p>
+            </a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center top-bar-mail">
+          <div class="d-flex align-items-center">
+            <i>
+              <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.833252 10.7083C0.488074 10.7083 0.208252 10.9881 0.208252 11.3333C0.208252 11.6785 0.488074 11.9583 0.833252 11.9583H3.33325C3.67843 11.9583 3.95825 11.6785 3.95825 11.3333C3.95825 10.9881 3.67843 10.7083 3.33325 10.7083H0.833252Z"
+                  fill="white"></path>
+                <path
+                  d="M0.833252 13.2083C0.488074 13.2083 0.208252 13.4881 0.208252 13.8333C0.208252 14.1785 0.488074 14.4583 0.833252 14.4583H5.83325C6.17843 14.4583 6.45825 14.1785 6.45825 13.8333C6.45825 13.4881 6.17843 13.2083 5.83325 13.2083H0.833252Z"
+                  fill="white"></path>
+                <path
+                  d="M2.59071 2.24172L2.5 2.16667C2.757 1.81294 3.0305 1.55276 3.38422 1.29576C4.4795 0.5 6.04189 0.5 9.16667 0.5H10.8333C13.9581 0.5 15.5205 0.5 16.6157 1.29576C16.9695 1.55276 17.2214 1.78443 17.4784 2.13816L17.3737 2.24225L15.4505 4.16551C14.0491 5.56689 13.0416 6.5725 12.1726 7.23558C11.318 7.88758 10.6712 8.14908 9.99992 8.14908C9.3285 8.14908 8.68175 7.88758 7.82717 7.23558C6.95817 6.5725 5.95066 5.56689 4.54927 4.16551L2.92989 2.54612L2.59071 2.24172Z"
+                  fill="white"></path>
+                <path
+                  d="M1.6665 8.00002C1.6665 5.80009 1.6665 4.37457 1.94419 3.34125L2.06971 3.45391L3.69904 5.08322C5.05926 6.44344 6.12525 7.50944 7.06879 8.22936C8.03456 8.96619 8.94517 9.39911 9.99975 9.39911C11.0543 9.39911 11.9649 8.96619 12.9307 8.22936C13.8742 7.50944 14.9402 6.44344 16.3004 5.08324L18.0527 3.33093C18.3332 4.36507 18.3332 5.79277 18.3332 8.00002C18.3332 11.1248 18.3332 12.6872 17.5374 13.7824C17.2804 14.1362 16.9693 14.4473 16.6156 14.7043C15.5203 15.5 13.9579 15.5 10.8332 15.5H9.1665C7.9762 15.5 7.0126 15.5 6.21518 15.456C6.95154 15.2834 7.49984 14.6224 7.49984 13.8334C7.49984 12.9129 6.75365 12.1667 5.83317 12.1667H4.77687C4.91868 11.9215 4.99984 11.6369 4.99984 11.3334C4.99984 10.4129 4.25365 9.66669 3.33317 9.66669H1.67251C1.6665 9.16577 1.6665 8.61294 1.6665 8.00002Z"
+                  fill="white"></path>
+              </svg>
+            </i>
+            <a href="mailto:info@clean-hedge.com">
+              <p><span class="__cf_email__" data-cfemail="">info@clean-hedge.com</span></p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner parallax-banner">
+    <div class="container">
+      <div class="banner-text">
+        <h2>BESS</h2>
+        <p>Reliable Energy Independence using the latest technology</p>
+        <ul class="page-breadcrumb">
+          <li><a href="index.html"><i class="fa-solid fa-house pe-2"></i>Home</a></li>
+          <li>BESS</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="gap">
+    <div class="container">
+
+      <div class="bess-about-pc">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="use-energix three">
+
+              <div class="heading">
+                <h2>Battery Energy Storage System (BESS)</h2>
+              </div>
+
+              <div>
+                <p>Installing a BESS can help expand your business by becoming
+                  energy independent. To increase grid stability using renewable
+                  power, we use a battery storage system. It consists of solar
+                  panels which inject power and store the same in a battery
+                  during high solar radiation times. This energy is released into
+                  the system during times of low or no sunlight.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="services-img">
+              <figure>
+                <img alt="img" src="assets/img/used/iStock/bess-para-final.webp">
+              </figure>
+            </div>
+          </div>
+          <div class="col-lg-12 para2-line">
+            <div class="heading">
+              <h2 style="font-size: 50px; font-weight: bold;">CleanHedge Energy Storage System (ESS)</h2>
+            </div>
+            <p>
+              CleanHedge ESS is a next-generation Battery Energy Storage Solution(BESS)designed to maximize energy
+              efficiency, safety,
+              and scalability for modern power systems. Built using advanced Lithium Iron Phosphate(LFP) technology and
+              backed by
+              precision-engineered components, CleanHedge ESS delivers high energy density,real-time control, and
+              unmatched reliability.
+            </p>
+            <br>
+            <p>
+              From industrial-scale renewable integration to grid support and backup power,CleanHedge ESS is a
+              plug-and-playsolution ready to power the future.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bess-about-mob">
+        <div class="row align-items-center">
+
+          <div class="col-lg-12 mt-5">
+            <div class="services-img">
+              <figure>
+                <img alt="img" src="assets/img/used/bess/bess-about-us-og.jpg">
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-lg-12 mt-5">
+            <div class="use-energix three">
+
+              <div class="heading">
+                <h2>Battery Energy Storage System (BESS)</h2>
+              </div>
+
+              <div>
+                <p>Installing a BESS can help expand your business by becoming
+                  energy independent. To increase grid stability using renewable
+                  power, we use a battery storage system. It consists of solar
+                  panels which inject power and store the same in a battery
+                  during high solar radiation times. This energy is released into
+                  the system during times of low or no sunlight.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 para2-line mt-5">
+            <div class="heading">
+              <h2 style="font-size: 50px; font-weight: bold;">CleanHedge Energy Storage System (ESS)</h2>
+            </div>
+            <p>
+              CleanHedge ESS is a next-generation Battery Energy Storage Solution(BESS)designed to maximize energy
+              efficiency, safety,
+              and scalability for modern power systems. Built using advanced Lithium Iron Phosphate(LFP) technology and
+              backed by
+              precision-engineered components, CleanHedge ESS delivers high energy density,real-time control, and
+              unmatched reliability.
+            </p>
+            <br>
+            <p>
+              From industrial-scale renewable integration to grid support and backup power,CleanHedge ESS is a
+              plug-and-play solution ready to power the future.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Button  -->
+  <section>
+    <a href="contact.html">
+      <div class="container gap no-top d-flex justify-content-center align-items-center">
+        <button class="button">Know More</button>
+      </div>
+    </a>
+  </section>
+
+  <!-- Features Sections -->
+  <section class="gap no-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="heading">
+            <h2>Key Features of CleanHedge ESS</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-xl-4 col-lg-6">
+          <div class="solar-pv feature1">
+            <img src="assets/img/used/bess/high-energy-density.png" alt="Signiﬁcant Savings">
+            <h4>High Energy Density</h4>
+            <div class="team-info">
+              <p>Pack 45% more energy in each container and reduce land costs by up to 35%.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="solar-pv feature2">
+            <img src="assets/img/used/bess/intelligent-thermal-management.png" alt="ROI">
+            <h4>Intelligent Thermal Management</h4>
+            <div class="team-info">
+              <p>Smart liquid cooling reduces auxiliary
+                losses by 30% and extends battery life</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="solar-pv feature3">
+            <img src="assets/img/used/bess/industry-leading-safety.png" alt="Environmental Friendly">
+            <h4>Industry-Leading Safety</h4>
+            <div class="team-info">
+              <p>Multi-level fire protection, IP67-rated
+                packs, and redundancy-based fault
+                isolation ensure maximum safety.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-xl-4 col-lg-6">
+          <div class="solar-pv feature4">
+            <img src="assets/img/used/bess/turnkey-compatibility.png" alt="Energy Independence">
+            <h4>Turnkey Compatibility</h4>
+            <div class="team-info">
+              <p>Fully compatible with all major inverters
+                and Energy Management Systems(EMS),
+                supporting a variety of grid applications.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="solar-pv feature5">
+            <img src="assets/img/used/bess/modular-architecture.png" alt="House">
+            <h4>Modular Architecture</h4>
+            <div class="team-info">
+              <p>Flexible string configurations,
+                active balancing, and space-saving
+                container design.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="solar-pv feature6">
+            <img src="assets/img/used/bess/global-compliance.png" alt="Tax">
+            <h4>Global Compliance</h4>
+            <div class="team-info">
+              <ul class="pb-0">
+                <p>Certified with UL, IEC, NFPA, and
+                  UN standards; designed for international
+                  markets and local safety codes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose Section  -->
+  <section class="section-solar-energy gap">
+    <div class="container">
+      <div class="heading">
+        <h2>Why Choose CleanHedge ESS?</h2>
+      </div>
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="use-energix two">
+            <div class="use-energix-icon">
+              <i>
+                <svg width="60" height="54" viewBox="0 0 60 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M59.0625 10.125H53.4375V6.375C53.4375 6.12636 53.3387 5.8879 53.1629 5.71209C52.9871 5.53627 52.7486 5.4375 52.5 5.4375H51.5625V1.6875C51.5625 1.43886 51.4637 1.2004 51.2879 1.02459C51.1121 0.848772 50.8736 0.75 50.625 0.75H45C44.7514 0.75 44.5129 0.848772 44.3371 1.02459C44.1613 1.2004 44.0625 1.43886 44.0625 1.6875V5.4375H43.125C42.8764 5.4375 42.6379 5.53627 42.4621 5.71209C42.2863 5.8879 42.1875 6.12636 42.1875 6.375V10.125H39.0171L37.4011 6.89316C37.3232 6.73744 37.2035 6.60648 37.0554 6.51496C36.9073 6.42344 36.7366 6.37498 36.5625 6.375H23.4375C23.2634 6.37498 23.0927 6.42344 22.9446 6.51496C22.7965 6.60648 22.6768 6.73744 22.5989 6.89316L20.9829 10.125H17.8125V6.375C17.8125 6.12636 17.7137 5.8879 17.5379 5.71209C17.3621 5.53627 17.1236 5.4375 16.875 5.4375H15.9375V1.6875C15.9375 1.43886 15.8387 1.2004 15.6629 1.02459C15.4871 0.848772 15.2486 0.75 15 0.75H9.375C9.12636 0.75 8.8879 0.848772 8.71209 1.02459C8.53627 1.2004 8.4375 1.43886 8.4375 1.6875V5.4375H7.5C7.25136 5.4375 7.0129 5.53627 6.83709 5.71209C6.66127 5.8879 6.5625 6.12636 6.5625 6.375V10.125H0.9375C0.68886 10.125 0.450403 10.2238 0.274587 10.3996C0.0987721 10.5754 0 10.8139 0 11.0625L0 18.5625C0 18.8111 0.0987721 19.0496 0.274587 19.2254C0.450403 19.4012 0.68886 19.5 0.9375 19.5H3.75V52.3125C3.75 52.5611 3.84877 52.7996 4.02459 52.9754C4.2004 53.1512 4.43886 53.25 4.6875 53.25H55.3125C55.5611 53.25 55.7996 53.1512 55.9754 52.9754C56.1512 52.7996 56.25 52.5611 56.25 52.3125V19.5H59.0625C59.3111 19.5 59.5496 19.4012 59.7254 19.2254C59.9012 19.0496 60 18.8111 60 18.5625V11.0625C60 10.8139 59.9012 10.5754 59.7254 10.3996C59.5496 10.2238 59.3111 10.125 59.0625 10.125ZM45.9375 2.625H49.6875V5.4375H45.9375V2.625ZM44.0625 7.3125H51.5625V10.125H44.0625V7.3125ZM24.0171 8.25H35.9829L36.9204 10.125H23.0796L24.0171 8.25ZM10.3125 2.625H14.0625V5.4375H10.3125V2.625ZM8.4375 7.3125H15.9375V10.125H8.4375V7.3125ZM54.375 51.375H5.625V19.5H54.375V51.375ZM58.125 17.625H1.875V12H58.125V17.625Z"
+                    fill="#459639" />
+                  <path
+                    d="M20.625 38.25H27.1875V45.75C27.1874 45.9387 27.2442 46.123 27.3505 46.2788C27.4568 46.4347 27.6077 46.5548 27.7834 46.6236C27.9591 46.6923 28.1515 46.7064 28.3353 46.6641C28.5192 46.6218 28.686 46.5249 28.8139 46.3863L40.0639 34.1988C40.1877 34.0649 40.2697 33.8978 40.2999 33.718C40.3302 33.5382 40.3073 33.3535 40.2342 33.1865C40.1611 33.0195 40.0409 32.8775 39.8883 32.7777C39.7357 32.678 39.5573 32.6249 39.375 32.625H32.8125V25.125C32.8126 24.9363 32.7557 24.752 32.6494 24.5962C32.5431 24.4403 32.3922 24.3202 32.2165 24.2514C32.0408 24.1827 31.8485 24.1686 31.6646 24.2109C31.4808 24.2533 31.3139 24.3501 31.186 24.4887L19.936 36.6762C19.8123 36.8101 19.7303 36.9772 19.7 37.157C19.6698 37.3368 19.6926 37.5215 19.7657 37.6885C19.8388 37.8555 19.959 37.9976 20.1117 38.0973C20.2643 38.197 20.4427 38.2501 20.625 38.25ZM30.9375 27.5228V33.5625C30.9375 33.8111 31.0362 34.0496 31.2121 34.2254C31.3879 34.4012 31.6263 34.5 31.875 34.5H37.2335L29.0625 43.3523V37.3125C29.0625 37.0639 28.9637 36.8254 28.7879 36.6496C28.6121 36.4738 28.3736 36.375 28.125 36.375H22.7664L30.9375 27.5228Z"
+                    fill="#459639" />
+                  <path
+                    d="M45.9375 25.125H46.875V26.0625C46.875 26.3111 46.9738 26.5496 47.1496 26.7254C47.3254 26.9012 47.5639 27 47.8125 27C48.0611 27 48.2996 26.9012 48.4754 26.7254C48.6512 26.5496 48.75 26.3111 48.75 26.0625V25.125H49.6875C49.9361 25.125 50.1746 25.0262 50.3504 24.8504C50.5262 24.6746 50.625 24.4361 50.625 24.1875C50.625 23.9389 50.5262 23.7004 50.3504 23.5246C50.1746 23.3488 49.9361 23.25 49.6875 23.25H48.75V22.3125C48.75 22.0639 48.6512 21.8254 48.4754 21.6496C48.2996 21.4738 48.0611 21.375 47.8125 21.375C47.5639 21.375 47.3254 21.4738 47.1496 21.6496C46.9738 21.8254 46.875 22.0639 46.875 22.3125V23.25H45.9375C45.6889 23.25 45.4504 23.3488 45.2746 23.5246C45.0988 23.7004 45 23.9389 45 24.1875C45 24.4361 45.0988 24.6746 45.2746 24.8504C45.4504 25.0262 45.6889 25.125 45.9375 25.125Z"
+                    fill="#459639" />
+                  <path
+                    d="M10.3125 25.125H14.0625C14.3111 25.125 14.5496 25.0262 14.7254 24.8504C14.9012 24.6746 15 24.4361 15 24.1875C15 23.9389 14.9012 23.7004 14.7254 23.5246C14.5496 23.3488 14.3111 23.25 14.0625 23.25H10.3125C10.0639 23.25 9.8254 23.3488 9.64959 23.5246C9.47377 23.7004 9.375 23.9389 9.375 24.1875C9.375 24.4361 9.47377 24.6746 9.64959 24.8504C9.8254 25.0262 10.0639 25.125 10.3125 25.125Z"
+                    fill="#459639" />
+                </svg>
+              </i>
+            </div>
+            <div>
+              <a href="javascript:void(0)">
+                <h4>Charge-Discharge Agility</h4>
+              </a>
+              <p>Optimized for renewable integration,
+                peak shaving, load shifting, and energy trading.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="use-energix two">
+            <div class="use-energix-icon">
+              <i>
+                <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M34 21.25C37.5158 21.25 40.375 18.3908 40.375 14.875C40.375 11.3592 37.5158 8.5 34 8.5C30.4842 8.5 27.625 11.3592 27.625 14.875C27.625 18.3908 30.4842 21.25 34 21.25ZM34 10.625C36.3439 10.625 38.25 12.5311 38.25 14.875C38.25 17.2189 36.3439 19.125 34 19.125C31.6561 19.125 29.75 17.2189 29.75 14.875C29.75 12.5311 31.6561 10.625 34 10.625Z"
+                    fill="#459639" />
+                  <path
+                    d="M61.3912 25.4999C58.7127 16.8809 51.9467 9.88757 43.4286 6.91363L44.2106 4.94907L41.0072 5.58976C38.9597 5.99776 36.8252 5.18388 35.5714 3.51257L34 1.41626L32.4286 3.51257C31.1748 5.18388 29.0413 5.99776 26.9928 5.58976L23.7894 4.94907L24.5714 6.91257C16.0289 9.88014 9.41056 16.6642 6.66612 25.3034C3.73468 26.6528 1.56187 29.4556 1.14218 32.7483C0.667246 36.4756 2.33006 40.0424 5.48143 42.0569C6.03287 42.4096 6.375 43.0875 6.375 43.8281V45.6874C6.375 47.8581 8.01762 49.6336 10.1214 49.8864C12.2102 53.0166 14.9366 55.7493 18.0625 57.8446V64.8124H5.3125V66.9374H62.6875V64.8124H47.8125V59.1344C52.2219 56.7066 55.9024 53.177 58.5161 48.8749H64.8125V46.7499H62.6875V44.6249H66.9375V25.4999H61.3912ZM64.8125 33.9999H60.5625V27.6249H64.8125V33.9999ZM54.1875 42.4999V36.1249H58.4375V42.4999H54.1875ZM47.8125 36.1249H52.0625V42.4999H47.8125V36.1249ZM47.8125 33.9999V27.6249H52.0625V33.9999H47.8125ZM54.1875 33.9999V27.6249H58.4375V33.9999H54.1875ZM26.9992 7.74557C29.6395 8.11745 32.3329 7.05176 34 4.95332C35.6671 7.05176 38.3616 8.11851 41.0019 7.74557C40.5609 10.4252 41.5916 13.1473 43.7399 14.8643C41.5937 16.5208 40.5099 19.194 40.8563 21.8439C38.2086 21.5506 35.6182 22.662 33.9989 24.7944C32.5518 22.9744 30.3344 21.931 28.0447 21.931C27.6962 21.931 27.3466 21.9544 26.9981 22.0043C27.4401 19.3194 26.4052 16.5919 24.2473 14.8749C26.4052 13.1579 27.4401 10.4305 26.9992 7.74557ZM6.62681 40.2666C4.1735 38.6994 2.88043 35.922 3.25125 33.0171C3.67518 29.6841 6.41112 26.9896 9.75375 26.6113C10.0491 26.5784 10.3424 26.5624 10.6335 26.5624C12.4663 26.5624 14.1971 27.218 15.5773 28.4516C17.1572 29.8615 18.0625 31.8845 18.0625 33.9999C18.0625 36.5393 16.7832 38.8779 14.6412 40.2549C13.5182 40.9763 12.8318 42.2024 12.7627 43.5624H11.6875V36.992C12.9211 36.5521 13.8125 35.3833 13.8125 33.9999C13.8125 32.2426 12.3824 30.8124 10.625 30.8124C8.86762 30.8124 7.4375 32.2426 7.4375 33.9999C7.4375 35.3833 8.32893 36.5521 9.5625 36.992V43.5624H8.48406C8.40543 42.1908 7.72862 40.971 6.62681 40.2666ZM9.5625 33.9999C9.5625 33.4145 10.0396 32.9374 10.625 32.9374C11.2104 32.9374 11.6875 33.4145 11.6875 33.9999C11.6875 34.5854 11.2104 35.0624 10.625 35.0624C10.0396 35.0624 9.5625 34.5854 9.5625 33.9999ZM8.5 45.6874H12.75C12.75 46.8594 11.7969 47.8124 10.625 47.8124C9.45306 47.8124 8.5 46.8594 8.5 45.6874ZM39.3125 47.8124V52.6787L35.0625 51.8287V64.8124H30.8125V49.7037L28.6875 50.1287V47.8124H39.3125ZM28.6875 52.2962V64.8124H20.1875V53.9962L28.6875 52.2962ZM37.1875 64.8124V54.4212L45.6875 56.1212V64.8124H37.1875ZM47.8125 56.6854V54.3787L41.4375 53.1037V45.6874H39.3125V43.5624H37.1875V45.6874H35.0625V41.4374H32.9375V45.6874H30.8125V43.5624H28.6875V45.6874H26.5625V50.5537L18.0625 52.2537V55.2383C15.9205 53.6254 14.008 51.6874 12.4397 49.5146C13.8741 48.8314 14.875 47.3789 14.875 45.6874V43.7834C14.875 43.0726 15.2256 42.4054 15.7909 42.042C18.5438 40.2729 20.1875 37.2661 20.1875 33.9999C20.1875 31.2799 19.023 28.68 16.9936 26.8674C14.9653 25.0548 12.2347 24.1899 9.51468 24.5001C9.39887 24.5129 9.28625 24.5373 9.1715 24.5543C11.9159 17.3208 17.6598 11.6609 24.9581 9.02482C24.9379 10.8693 23.9912 12.6288 22.3167 13.6329L20.2481 14.8749L22.3178 16.117C24.6266 17.5025 25.5776 20.3224 24.5756 22.8246L23.7894 24.8008L26.9928 24.1601C29.0413 23.7532 31.1748 24.566 32.4286 26.2373L34 28.3336L35.6702 26.1077C36.8921 24.4778 38.8992 23.6682 40.9126 23.9954L43.8982 24.4821L43.2607 22.7693C42.3449 20.3064 43.3149 17.5386 45.5664 16.1871L47.753 14.8749L45.6832 13.6329C44.0098 12.6288 43.0642 10.8704 43.0429 9.02695C50.5771 11.765 56.593 17.9116 59.1653 25.4999H45.6875V44.6249H49.9375V46.7499H47.8125V48.8749H56.0107C53.8698 52.0401 51.0754 54.6964 47.8125 56.6854ZM60.5625 46.7499H52.0625V44.6249H60.5625V46.7499ZM60.5625 42.4999V36.1249H64.8125V42.4999H60.5625Z"
+                    fill="#459639" />
+                  <path d="M64.8125 64.8125H66.9375V66.9375H64.8125V64.8125Z" fill="#459639" />
+                  <path d="M1.0625 64.8125H3.1875V66.9375H1.0625V64.8125Z" fill="#459639" />
+                  <path d="M39.3125 60.5625H43.5625V62.6875H39.3125V60.5625Z" fill="#459639" />
+                  <path d="M22.3125 56.3125H26.5625V58.4375H22.3125V56.3125Z" fill="#459639" />
+                  <path d="M22.3125 60.5625H26.5625V62.6875H22.3125V60.5625Z" fill="#459639" />
+                  <path d="M26.5625 30.8125H41.4375V32.9375H26.5625V30.8125Z" fill="#459639" />
+                  <path d="M39.3125 35.0625H41.4375V37.1875H39.3125V35.0625Z" fill="#459639" />
+                  <path d="M30.8125 35.0625H32.9375V37.1875H30.8125V35.0625Z" fill="#459639" />
+                  <path d="M26.5625 35.0625H28.6875V37.1875H26.5625V35.0625Z" fill="#459639" />
+                  <path d="M35.0625 35.0625H37.1875V37.1875H35.0625V35.0625Z" fill="#459639" />
+                </svg>
+              </i>
+            </div>
+            <div>
+              <a href="javascript:void(0)">
+                <h4>Smart Monitoring</h4>
+              </a>
+              <p>Real-time performance dashboards and predictive
+                analytics through advanced EMS and SCADA systems.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="use-energix two">
+            <div class="use-energix-icon">
+              <i>
+                <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M21.8637 27.379H21.4698C15.5607 27.379 10.9319 22.7502 10.9319 16.8411C10.9319 10.932 15.5607 6.30322 21.4698 6.30322C27.3789 6.30322 32.0076 10.932 32.0076 16.8411V17.235C32.0076 17.826 31.6137 18.2199 31.0228 18.2199C30.4319 18.2199 30.0379 17.826 30.0379 17.235V16.8411C30.0379 12.0153 26.2955 8.27292 21.4698 8.27292C16.644 8.27292 12.9016 12.0153 12.9016 16.8411C12.9016 21.6669 16.644 25.4093 21.4698 25.4093H21.8637C22.4546 25.4093 22.8486 25.8032 22.8486 26.3941C22.8486 26.985 22.4546 27.379 21.8637 27.379Z"
+                    fill="#459639" />
+                  <path
+                    d="M21.4697 4.33335C20.8788 4.33335 20.4849 3.93941 20.4849 3.3485V1.96971C20.4849 1.3788 20.8788 0.984863 21.4697 0.984863C22.0606 0.984863 22.4546 1.3788 22.4546 1.96971V3.3485C22.4546 3.93941 22.0606 4.33335 21.4697 4.33335Z"
+                    fill="#459639" />
+                  <path
+                    d="M7.8788 17.8257H6.5985C6.00759 17.8257 5.61365 17.4317 5.61365 16.8408C5.61365 16.2499 6.00759 15.856 6.5985 15.856H7.8788C8.46971 15.856 8.86365 16.2499 8.86365 16.8408C8.86365 17.4317 8.46971 17.8257 7.8788 17.8257Z"
+                    fill="#459639" />
+                  <path
+                    d="M11.8182 8.27267C11.5228 8.27267 11.3258 8.17418 11.1288 7.97721L10.2425 6.99236C9.84854 6.59842 9.84854 5.90903 10.2425 5.61357C10.6364 5.21964 11.2273 5.31812 11.6213 5.71206L12.5076 6.69691C12.9016 7.09085 12.8031 7.68176 12.4091 8.0757C12.3107 8.17418 12.0152 8.27267 11.8182 8.27267Z"
+                    fill="#459639" />
+                  <path
+                    d="M31.1213 27.4774C30.8258 27.4774 30.6289 27.3789 30.4319 27.1819L30.3334 27.0834C29.9395 26.6895 29.9395 26.0986 30.3334 25.7046C30.7274 25.3107 31.3183 25.3107 31.7122 25.7046L31.8107 25.8031C32.2046 26.1971 32.2046 26.788 31.8107 27.1819C31.6137 27.3789 31.4168 27.4774 31.1213 27.4774Z"
+                    fill="#459639" />
+                  <path
+                    d="M10.9318 28.3637C10.7349 28.3637 10.4394 28.2652 10.2424 28.0682C9.8485 27.6743 9.8485 27.0834 10.144 26.6894L11.0303 25.7046C11.4243 25.3107 12.0152 25.3107 12.4091 25.6061C12.803 26.0001 12.803 26.591 12.5076 26.9849L11.6212 27.9697C11.4243 28.2652 11.2273 28.3637 10.9318 28.3637Z"
+                    fill="#459639" />
+                  <path
+                    d="M31.0228 8.27287C30.8258 8.27287 30.5303 8.17438 30.3334 7.97741C29.9394 7.58347 29.9394 6.99256 30.2349 6.59862L31.1213 5.61378C31.5152 5.21984 32.1061 5.21984 32.5 5.51529C32.894 5.90923 32.894 6.50014 32.5985 6.89408L31.7122 7.87893C31.5152 8.17438 31.3182 8.27287 31.0228 8.27287Z"
+                    fill="#459639" />
+                  <path
+                    d="M61.2576 52.5909H19.5C19.2045 52.5909 18.9091 52.4924 18.8106 52.2955C18.7121 52.0985 18.5151 51.803 18.5151 51.5076L21.7651 17.1364C21.7651 16.6439 22.2576 16.25 22.75 16.25H58.106C58.5985 16.25 58.9924 16.6439 59.0909 17.1364L62.2424 51.5076C62.2424 51.803 62.1439 52.0985 61.947 52.2955C61.75 52.4924 61.553 52.5909 61.2576 52.5909ZM20.5833 50.6212H60.1742L57.2197 18.2197H23.6363L20.5833 50.6212Z"
+                    fill="#459639" />
+                  <path
+                    d="M29.9394 52.591C29.3485 52.591 28.9546 52.0985 28.9546 51.6061L30.5303 17.9243C30.5303 17.3334 31.0228 16.9395 31.5152 16.9395C32.1061 16.9395 32.5 17.4319 32.5 17.9243L30.9243 51.6061C30.9243 52.197 30.4319 52.591 29.9394 52.591Z"
+                    fill="#459639" />
+                  <path
+                    d="M40.3788 52.591C39.7879 52.591 39.3939 52.197 39.3939 51.6061V17.9243C39.3939 17.3334 39.7879 16.9395 40.3788 16.9395C40.9697 16.9395 41.3636 17.3334 41.3636 17.9243V51.6061C41.3636 52.197 40.9697 52.591 40.3788 52.591Z"
+                    fill="#459639" />
+                  <path
+                    d="M50.8182 52.591C50.3257 52.591 49.8333 52.197 49.8333 51.6061L48.2576 17.9243C48.2576 17.3334 48.6515 16.9395 49.2424 16.9395C49.8333 16.9395 50.2273 17.3334 50.2273 17.9243L51.803 51.6061C51.803 52.0985 51.4091 52.591 50.8182 52.591Z"
+                    fill="#459639" />
+                  <path
+                    d="M59.6818 35.2578H21.1742C20.5833 35.2578 20.1893 34.8638 20.1893 34.2729C20.1893 33.682 20.5833 33.2881 21.1742 33.2881H59.6818C60.2727 33.2881 60.6666 33.682 60.6666 34.2729C60.6666 34.8638 60.2727 35.2578 59.6818 35.2578Z"
+                    fill="#459639" />
+                  <path
+                    d="M58.894 26.6894H21.9621C21.3712 26.6894 20.9773 26.2955 20.9773 25.7046C20.9773 25.1137 21.3712 24.7197 21.9621 24.7197H58.894C59.4849 24.7197 59.8788 25.1137 59.8788 25.7046C59.8788 26.2955 59.4849 26.6894 58.894 26.6894Z"
+                    fill="#459639" />
+                  <path
+                    d="M60.4697 43.7275H20.3863C19.7954 43.7275 19.4015 43.3336 19.4015 42.7427C19.4015 42.1518 19.7954 41.7578 20.3863 41.7578H60.4697C61.0606 41.7578 61.4545 42.1518 61.4545 42.7427C61.4545 43.3336 61.0606 43.7275 60.4697 43.7275Z"
+                    fill="#459639" />
+                  <path
+                    d="M40.3788 59.288C39.7879 59.288 39.3939 58.894 39.3939 58.3031V52.394C39.3939 51.8031 39.7879 51.4092 40.3788 51.4092C40.9697 51.4092 41.3636 51.8031 41.3636 52.394V58.3031C41.3636 58.894 40.9697 59.288 40.3788 59.288Z"
+                    fill="#459639" />
+                  <path
+                    d="M54.7576 64.0153H27.2803C26.8864 64.0153 26.4925 63.8184 26.394 63.4244C26.2955 63.0305 26.2955 62.6365 26.591 62.3411L31.3182 57.6138C31.5152 57.4168 31.7122 57.3184 32.0076 57.3184H48.75C48.947 57.3184 49.144 57.4168 49.341 57.5153L55.3485 62.2426C55.644 62.5381 55.841 62.932 55.644 63.3259C55.5455 63.7199 55.1516 64.0153 54.7576 64.0153ZM29.644 62.0456H51.9016L48.3561 59.2881H32.4016L29.644 62.0456Z"
+                    fill="#459639" />
+                  <path
+                    d="M7.87878 52.0002C5.02272 52.0002 2.75757 49.7351 2.75757 46.879V42.7427C2.75757 42.1518 3.15151 41.7578 3.74242 41.7578H12.0151C12.6061 41.7578 13 42.1518 13 42.7427V46.879C13 49.7351 10.7348 52.0002 7.87878 52.0002ZM4.72727 43.7275V46.879C4.72727 48.5533 6.20454 50.0305 7.87878 50.0305C9.65151 50.0305 11.0303 48.6517 11.0303 46.879V43.7275H4.72727Z"
+                    fill="#459639" />
+                  <path
+                    d="M5.90904 43.7273C5.31813 43.7273 4.92419 43.3334 4.92419 42.7425V38.7046C4.92419 38.1137 5.31813 37.7197 5.90904 37.7197C6.49995 37.7197 6.89389 38.1137 6.89389 38.7046V42.7425C6.89389 43.3334 6.49995 43.7273 5.90904 43.7273Z"
+                    fill="#459639" />
+                  <path
+                    d="M9.8485 43.7273C9.25759 43.7273 8.86365 43.3334 8.86365 42.7425V38.7046C8.86365 38.1137 9.25759 37.7197 9.8485 37.7197C10.4394 37.7197 10.8333 38.1137 10.8333 38.7046V42.7425C10.8333 43.3334 10.4394 43.7273 9.8485 43.7273Z"
+                    fill="#459639" />
+                  <path
+                    d="M15.1666 61.6516C10.7348 61.6516 7.18933 58.1062 7.18933 53.6744V51.1138C7.18933 50.5228 7.58327 50.1289 8.17418 50.1289C8.76509 50.1289 9.15903 50.5228 9.15903 51.1138V53.6744C9.15903 57.0228 11.8181 59.6819 15.1666 59.6819C18.5151 59.6819 21.1742 57.0228 21.1742 53.6744V51.6062C21.1742 51.0153 21.5681 50.6213 22.159 50.6213C22.7499 50.6213 23.1439 51.0153 23.1439 51.6062V53.6744C23.1439 58.1062 19.5984 61.6516 15.1666 61.6516Z"
+                    fill="#459639" />
+                </svg>
+
+              </i>
+            </div>
+            <div>
+              <a href="javascript:void(0)">
+                <h4>Augmentation-Ready</h4>
+              </a>
+              <p>Future-proof your storage with modular expansion
+                and degradation-offset augmentation plans.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="use-energix two">
+            <div class="use-energix-icon">
+              <i>
+                <img src="assets/img/used/bess/why-choose4.png" alt="">
+              </i>
+            </div>
+            <div>
+              <a href="javascript:void(0)">
+                <h4>Reduced O&M Risks</h4>
+              </a>
+              <p>24/7 monitoring center and long-term service
+                agreements(LTSAs) ensure operational peace of mind.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Button  -->
+    <section>
+      <a href="contact.html">
+        <div class="container gap d-flex justify-content-center align-items-center">
+          <button class="button">Know More</button>
+        </div>
+      </a>
+    </section>
+
+  </section>
+
+  <!-- Ideal Applications Section -->
+  <section class="gap">
+    <div class="container">
+      <div class="row">
+        <div class="heading">
+          <h2>Ideal Applications</h2>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="accordion">
+            <div class="tabs">
+              <div class="tab">
+                <input type="radio" id="rd1" name="rd">
+                <label class="tab-label" for="rd1"> Renewable Energy Storage</label>
+                <div class="tab-content">
+                  Maximize efficiency by storing excess solar and wind power. Ensure reliable, round-the-clock energy
+                  for homes, businesses and industries.
+                </div>
+              </div>
+              <div class="tab">
+                <input type="radio" id="rd2" name="rd">
+                <label class="tab-label" for="rd2">Microgrids & C&I Backup</label>
+                <div class="tab-content">
+                  Enable energy independence and reliability with smart microgrids. Ensure seamless backup for
+                  commercial and industrial operations.
+                </div>
+              </div>
+              <div class="tab">
+                <input type="radio" id="rd3" name="rd">
+                <label class="tab-label" for="rd3">Peak Load Management</label>
+                <div class="tab-content">
+                  Manage energy efficiently during peak hours and reduce costs while preventing overloads.
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="accordion">
+            <div class="tabs">
+              <div class="tab">
+                <input type="radio" id="rd4" name="rd">
+                <label class="tab-label" for="rd4">Grid Stability & Ancillary Services</label>
+                <div class="tab-content">
+                  Enhance grid performance during fluctuations while maintaining seamless energy supply.
+                </div>
+              </div>
+              <div class="tab">
+                <input type="radio" id="rd5" name="rd">
+                <label class="tab-label" for="rd5">Energy Arbitrage & Trading</label>
+                <div class="tab-content">
+                  Optimize profits by trading energy smartly while taking advantage of peak and off-peak rates.
+                </div>
+              </div>
+              <div class="tab">
+                <input type="radio" id="rd6" name="rd">
+                <label class="tab-label" for="rd6">Future-proof your energy with CleanHedge ESS </label>
+                <div class="tab-content">
+                  Secure your energy needs for tomorrow with reliable, sustainable, and smart storage solutions.
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact form -->
+  <section class="gap no-top">
+    <div class="container">
+      <div class="request-quote" style="background-image: url(assets/img/used/iStock/home-page-cf-final.webp);">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="heading">
+              <p style="color: white;">Request A Quote</p>
+              <div class="line" style="background-color: #459639;"></div>
+              <h2 class="small-heading" style="color: white; font-size: 50px; line-height: 50px;">Are You Ready to Make
+                the Switch to Green
+                Energy?</h2>
+              <p style="color: white; line-height: 25px;">Fill out the form to get tailored solutions that will lower
+                your costs and reduce
+                your carbon
+                footprint.
+              <p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm' style='color: black;max-width: 600px;'>
+              <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+              <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
+              <script src='https://www.google.com/recaptcha/api.js' async defer>
+              </script>
+              <form id='webform868496000001580012' action='https://crm.zoho.in/crm/WebToLeadForm'
+                name=WebToLeads868496000001580012 method='POST'
+                onSubmit='javascript:document.charset="UTF-8"; return checkMandatory868496000001580012()'
+                accept-charset='UTF-8' class="request-quote-form">
+                <input type='text' style='display:none;' name='xnQsjsdp'
+                  value='bf8d7be9c2fcc5b9380db2cd7fe7817047ab2de69ca3101113800fac0a914373'>
+                </input>
+                <input type='hidden' name='zc_gad' id='zc_gad' value=''>
+                </input>
+                <input type='text' style='display:none;' name='xmIwtLD'
+                  value='0c20e58fc6db7768670c551bea89ef83d86ee647903e7559e58d53227cfb984b0fcc03adaeeea7fd0d0229a5981dfd5f'>
+                </input>
+                <input type='text' style='display:none;' name='actionType' value='TGVhZHM='>
+                </input>
+                <input type='text' style='display:none;' name='returnURL' value='null'>
+                </input>
+
+                <div class="form-row">
+                  <input type="text" name='First Name' placeholder="First Name*" required>
+                  <input type="text" name='Last Name' placeholder="Last Name*" required>
+
+                </div>
+
+                <div class="form-row">
+                  <input type="text" name='Company' placeholder="Company Name*" required>
+
+                  <input type="text" name='Mobile' placeholder="Mobile Number*" required>
+                </div>
+
+                <div class="form-row">
+                  <input type="text" name='Email' placeholder="Email*" required>
+                  <input type="text" name='City' placeholder="City">
+                </div>
+
+                <div class="form-row">
+                  <div class="dropdown-wrapper">
+                    <select class="nice-select" id='LEADCF11' name="LEADCF11"
+                      onChange='addAriaSelected868496000001580012()'>
+                      <!-- <option value="">Electricity Bill
+                      Amount</option> -->
+                      <option value="">Current Electricity Bill Amount</option>
+                      <option>Rs. 1.20 Lakhs - Rs. 6 Lakhs</option>
+                      <option>Rs. 6 Lakhs - Rs. 60 lakhs</option>
+                      <option>Rs. 60 Lakhs+</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <input type="text" class="other-input" id="otherCity1" placeholder="Electricity Bill Amount"
+                    style="margin-top: 0px !important;" />
+                </div>
+
+                <textarea placeholder="Message"></textarea>
+
+                <div class='zcwf_row'>
+                  <div class='zcwf_col_lab'>
+                  </div>
+                  <div class='zcwf_col_fld'>
+                    <div class='g-recaptcha' data-sitekey='6LcUjbErAAAAAFuO86Ym-EieZhIO20Di8c9njRxP' data-theme='light'
+                      data-callback='rccallback868496000001580012' captcha-verified='false'
+                      id='recap868496000001580012'>
+                    </div>
+                    <div id='recapErr868496000001580012' style='font-size:12px;color:red;visibility:hidden;'>Captcha
+                      validation failed. If you are not a robot then please try again.</div>
+                  </div>
+                </div>
+                <input type='text' type='hidden' style='display: none;' name='aG9uZXlwb3Q' value='' />
+
+                <button class="button foot-btn" name="LEADCF8">Send Message</button>
+
+                <div class='zcwf_row wfrm_fld_dpNn'>
+                  <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'>
+                    <label for='LEADCF10'>Deal Source</label>
+                  </div>
+                  <div class='zcwf_col_fld'>
+                    <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false' aria-haspopup='listbox'
+                      id='LEADCF10' onChange='addAriaSelected868496000001580012()' aria-required='false'
+                      aria-label='LEADCF10' name='LEADCF10'>
+                      <option value='-None-'>-None-</option>
+                      <option value='Advertisement'>Advertisement</option>
+                      <option value='Google&#x20;ads'>Google ads</option>
+                      <option value='New&#x20;research'>New research</option>
+                      <option value='Channel&#x20;Partner&#x20;&#x28;CP&#x29;'>Channel Partner &#x28;CP&#x29;</option>
+                      <option value='Ornate'>Ornate</option>
+                      <option value='Online&#x20;Software'>Online Software</option>
+                      <option value='Personal&#x20;Ref'>Personal Ref</option>
+                      <option value='Event'>Event</option>
+                      <option value='Cold&#x20;Call'>Cold Call</option>
+                      <option value='Employee&#x20;Referral'>Employee Referral</option>
+                      <option value='External&#x20;Referral'>External Referral</option>
+                      <option value='Online&#x20;Store'>Online Store</option>
+                      <option value='Partner'>Partner</option>
+                      <option value='Public&#x20;Relations'>Public Relations</option>
+                      <option value='Sales&#x20;Email&#x20;Alias'>Sales Email Alias</option>
+                      <option value='Seminar&#x20;Partner'>Seminar Partner</option>
+                      <option value='Internal&#x20;Seminar'>Internal Seminar</option>
+                      <option value='Trade&#x20;Show'>Trade Show</option>
+                      <option value='Web&#x20;Download'>Web Download</option>
+                      <option value='Web&#x20;Research'>Web Research</option>
+                      <option value='Chat'>Chat</option>
+                      <option selected value='Website&#x20;Form'>Website Form</option>
+                    </select>
+                    <div class='zcwf_col_help'>
+                    </div>
+                  </div>
+                </div>
+
+                <style>
+                  .zcwf_lblLeft .wfrm_fld_dpNn {
+                    display: none;
+                  }
+                </style>
+
+                <script>
+                  function addAriaSelected868496000001580012() {
+                    var optionElem = event.target;
+                    var previousSelectedOption = optionElem.querySelector('[aria-selected=true]');
+                    if (previousSelectedOption) {
+                      previousSelectedOption.removeAttribute('aria-selected');
+                    }
+                    optionElem.querySelectorAll('option')[optionElem.selectedIndex].ariaSelected = 'true';
+                  }
+                  /* Do not remove this code. */
+                  function rccallback868496000001580012() {
+                    if (document.getElementById('recap868496000001580012') != undefined) {
+                      document.getElementById('recap868496000001580012').setAttribute('captcha-verified', true);
+                    }
+                    if (document.getElementById('recapErr868496000001580012') != undefined && document.getElementById('recapErr868496000001580012').style.visibility == 'visible') {
+                      document.getElementById('recapErr868496000001580012').style.visibility = 'hidden';
+                    }
+                  }
+                  function reCaptchaAlert868496000001580012() {
+                    var recap = document.getElementById('recap868496000001580012');
+                    if (recap != undefined && recap.getAttribute('captcha-verified') == 'false') {
+                      document.getElementById('recapErr868496000001580012').style.visibility = 'visible';
+                      return false;
+                    }
+                    return true;
+                  }
+                  function validateEmail868496000001580012() {
+                    var form = document.forms['WebToLeads868496000001580012'];
+                    var emailFld = form.querySelectorAll('[ftype=email]');
+                    var i;
+                    for (i = 0; i < emailFld.length; i++) {
+                      var emailVal = emailFld[i].value;
+                      if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
+                        var atpos = emailVal.indexOf('@');
+                        var dotpos = emailVal.lastIndexOf('.');
+                        if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
+                          alert('Please enter a valid email address. ');
+                          emailFld[i].focus();
+                          return false;
+                        }
+                      }
+                    }
+                    return true;
+                  }
+                  function checkMandatory868496000001580012() {
+                    var mndFileds = new Array('First Name', 'Last Name', 'Email', 'Mobile');
+                    var fldLangVal = new Array('First\x20Name', 'Last\x20Name', 'Email', 'Mobile');
+                    for (i = 0; i < mndFileds.length; i++) {
+                      var fieldObj = document.forms['WebToLeads868496000001580012'][mndFileds[i]];
+                      if (fieldObj) {
+                        if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
+                          if (fieldObj.type == 'file') {
+                            alert('Please select a file to upload.');
+                            fieldObj.focus();
+                            return false;
+                          }
+                          alert(fldLangVal[i] + ' cannot be empty.');
+                          fieldObj.focus();
+                          return false;
+                        }
+                        else if (fieldObj.nodeName == 'SELECT') {
+                          if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+                            alert(fldLangVal[i] + ' cannot be none.');
+                            fieldObj.focus();
+                            return false;
+                          }
+                        }
+                        else if (fieldObj.type == 'checkbox') {
+                          if (fieldObj.checked == false) {
+                            alert('Please accept  ' + fldLangVal[i]);
+                            fieldObj.focus();
+                            return false;
+                          }
+                        }
+                        try {
+                          if (fieldObj.name == 'Last Name') {
+                            name = fieldObj.value;
+                          }
+                        }
+                        catch (e) { }
+                      }
+                    }
+                    if (!validateEmail868496000001580012()) {
+                      return false;
+                    }
+                    if (!reCaptchaAlert868496000001580012()) {
+                      return false;
+                    }
+                    var urlparams = new URLSearchParams(window.location.search);
+                    if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) {
+                      var webform = document.getElementById('webform868496000001580012');
+                      var service = urlparams.get('service');
+                      var smarturlfield = document.createElement('input');
+                      smarturlfield.setAttribute('type', 'hidden');
+                      smarturlfield.setAttribute('value', service);
+                      smarturlfield.setAttribute('name', 'service');
+                      webform.appendChild(smarturlfield);
+                    }
+                    document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+                  }
+                  function tooltipShow868496000001580012(el) {
+                    var tooltip = el.nextElementSibling;
+                    var tooltipDisplay = tooltip.style.display;
+                    if (tooltipDisplay == 'none') {
+                      var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+                      for (i = 0; i < allTooltip.length; i++) {
+                        allTooltip[i].style.display = 'none';
+                      }
+                      tooltip.style.display = 'block';
+                    }
+                    else {
+                      tooltip.style.display = 'none';
+                    }
+                  }
+                </script>
+                <!-- Do not remove this --- Analytics Tracking code starts -->
+                <script id='wf_anal'
+                  src='https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=9de97f5e0bd2b245278ec27c9cfabf7bfa84ee5ee4a62ad008c669998ee527af52148917e73dacdc6f5538edfb0728b2gidd5113da09cda64ae1a94f02bdb7dc6f6c10bbb243bd2a293a624c8642c4d7491gid88073b8d1088ecde3328b1aa73ea1b02aadde1abdc56e98896d271480a6ccb56gid4d2825887b48010f811ded7c857920c1257e1380f414199da82570eccbe4622d&tw=8c71e05614ae1fa06aabddc0994bb1116ac9ea3e2aa644abd228c570d9ea033c'>
+                  </script>
+                <!-- Do not remove this --- Analytics Tracking code ends. -->
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="gap no-bottom one" style="background-image:url(assets/img/used/home-page/footer-banner-final.jpeg)">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-md-6">
+          <div class="logo">
+            <a href="javascript:void(0)">
+              <img src="assets/img/used/clean-hedge-logo-white.png" alt="" style="width: 300px;">
+            </a>
+
+            <p>CleanHedge Verde Private Limited operates at the intersection of solar innovation, energy storage, and
+              sustainable
+              infrastructure—driving India’s transition to a cleaner, smarter energy future.</p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-12">
+          <div class="about-energix">
+            <h6>Resources</h6>
+            <div class="line"></div>
+            <ul class="link-style">
+              <li><i class="fa-solid fa-caret-right"></i><a href="index.html">Home</a></li>
+              <li><i class="fa-solid fa-caret-right"></i><a href="about-us.html">About Us</a></li>
+              <li><i class="fa-solid fa-caret-right"></i><a href="contact.html">Contact Us </a></li>
+              <li><i class="fa-solid fa-caret-right"></i><a href="https://blog.clean-hedge.com/" target="_blank">Blogs
+                </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-5 col-md-6">
+          <div class="about-energix">
+            <h6>Contact Information</h6>
+            <div class="line"></div>
+            <div class="d-flex align-items-center top-bar-mail">
+              <div class="d-flex align-items-center">
+                <i>
+                  <svg width="20" height="20" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.7917 4.23926C10.1532 4.23926 9.6355 4.75693 9.6355 5.39551V31.6038C9.6355 32.2424 10.1532 32.7601 10.7917 32.7601H26.2084C26.847 32.7601 27.3647 32.2424 27.3647 31.6038V5.39551C27.3647 4.75693 26.847 4.23926 26.2084 4.23926H10.7917ZM7.323 5.39551C7.323 3.47977 8.87601 1.92676 10.7917 1.92676H26.2084C28.1241 1.92676 29.6772 3.47977 29.6772 5.39551V31.6038C29.6772 33.5195 28.1241 35.0726 26.2084 35.0726H10.7917C8.87601 35.0726 7.323 33.5195 7.323 31.6038V5.39551Z"
+                      fill="#459639"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.8022 7.70801C15.8022 7.06943 16.3199 6.55176 16.9585 6.55176H20.0418C20.6804 6.55176 21.1981 7.06943 21.1981 7.70801C21.1981 8.34658 20.6804 8.86426 20.0418 8.86426H16.9585C16.3199 8.86426 15.8022 8.34658 15.8022 7.70801Z"
+                      fill="#459639"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M14.2605 29.291C14.2605 28.6525 14.7782 28.1348 15.4167 28.1348H21.5834C22.222 28.1348 22.7397 28.6525 22.7397 29.291C22.7397 29.9296 22.222 30.4473 21.5834 30.4473H15.4167C14.7782 30.4473 14.2605 29.9296 14.2605 29.291Z"
+                      fill="#459639"></path>
+                  </svg>
+                </i>
+                <a href="callto:+91-73 044 06 336">
+                  <p>+91-73 044 06 336</p>
+                </a>
+              </div>
+            </div>
+            <div class="d-flex align-items-center top-bar-mail">
+              <div class="d-flex align-items-center">
+                <i>
+                  <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.833252 10.7083C0.488074 10.7083 0.208252 10.9881 0.208252 11.3333C0.208252 11.6785 0.488074 11.9583 0.833252 11.9583H3.33325C3.67843 11.9583 3.95825 11.6785 3.95825 11.3333C3.95825 10.9881 3.67843 10.7083 3.33325 10.7083H0.833252Z"
+                      fill="#459639"></path>
+                    <path
+                      d="M0.833252 13.2083C0.488074 13.2083 0.208252 13.4881 0.208252 13.8333C0.208252 14.1785 0.488074 14.4583 0.833252 14.4583H5.83325C6.17843 14.4583 6.45825 14.1785 6.45825 13.8333C6.45825 13.4881 6.17843 13.2083 5.83325 13.2083H0.833252Z"
+                      fill="#459639"></path>
+                    <path
+                      d="M2.59071 2.24172L2.5 2.16667C2.757 1.81294 3.0305 1.55276 3.38422 1.29576C4.4795 0.5 6.04189 0.5 9.16667 0.5H10.8333C13.9581 0.5 15.5205 0.5 16.6157 1.29576C16.9695 1.55276 17.2214 1.78443 17.4784 2.13816L17.3737 2.24225L15.4505 4.16551C14.0491 5.56689 13.0416 6.5725 12.1726 7.23558C11.318 7.88758 10.6712 8.14908 9.99992 8.14908C9.3285 8.14908 8.68175 7.88758 7.82717 7.23558C6.95817 6.5725 5.95066 5.56689 4.54927 4.16551L2.92989 2.54612L2.59071 2.24172Z"
+                      fill="#459639"></path>
+                    <path
+                      d="M1.6665 8.00002C1.6665 5.80009 1.6665 4.37457 1.94419 3.34125L2.06971 3.45391L3.69904 5.08322C5.05926 6.44344 6.12525 7.50944 7.06879 8.22936C8.03456 8.96619 8.94517 9.39911 9.99975 9.39911C11.0543 9.39911 11.9649 8.96619 12.9307 8.22936C13.8742 7.50944 14.9402 6.44344 16.3004 5.08324L18.0527 3.33093C18.3332 4.36507 18.3332 5.79277 18.3332 8.00002C18.3332 11.1248 18.3332 12.6872 17.5374 13.7824C17.2804 14.1362 16.9693 14.4473 16.6156 14.7043C15.5203 15.5 13.9579 15.5 10.8332 15.5H9.1665C7.9762 15.5 7.0126 15.5 6.21518 15.456C6.95154 15.2834 7.49984 14.6224 7.49984 13.8334C7.49984 12.9129 6.75365 12.1667 5.83317 12.1667H4.77687C4.91868 11.9215 4.99984 11.6369 4.99984 11.3334C4.99984 10.4129 4.25365 9.66669 3.33317 9.66669H1.67251C1.6665 9.16577 1.6665 8.61294 1.6665 8.00002Z"
+                      fill="#459639"></path>
+                  </svg>
+                </i>
+                <a href="mailto:info@clean-hedge.com">
+                  <p><span class="__cf_email__">info@clean-hedge.com</span></p>
+                </a>
+              </div>
+            </div>
+            <div class="d-flex top-bar-mail align-items-center mb-0">
+              <i class="foot-address-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10 5.58319C8.59053 5.58319 7.44385 6.72991 7.44385 8.13936C7.44385 9.54882 8.59053 10.6955 10 10.6955C11.4095 10.6955 12.5562 9.54882 12.5562 8.13936C12.5562 6.72991 11.4095 5.58319 10 5.58319Z"
+                    fill="#459639"></path>
+                  <path
+                    d="M15.9814 2.47758C14.3837 0.879883 12.2595 0 10 0C7.74055 0 5.61629 0.879883 4.01863 2.47758C2.4209 4.07531 1.54102 6.19953 1.54102 8.45895C1.54102 13.0298 5.86289 16.8315 8.18476 18.874C8.50738 19.1578 8.78602 19.4029 9.00793 19.6102C9.28609 19.8701 9.64297 20 9.99996 20C10.3569 20 10.7139 19.87 10.992 19.6103C11.214 19.4029 11.4926 19.1579 11.8152 18.874C14.1371 16.8316 18.4589 13.0298 18.4589 8.45898C18.4589 6.19953 17.5791 4.07531 15.9814 2.47758ZM10 11.8671C7.94449 11.8671 6.27226 10.1948 6.27226 8.13934C6.27226 6.08383 7.94449 4.4116 10 4.4116C12.0555 4.4116 13.7277 6.08383 13.7277 8.13934C13.7277 10.1948 12.0555 11.8671 10 11.8671Z"
+                    fill="#459639"></path>
+                </svg>
+              </i>
+              <p>88/B, Nariman Bhavan, Nariman Point, <br> Mumbai, Maharashtra 400021
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row contact-footer">
+        <div class="col-lg-12">
+          <div class="contact-info two">
+            <div class="d-flex align-items-center">
+              <i>
+                <svg width="46" height="46" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.833252 10.7083C0.488074 10.7083 0.208252 10.9881 0.208252 11.3333C0.208252 11.6785 0.488074 11.9583 0.833252 11.9583H3.33325C3.67843 11.9583 3.95825 11.6785 3.95825 11.3333C3.95825 10.9881 3.67843 10.7083 3.33325 10.7083H0.833252Z"
+                    fill="#459639"></path>
+                  <path
+                    d="M0.833252 13.2083C0.488074 13.2083 0.208252 13.4881 0.208252 13.8333C0.208252 14.1785 0.488074 14.4583 0.833252 14.4583H5.83325C6.17843 14.4583 6.45825 14.1785 6.45825 13.8333C6.45825 13.4881 6.17843 13.2083 5.83325 13.2083H0.833252Z"
+                    fill="#459639"></path>
+                  <path
+                    d="M2.59071 2.24172L2.5 2.16667C2.757 1.81294 3.0305 1.55276 3.38422 1.29576C4.4795 0.5 6.04189 0.5 9.16667 0.5H10.8333C13.9581 0.5 15.5205 0.5 16.6157 1.29576C16.9695 1.55276 17.2214 1.78443 17.4784 2.13816L17.3737 2.24225L15.4505 4.16551C14.0491 5.56689 13.0416 6.5725 12.1726 7.23558C11.318 7.88758 10.6712 8.14908 9.99992 8.14908C9.3285 8.14908 8.68175 7.88758 7.82717 7.23558C6.95817 6.5725 5.95066 5.56689 4.54927 4.16551L2.92989 2.54612L2.59071 2.24172Z"
+                    fill="#459639"></path>
+                  <path
+                    d="M1.6665 8.00002C1.6665 5.80009 1.6665 4.37457 1.94419 3.34125L2.06971 3.45391L3.69904 5.08322C5.05926 6.44344 6.12525 7.50944 7.06879 8.22936C8.03456 8.96619 8.94517 9.39911 9.99975 9.39911C11.0543 9.39911 11.9649 8.96619 12.9307 8.22936C13.8742 7.50944 14.9402 6.44344 16.3004 5.08324L18.0527 3.33093C18.3332 4.36507 18.3332 5.79277 18.3332 8.00002C18.3332 11.1248 18.3332 12.6872 17.5374 13.7824C17.2804 14.1362 16.9693 14.4473 16.6156 14.7043C15.5203 15.5 13.9579 15.5 10.8332 15.5H9.1665C7.9762 15.5 7.0126 15.5 6.21518 15.456C6.95154 15.2834 7.49984 14.6224 7.49984 13.8334C7.49984 12.9129 6.75365 12.1667 5.83317 12.1667H4.77687C4.91868 11.9215 4.99984 11.6369 4.99984 11.3334C4.99984 10.4129 4.25365 9.66669 3.33317 9.66669H1.67251C1.6665 9.16577 1.6665 8.61294 1.6665 8.00002Z"
+                    fill="#459639"></path>
+                </svg>
+              </i>
+              <h3>Subscribe to our newsletter.</h3>
+            </div>
+            <form>
+              <input type="text" name="email" placeholder="Enter your email address...">
+              <button class="button foot-btn2">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© Copyright 2025 | CleanHedge Verde Private Limited | All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- mobile-search -->
+  <div class="mobile-search">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-11">
+          <form>
+            <label>What are you looking for?</label>
+            <div class="d-flex search-bar">
+              <input type="text" placeholder="Type Here to Search">
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </div>
+        <div class="col-1 d-flex justify-content-end align-items-center">
+          <div class="search-cross-btn">
+            <i class="fa fa-times"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- mobile-search end -->
+
+  <!-- Popup Form Integration -->
+  <div class="latterbox" id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
+    <script src='https://www.google.com/recaptcha/api.js' async defer>
+    </script>
+    <form class="request-quote-form" id='webform868496000001580012' action='https://crm.zoho.in/crm/WebToLeadForm'
+      name=WebToLeads868496000001580012 method='POST'
+      onSubmit='javascript:document.charset="UTF-8"; return checkMandatory868496000001580012()' accept-charset='UTF-8'
+      class="request-quote-form">
+      <input type='text' style='display:none;' name='xnQsjsdp'
+        value='bf8d7be9c2fcc5b9380db2cd7fe7817047ab2de69ca3101113800fac0a914373'>
+      </input>
+      <input type='hidden' name='zc_gad' id='zc_gad' value=''>
+      </input>
+      <input type='text' style='display:none;' name='xmIwtLD'
+        value='0c20e58fc6db7768670c551bea89ef83d86ee647903e7559e58d53227cfb984b0fcc03adaeeea7fd0d0229a5981dfd5f'>
+      </input>
+      <input type='text' style='display:none;' name='actionType' value='TGVhZHM='>
+      </input>
+      <input type='text' style='display:none;' name='returnURL' value='null'>
+      </input>
+
+      <h3>Request a Quote</h3>
+      <input type="text" name="First Name" placeholder="First Name*" required>
+      <input type="text" name="Last Name" placeholder="Last Name*" required>
+      <input type="text" name="Company" placeholder="Company Name*" required>
+      <input type="text" name="Mobile" placeholder="Mobile Number*" required>
+      <input type="text" name="Email" placeholder="Email Address*" required>
+      <input type="text" name='City' placeholder="City">
+      <div class="dropdown-wrapper">
+        <select class="nice-select dw" id='LEADCF12' name="LEADCF11" onChange='addAriaSelected868496000001580012()'>
+          <option value="">Current Electricity Bill Amount</option>
+          <option>Rs. 1.20 Lakhs - Rs. 6 Lakhs</option>
+          <option>Rs. 6 Lakhs - Rs. 60 lakhs</option>
+          <option>Rs. 60 Lakhs+</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <input type="text" class="other-input" id="otherCity2" placeholder="Electricity Bill Amount"
+        style="margin-top: 0px !important;" />
+      <textarea placeholder="Message"></textarea>
+
+      <div class='zcwf_row'>
+        <div class='zcwf_col_lab'>
+        </div>
+        <div class='zcwf_col_fld'>
+          <div class='g-recaptcha' data-sitekey='6LcUjbErAAAAAFuO86Ym-EieZhIO20Di8c9njRxP' data-theme='light'
+            data-callback='rccallback868496000001580012' captcha-verified='false' id='recap868496000001580012'>
+          </div>
+          <div id='recapErr868496000001580012' style='font-size:12px;color:red;visibility:hidden;'>Captcha validation
+            failed. If you are not a robot then please try again.</div>
+        </div>
+      </div>
+      <input type='text' type='hidden' style='display: none;' name='aG9uZXlwb3Q' value='' />
+
+      <button class="button" name="LEADCF8">Send Message</button>
+
+      <div class='zcwf_row wfrm_fld_dpNn'>
+        <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'>
+          <label for='LEADCF10'>Deal Source</label>
+        </div>
+        <div class='zcwf_col_fld'>
+          <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false' aria-haspopup='listbox' id='LEADCF10'
+            onChange='addAriaSelected868496000001580012()' aria-required='false' aria-label='LEADCF10' name='LEADCF10'>
+            <option value='-None-'>-None-</option>
+            <option value='Advertisement'>Advertisement</option>
+            <option value='Google&#x20;ads'>Google ads</option>
+            <option value='New&#x20;research'>New research</option>
+            <option value='Channel&#x20;Partner&#x20;&#x28;CP&#x29;'>Channel Partner &#x28;CP&#x29;</option>
+            <option value='Ornate'>Ornate</option>
+            <option value='Online&#x20;Software'>Online Software</option>
+            <option value='Personal&#x20;Ref'>Personal Ref</option>
+            <option value='Event'>Event</option>
+            <option value='Cold&#x20;Call'>Cold Call</option>
+            <option value='Employee&#x20;Referral'>Employee Referral</option>
+            <option value='External&#x20;Referral'>External Referral</option>
+            <option value='Online&#x20;Store'>Online Store</option>
+            <option value='Partner'>Partner</option>
+            <option value='Public&#x20;Relations'>Public Relations</option>
+            <option value='Sales&#x20;Email&#x20;Alias'>Sales Email Alias</option>
+            <option value='Seminar&#x20;Partner'>Seminar Partner</option>
+            <option value='Internal&#x20;Seminar'>Internal Seminar</option>
+            <option value='Trade&#x20;Show'>Trade Show</option>
+            <option value='Web&#x20;Download'>Web Download</option>
+            <option value='Web&#x20;Research'>Web Research</option>
+            <option value='Chat'>Chat</option>
+            <option selected value='Website&#x20;Form'>Website Form</option>
+          </select>
+          <div class='zcwf_col_help'>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .wfrm_fld_dpNn {
+          display: none;
+        }
+
+        .dw {
+          background-color: #fafafa !important;
+          padding-left: 30px !important;
+          border: 1px solid #c1c1c1 !important;
+          position: relative !important;
+        }
+      </style>
+
+      <script>
+        function addAriaSelected868496000001580012() {
+          var optionElem = event.target;
+          var previousSelectedOption = optionElem.querySelector('[aria-selected=true]');
+          if (previousSelectedOption) {
+            previousSelectedOption.removeAttribute('aria-selected');
+          }
+          optionElem.querySelectorAll('option')[optionElem.selectedIndex].ariaSelected = 'true';
+        }
+        /* Do not remove this code. */
+        function rccallback868496000001580012() {
+          if (document.getElementById('recap868496000001580012') != undefined) {
+            document.getElementById('recap868496000001580012').setAttribute('captcha-verified', true);
+          }
+          if (document.getElementById('recapErr868496000001580012') != undefined && document.getElementById('recapErr868496000001580012').style.visibility == 'visible') {
+            document.getElementById('recapErr868496000001580012').style.visibility = 'hidden';
+          }
+        }
+        function reCaptchaAlert868496000001580012() {
+          var recap = document.getElementById('recap868496000001580012');
+          if (recap != undefined && recap.getAttribute('captcha-verified') == 'false') {
+            document.getElementById('recapErr868496000001580012').style.visibility = 'visible';
+            return false;
+          }
+          return true;
+        }
+        function validateEmail868496000001580012() {
+          var form = document.forms['WebToLeads868496000001580012'];
+          var emailFld = form.querySelectorAll('[ftype=email]');
+          var i;
+          for (i = 0; i < emailFld.length; i++) {
+            var emailVal = emailFld[i].value;
+            if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
+              var atpos = emailVal.indexOf('@');
+              var dotpos = emailVal.lastIndexOf('.');
+              if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
+                alert('Please enter a valid email address. ');
+                emailFld[i].focus();
+                return false;
+              }
+            }
+          }
+          return true;
+        }
+        function checkMandatory868496000001580012() {
+          var mndFileds = new Array('First Name', 'Last Name', 'Email', 'Mobile');
+          var fldLangVal = new Array('First\x20Name', 'Last\x20Name', 'Email', 'Mobile');
+          for (i = 0; i < mndFileds.length; i++) {
+            var fieldObj = document.forms['WebToLeads868496000001580012'][mndFileds[i]];
+            if (fieldObj) {
+              if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
+                if (fieldObj.type == 'file') {
+                  alert('Please select a file to upload.');
+                  fieldObj.focus();
+                  return false;
+                }
+                alert(fldLangVal[i] + ' cannot be empty.');
+                fieldObj.focus();
+                return false;
+              }
+              else if (fieldObj.nodeName == 'SELECT') {
+                if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+                  alert(fldLangVal[i] + ' cannot be none.');
+                  fieldObj.focus();
+                  return false;
+                }
+              }
+              else if (fieldObj.type == 'checkbox') {
+                if (fieldObj.checked == false) {
+                  alert('Please accept  ' + fldLangVal[i]);
+                  fieldObj.focus();
+                  return false;
+                }
+              }
+              try {
+                if (fieldObj.name == 'Last Name') {
+                  name = fieldObj.value;
+                }
+              }
+              catch (e) { }
+            }
+          }
+          if (!validateEmail868496000001580012()) {
+            return false;
+          }
+          if (!reCaptchaAlert868496000001580012()) {
+            return false;
+          }
+          var urlparams = new URLSearchParams(window.location.search);
+          if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) {
+            var webform = document.getElementById('webform868496000001580012');
+            var service = urlparams.get('service');
+            var smarturlfield = document.createElement('input');
+            smarturlfield.setAttribute('type', 'hidden');
+            smarturlfield.setAttribute('value', service);
+            smarturlfield.setAttribute('name', 'service');
+            webform.appendChild(smarturlfield);
+          }
+          document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+        }
+        function tooltipShow868496000001580012(el) {
+          var tooltip = el.nextElementSibling;
+          var tooltipDisplay = tooltip.style.display;
+          if (tooltipDisplay == 'none') {
+            var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+            for (i = 0; i < allTooltip.length; i++) {
+              allTooltip[i].style.display = 'none';
+            }
+            tooltip.style.display = 'block';
+          }
+          else {
+            tooltip.style.display = 'none';
+          }
+        }
+      </script>
+      <!-- Do not remove this --- Analytics Tracking code starts -->
+      <script id='wf_anal'
+        src='https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=9de97f5e0bd2b245278ec27c9cfabf7bfa84ee5ee4a62ad008c669998ee527af52148917e73dacdc6f5538edfb0728b2gidd5113da09cda64ae1a94f02bdb7dc6f6c10bbb243bd2a293a624c8642c4d7491gid88073b8d1088ecde3328b1aa73ea1b02aadde1abdc56e98896d271480a6ccb56gid4d2825887b48010f811ded7c857920c1257e1380f414199da82570eccbe4622d&tw=8c71e05614ae1fa06aabddc0994bb1116ac9ea3e2aa644abd228c570d9ea033c'>
+        </script>
+      <!-- Do not remove this --- Analytics Tracking code ends. -->
+
+    </form>
+    <div class="latterbox-cross-btn">
+      <i class="fa fa-times"></i>
+    </div>
+  </div>
+
+  <!-- WhatsApp Widget -->
+  <div class="wa-widget" id="waWidget">
+    <div class="wa-header">
+      <span>CleanHedge</span>
+      <div class="wa-close" onclick="toggleWidget()">×</div>
+    </div>
+
+    <div class="wa-body">
+      <div class="wa-message">
+        Hello! Lets connect to reduce my electricity bill by half.
+      </div>
+    </div>
+
+    <div class="wa-footer">
+      <a href="https://wa.me/917304406336?text=Hello!%0ALets%20connect%20to%20reduce%20my%20electricity%20bill%20by%20half."
+        target="_blank">Open Chat</a>
+    </div>
+  </div>
+
+  <!-- Floating Button -->
+  <div class="wa-float" onclick="toggleWidget()">
+    <img src="assets/img/used/whatsapp.svg" />
+  </div>
+
+  <style>
+    /* Floating WhatsApp Button */
+    .wa-float {
+      position: fixed;
+      bottom: 100px;
+      right: 15px;
+      background: #25D366;
+      color: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+      z-index: 9999;
+      opacity: 0;
+      transform: translateY(20px);
+      pointer-events: none;
+      transition: all 0.35s ease;
+    }
+
+    .wa-float.show {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .wa-float img {
+      width: 34px;
+    }
+
+    /* Chat Widget Box */
+    .wa-widget {
+      position: fixed;
+      bottom: 20px;
+      right: 85px;
+      width: 320px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      display: none;
+      z-index: 9999;
+    }
+
+    .wa-header {
+      background: #459639;
+      color: #fff;
+      padding: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .wa-header span {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .wa-close {
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .wa-body {
+      padding: 16px;
+      background: #ECE5DD;
+    }
+
+    .wa-message {
+      background: #fff;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 14px;
+      line-height: 1.4;
+      display: inline-block;
+      max-width: 90%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .wa-footer {
+      padding: 14px;
+      background: #fff;
+      border-top: 1px solid #eee;
+    }
+
+    .wa-footer a {
+      display: block;
+      background: #459639;
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media(max-width: 1199px) {
+      .wa-float {
+        width: 50px;
+        height: 50px;
+        bottom: 85px
+      }
+    }
+
+    @media(max-width: 576px) {
+      .wa-widget {
+        width: 250px;
+      }
+
+      .wa-body {
+        padding: 15px 10px;
+      }
+
+      .wa-message {
+        padding: 10px 10px;
+        max-width: 100%;
+      }
+    }
+  </style>
+
+  <!-- progress -->
+  <div id="progress" style="background: #459639 !important">
+    <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
+  </div>
+
+  <!-- Script -->
+
+  <!-- Preloader -->
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        document.querySelector('.preloader').style.opacity = '0';
+        document.querySelector('.preloader').style.visibility = 'hidden';
+      }, 2000); // 2000ms = 2 seconds
+    });
+  </script>
+
+  <!-- Dropdown Field -->
+  <!-- Footer Contact Form -->
+  <script>
+    const dropdown1 = document.getElementById('LEADCF11');
+    const otherInput1 = document.getElementById('otherCity1');
+
+    dropdown1.addEventListener('change', function () {
+      if (this.value === 'other') {
+        otherInput1.style.display = 'block';
+      } else {
+        otherInput1.style.display = 'none';
+      }
+    });
+
+    dropdown1.addEventListener('click', function () {
+      this.classList.toggle('up');
+    });
+  </script>
+
+  <!-- Upper Contact Form -->
+  <script>
+    const dropdown2 = document.getElementById('LEADCF12');
+    const otherInput2 = document.getElementById('otherCity2');
+
+    dropdown2.addEventListener('change', function () {
+      if (this.value === 'other') {
+        otherInput2.style.display = 'block';
+      } else {
+        otherInput2.style.display = 'none';
+      }
+    });
+
+    dropdown2.addEventListener('click', function () {
+      this.classList.toggle('up');
+    });
+  </script>
+  <!-- Same Tabs Toggle -->
+  <script>
+    document.querySelectorAll('.tab-label').forEach(label => {
+      label.addEventListener('click', function (e) {
+        const input = document.getElementById(this.getAttribute('for'));
+
+        // If the clicked tab is already selected, uncheck it
+        if (input.checked && input.dataset.toggle === "true") {
+          input.checked = false;
+          input.dataset.toggle = "false";
+          e.preventDefault(); // Prevent radio default
+        } else {
+          // Mark it as active so next click can toggle
+          document.querySelectorAll('.tabs input').forEach(i => i.dataset.toggle = "false");
+          input.dataset.toggle = "true";
+        }
+      });
+    });
+  </script>
+
+  <!-- After scroll whatsapp widget -->
+  <script>
+    function toggleWidget() {
+      const widget = document.getElementById("waWidget");
+      widget.style.display = widget.style.display === "block" ? "none" : "block";
+    }
+
+    const waButton = document.querySelector(".wa-float");
+    const showAfter = 120;
+
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > showAfter) {
+        waButton.classList.add("show");
+      } else {
+        waButton.classList.remove("show");
+      }
+    });
+  </script>
+
+  <!-- jQuery -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap Js -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <!-- fancybox -->
+  <script src="assets/js/jquery.fancybox.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>

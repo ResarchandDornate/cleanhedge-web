@@ -1,0 +1,2637 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanHedge - Home Page</title>
+  <link rel="icon" href="assets/img/favicon.png">
+
+  <!-- CSS only -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <!-- fancybox -->
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+  <!-- style -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- responsive -->
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- color -->
+  <link rel="stylesheet" href="assets/css/color.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PB7M5VKN');</script>
+
+</head>
+
+<style>
+  /* Quote Form css */
+
+  form.request-quote-form {
+    padding: 20px 20px !important
+  }
+
+  form.request-quote-form input {
+    margin-bottom: 10px !important;
+  }
+
+  .request-quote-form textarea {
+    margin-top: 0px !important;
+  }
+
+  form.request-quote-form select {
+    margin-bottom: 10px !important;
+  }
+
+  form.request-quote-form textarea {
+    margin-bottom: 0px !important;
+  }
+
+  form.request-quote-form input {
+    height: 50px !important;
+  }
+
+  /* Quote Form css  */
+
+  /* Banner */
+  .hero-section {
+    height: 950px;
+    padding-top: 350px;
+  }
+
+  .owl-item.active .hero-section:before {
+    height: 750px;
+    width: 750px;
+    top: 100px
+  }
+
+  /* Preloader */
+  .preloader {
+    background: white;
+  }
+
+  .preloader-logo {
+    width: 350px;
+    height: auto;
+  }
+
+  /* About us */
+  .circle-img {
+    height: 620px;
+    width: 620px;
+  }
+
+  /* Explore the process section */
+  .next-slide1 {
+    position: relative;
+  }
+
+  .nav-c-slider:before {
+    content: "";
+    width: 407px;
+    height: 552px;
+    background-color: white;
+    position: absolute;
+    top: -25px;
+    right: 395px;
+    z-index: 0;
+  }
+
+  .nav-c-slider:before {
+    top: -71px !important;
+    right: 355px !important;
+  }
+
+  .nav-c-slider a:nth-child(8) {
+    top: 87.2% !important;
+    right: 72% !important;
+  }
+
+  .arrow {
+    border: 0px !important;
+    box-shadow: none !important;
+    transform: rotate(11deg);
+    height: 70px !important;
+    width: 70px !important;
+  }
+
+  .tooltip-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #459639;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 99;
+  }
+
+  /* Tooltip appears above */
+  .tooltip-top {
+    top: -35%
+  }
+
+  /* Tooltip appears below */
+  .tooltip-bottom {
+    bottom: -40px;
+  }
+
+  /* Third element Merging  */
+  .tooltip-third {
+    top: -35%;
+    left: 70%;
+  }
+
+  .tooltip-forth {
+    top: -30%;
+    left: 55%;
+  }
+
+  /* Fifth element Merging */
+  .tooltip-fifth {
+    bottom: -42%;
+    left: 60%;
+  }
+
+  .next-slide1.nav-active .tooltip-title,
+  .next-slide1:hover .tooltip-title {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
+  }
+
+  /* What do we offer */
+  .fifth-offer {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .what-do-we-img {
+    height: 320px !important;
+    width: 600px !important;
+  }
+
+  .recent-projects-img:hover img {
+    transform: scale(1.05) rotate(0deg);
+  }
+
+  .recent-projects-text {
+    padding: 20px 30px;
+    width: 55%;
+    margin-top: -80px;
+  }
+
+  /* Clientele */
+  .mobile-view {
+    display: none;
+  }
+
+  .sponsors.three {
+    justify-content: space-evenly;
+  }
+
+  /* Trending Articles */
+  .extra-width-p {
+    width: 94% !important;
+  }
+
+  /* On mobile only, hide desktop grid and show swiper */
+  @media (max-width: 767px) {
+    .desktop-view {
+      display: none;
+    }
+
+    .mobile-view {
+      display: block;
+    }
+
+    .swiper-slide {
+      text-align: center;
+    }
+
+    .swiper-slide img {
+      max-width: 150px;
+      margin: auto;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #459639;
+    }
+  }
+
+  /* Responsive for Desktop */
+  @media(min-width:1700px) and (max-width: 1799px) {
+    .featured-area-one {
+      left: 8% !important;
+    }
+  }
+
+  @media(min-width:1600px) and (max-width: 1699px) {
+    .featured-area-one {
+      left: 15% !important;
+    }
+  }
+
+  @media(min-width:1500px) and (max-width: 1599px) {
+    .featured-area-one {
+      left: 25% !important;
+    }
+  }
+
+  @media(min-width:1401px) and (max-width: 1499px) {
+    .featured-area-one {
+      left: 33% !important;
+    }
+  }
+
+  @media(min-width:1301px) and (max-width: 1400px) {
+    .featured-area-one {
+      left: 0% !important;
+    }
+  }
+
+  @media(min-width:1200px) and (max-width: 1300px) {
+    .featured-area-one {
+      left: 10% !important;
+    }
+  }
+
+  @media(min-width:1100px) and (max-width: 1199px) {
+    .featured-area-one {
+      left: 10% !important;
+    }
+  }
+
+  @media(min-width:992px) and (max-width: 1099px) {
+    .featured-area-one {
+      left: 15% !important;
+    }
+  }
+
+  @media(min-width:768px) and (max-width: 991px) {
+    .owl-item.active .hero-section:before {
+      /* width: 100% !important; */
+      left: 0px !important;
+      top: 90px !important
+    }
+  }
+
+  @media(min-width:768px) and (max-width: 850px) {
+    .featured-area-one {
+      left: 12% !important;
+    }
+  }
+
+  /* Responsive for Tabs & Laptops */
+  @media(min-width: 1200px) and (max-width: 1399px) {
+    .energize-society {
+      margin-right: 30px !important;
+    }
+
+    .circle-img {
+      height: 520px !important;
+      width: 520px !important;
+    }
+
+    .energize-society:before {
+      width: 530px !important;
+      height: 550px !important;
+    }
+
+    .nav-c-slider a img {
+      width: 80px !important;
+      height: 80px !important;
+    }
+
+    .nav-c-slider:before {
+      top: -70px !important;
+      right: 340px !important;
+    }
+
+    .nav-c-slider a:nth-child(1) {
+      top: -9% !important;
+      right: 65% !important;
+    }
+
+    .nav-c-slider a:nth-child(2) {
+      top: -10% !important;
+      right: 32% !important;
+    }
+
+    .nav-c-slider a:nth-child(3) {
+      top: 5% !important;
+      right: 3% !important;
+    }
+
+    .nav-c-slider a:nth-child(4) {
+      top: 35% !important;
+      right: -10% !important;
+    }
+
+    .nav-c-slider a:nth-child(5) {
+      top: 65% !important;
+      right: -5% !important;
+    }
+
+    .nav-c-slider a:nth-child(6) {
+      top: 86% !important;
+      right: 18% !important;
+    }
+
+    .nav-c-slider a:nth-child(8) {
+      top: 85% !important;
+      right: 70% !important;
+    }
+
+    .tooltip-title {
+      font-size: 10px !important;
+    }
+
+    .tooltip-forth {
+      top: -33% !important;
+      left: 65% !important;
+    }
+
+    .tooltip-fifth {
+      bottom: -45% !important;
+      left: 85% !important;
+    }
+  }
+
+  @media(min-width: 992px) and (max-width: 1199px) {
+    .energize-society {
+      margin-right: 25px !important;
+    }
+
+    .circle-img {
+      height: 460px !important;
+      width: 460px !important;
+    }
+
+    .energize-society:before {
+      width: 480px !important;
+      height: 480px !important;
+      border: 40px solid #459639 !important;
+    }
+
+    .about-two-content h2,
+    .about-two-content span {
+      font-size: 48px !important;
+    }
+
+    .nav-c-slider a img {
+      width: 80px !important;
+      height: 80px !important;
+    }
+
+    .nav-c-slider:before {
+      top: -70px !important;
+      right: 330px !important;
+    }
+
+    .nav-c-slider a:nth-child(1) {
+      top: -5% !important;
+      right: 70% !important;
+    }
+
+    .nav-c-slider a:nth-child(2) {
+      top: -12% !important;
+      right: 35% !important;
+    }
+
+    .nav-c-slider a:nth-child(3) {
+      top: 3% !important;
+      right: 3% !important;
+    }
+
+    .nav-c-slider a:nth-child(4) {
+      top: 34% !important;
+      right: -10% !important;
+    }
+
+    .nav-c-slider a:nth-child(5) {
+      top: 65% !important;
+      right: -5% !important;
+    }
+
+    .nav-c-slider a:nth-child(6) {
+      top: 86% !important;
+      right: 18% !important;
+    }
+
+    .nav-c-slider a:nth-child(8) {
+      top: 83% !important;
+      right: 73% !important;
+    }
+
+    .tooltip-title {
+      font-size: 10px !important;
+    }
+
+    .tooltip-forth {
+      top: -33% !important;
+      left: 65% !important;
+    }
+
+    .tooltip-fifth {
+      bottom: -45% !important;
+      left: 85% !important;
+    }
+  }
+
+  @media(min-width: 769px) and (max-width: 991px) {
+    .energize-society {
+      margin-right: 0px !important;
+    }
+
+    .circle-img {
+      height: 650px !important;
+      width: 650px !important;
+      display: flex !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    .energize-society:before {
+      width: 700px !important;
+      height: 680px !important;
+      border: 45px solid #459639 !important;
+    }
+  }
+
+  @media(min-width: 577px) and (max-width: 768px) {
+    .energize-society {
+      margin-right: 0px !important;
+    }
+
+    .circle-img {
+      height: 500px !important;
+      width: 500px !important;
+      display: flex !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    .energize-society:before {
+      width: 550px !important;
+      height: 530px !important;
+      border: 40px solid #459639 !important;
+    }
+  }
+
+  @media(max-width: 576px) {
+    .energize-society {
+      margin-right: 0px !important;
+    }
+    .recent-projects-text{
+         width: 100% !important; 
+         margin-left: 0px !important;
+    }
+
+    .circle-img {
+      height: 400px !important;
+      width: 400px !important;
+      display: flex !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    .energize-society:before {
+      /* display: none !important; */
+      width: 450px !important;
+      height: 420px !important;
+      border: 30px solid #459639 !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .owl-item.active .hero-section:before {
+      border-radius: 50%;
+    }
+  }
+
+  /* Responsive for mobile */
+  @media (max-width:767px) {
+    .owl-item.active .hero-section:before {
+      height: 1000px;
+      /* width: 1000px; */
+    }
+
+    .owl-item.active .hero-section:before {
+      border-radius: 0%;
+    }
+
+    .nav-c-slider {
+      border-radius: 45%;
+    }
+
+    .energize-society:before {
+      transform: rotate(22deg);
+      width: 645px;
+      height: 645px;
+      position: absolute;
+      content: "";
+      border-radius: 64%;
+      z-index: 15;
+      border: 70px solid #459639;
+      clip-path: inset(26% 0 0 35%);
+      top: -14px;
+      -webkit-animation-name: rotateme;
+      -webkit-animation-duration: 88s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+    }
+
+    .owl-item.active .hero-section:before {
+      background-color: #000000b3;
+      width: 800px !important;
+    }
+  }
+
+  @media (max-width:576px) {
+    .small-font {
+      font-size: 30px !important;
+    }
+
+    .next-slide8 {
+      display: none !important;
+    }
+
+    .tooltip-top {
+      top: -50%;
+    }
+
+    .tooltip-forth {
+      transform: translateX(-90%) translateY(-20px) !important;
+    }
+
+    .tooltip-third {
+      transform: translateX(-60%) translateY(-20px) !important;
+    }
+
+    .tooltip-fifth {
+      transform: translateX(-50%) translateY(11px) !important;
+    }
+
+    .slider-main-img img {
+      height: 350px !important;
+      width: 350px !important;
+      display: flex !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      margin-top: 35px;
+    }
+
+    .recent-projects-text h6 {
+      font-size: 20px !important;
+    }
+
+    .hero-section {
+      height: 581px;
+      padding-top: 200px;
+    }
+
+    .slider-main-img {
+      top: 80%;
+    }
+
+    .small-heading {
+      font-size: 25px !important;
+      line-height: 35px !important;
+    }
+
+    .nav-c-slider a:nth-child(1) {
+      top: -9%;
+      left: 64px;
+      right: auto;
+    }
+
+    .nav-c-slider a:nth-child(2) {
+      top: -10%;
+      left: 31%;
+      right: auto;
+    }
+
+    .nav-c-slider a:nth-child(3) {
+      top: -10%;
+      left: 51%;
+      right: auto;
+    }
+
+    .nav-c-slider a:nth-child(4) {
+      top: -10%;
+      left: 71%;
+      right: auto;
+    }
+
+    .nav-c-slider a:nth-child(5) {
+      top: 12%;
+      left: 22%;
+      right: auto;
+    }
+
+    .nav-c-slider a:nth-child(6) {
+      top: 13%;
+      right: 45%;
+    }
+
+    .nav-c-slider a:nth-child(7) {
+      top: 13%;
+      right: 25%;
+    }
+
+    .heading1 {
+      padding-top: 50px;
+
+    }
+
+    .about-two-content h2,
+    .about-two-content span {
+      font-size: 40px;
+    }
+  }
+</style>
+
+<!-- mob css code  -->
+<style>
+  @media (max-width: 576px) {
+    .slider-main-img {
+      top: 70% !important;
+    }
+
+    .desk-view {
+      display: none;
+    }
+
+    .mob-view {
+      display: block;
+      padding-top: 0px !important;
+    }
+
+    .mob-marg {
+      margin-top: 30px !important
+    }
+
+    .mob-text {
+      text-align: center !important;
+    }
+
+    .mob-center {
+      text-align: center !important;
+      margin-top: 20px !important;
+    }
+
+    .mob-flex {
+      display: flex !important;
+      justify-content: center !important;
+    }
+
+    .left-line {
+      margin: 0 auto !important;
+    }
+
+    .slider-main-img {
+      left: 50% !important;
+    }
+
+    .image-center {
+      width: 100% !important;
+    }
+  }
+
+  @media (max-width:380px) {
+    .mob-s-1 {
+      left: 7% !important;
+    }
+
+    .mob-s-3 {
+      left: 55% !important;
+    }
+
+    .mob-s-4 {
+      left: 79% !important;
+    }
+
+    .mob-s-5 {
+      top: 10% !important;
+      left: 14% !important;
+    }
+
+    .mob-s-6 {
+      top: 10% !important;
+      right: 43% !important;
+    }
+
+    .mob-s-7 {
+      top: 10% !important;
+      right: 19% !important
+    }
+  }
+
+  @media (min-width:380px) and (max-width:470px) {
+    .mob-s-1 {
+      left: 12% !important;
+    }
+
+    .mob-s-3 {
+      left: 49% !important;
+    }
+
+    .mob-s-4 {
+      left: 67% !important;
+    }
+
+    .mob-s-2 {
+      left: 31% !important;
+    }
+
+    .mob-s-5 {
+      top: 10% !important;
+      left: 21% !important;
+    }
+
+    .mob-s-6 {
+      top: 10% !important;
+      right: 44% !important;
+    }
+
+    .mob-s-7 {
+      top: 10% !important;
+      right: 26% !important
+    }
+
+  }
+
+  @media (min-width:470px) and (max-width:520px) {
+    .mob-s-1 {
+      left: 12% !important;
+    }
+
+    .mob-s-3 {
+      left: 47% !important;
+    }
+
+    .mob-s-4 {
+      left: 65% !important;
+    }
+
+    .mob-s-2 {
+      left: 29% !important;
+    }
+
+    .mob-s-5 {
+      top: 10% !important;
+      left: 21% !important;
+    }
+
+    .mob-s-6 {
+      top: 10% !important;
+      right: 46% !important;
+    }
+
+    .mob-s-7 {
+      top: 10% !important;
+      right: 28% !important
+    }
+
+  }
+
+  @media (min-width:520px) and (max-width:576px) {
+    .mob-s-1 {
+      left: 14% !important;
+    }
+
+    .mob-s-3 {
+      left: 46% !important;
+    }
+
+    .mob-s-4 {
+      left: 62% !important;
+    }
+
+    .mob-s-2 {
+      left: 30% !important;
+    }
+
+    .mob-s-5 {
+      top: 10% !important;
+      left: 24% !important;
+    }
+
+    .mob-s-6 {
+      top: 10% !important;
+      right: 46% !important;
+    }
+
+    .mob-s-7 {
+      top: 10% !important;
+      right: 30% !important
+    }
+
+  }
+
+  @media (min-width: 578px) {
+    .mob-view {
+      display: none !important;
+
+    }
+  }
+</style>
+
+<!-- Responsive for mobile intro circle -->
+<style>
+  @media(max-width: 576px) {
+    .mob-gap {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+  }
+
+  @media(max-width: 440px) {
+    .energize-society:before {
+      width: 420px !important;
+    }
+  }
+
+  @media(max-width: 420px) {
+    .energize-society:before {
+      width: 405px !important;
+    }
+
+    .circle-img {
+      height: 380px !important;
+      width: 380px !important;
+    }
+  }
+
+  @media(min-width: 360px) and (max-width: 380px) {
+    .energize-society:before {
+      width: 360px !important;
+      height: 350px !important;
+    }
+
+    .circle-img {
+      height: 330px !important;
+      width: 330px !important;
+    }
+  }
+</style>
+
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PB7M5VKN" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- preloader -->
+  <div class="preloader">
+    <div class="logo-container">
+      <img src="assets/img/used/clean-hedge-logo-black.png" alt="Logo" class="preloader-logo spinning" />
+    </div>
+  </div>
+  <!-- preloader end -->
+
+  <!-- Header -->
+  <header class="two">
+
+    <!-- Topbar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-text">
+          <ul class="d-flex">
+            <li><a href="https://www.instagram.com/clean.hedge/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/clean-hedge"><i class="fa-brands fa-linkedin"></i></a></li>
+          </ul>
+          <div class="d-flex top-bar-mail">
+            <div class="d-flex align-items-center me-4">
+              <i>
+                <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.833252 10.7083C0.488074 10.7083 0.208252 10.9881 0.208252 11.3333C0.208252 11.6785 0.488074 11.9583 0.833252 11.9583H3.33325C3.67843 11.9583 3.95825 11.6785 3.95825 11.3333C3.95825 10.9881 3.67843 10.7083 3.33325 10.7083H0.833252Z"
+                    fill="#459639" />
+                  <path
+                    d="M0.833252 13.2083C0.488074 13.2083 0.208252 13.4881 0.208252 13.8333C0.208252 14.1785 0.488074 14.4583 0.833252 14.4583H5.83325C6.17843 14.4583 6.45825 14.1785 6.45825 13.8333C6.45825 13.4881 6.17843 13.2083 5.83325 13.2083H0.833252Z"
+                    fill="#459639" />
+                  <path
+                    d="M2.59071 2.24172L2.5 2.16667C2.757 1.81294 3.0305 1.55276 3.38422 1.29576C4.4795 0.5 6.04189 0.5 9.16667 0.5H10.8333C13.9581 0.5 15.5205 0.5 16.6157 1.29576C16.9695 1.55276 17.2214 1.78443 17.4784 2.13816L17.3737 2.24225L15.4505 4.16551C14.0491 5.56689 13.0416 6.5725 12.1726 7.23558C11.318 7.88758 10.6712 8.14908 9.99992 8.14908C9.3285 8.14908 8.68175 7.88758 7.82717 7.23558C6.95817 6.5725 5.95066 5.56689 4.54927 4.16551L2.92989 2.54612L2.59071 2.24172Z"
+                    fill="#459639" />
+                  <path
+                    d="M1.6665 8.00002C1.6665 5.80009 1.6665 4.37457 1.94419 3.34125L2.06971 3.45391L3.69904 5.08322C5.05926 6.44344 6.12525 7.50944 7.06879 8.22936C8.03456 8.96619 8.94517 9.39911 9.99975 9.39911C11.0543 9.39911 11.9649 8.96619 12.9307 8.22936C13.8742 7.50944 14.9402 6.44344 16.3004 5.08324L18.0527 3.33093C18.3332 4.36507 18.3332 5.79277 18.3332 8.00002C18.3332 11.1248 18.3332 12.6872 17.5374 13.7824C17.2804 14.1362 16.9693 14.4473 16.6156 14.7043C15.5203 15.5 13.9579 15.5 10.8332 15.5H9.1665C7.9762 15.5 7.0126 15.5 6.21518 15.456C6.95154 15.2834 7.49984 14.6224 7.49984 13.8334C7.49984 12.9129 6.75365 12.1667 5.83317 12.1667H4.77687C4.91868 11.9215 4.99984 11.6369 4.99984 11.3334C4.99984 10.4129 4.25365 9.66669 3.33317 9.66669H1.67251C1.6665 9.16577 1.6665 8.61294 1.6665 8.00002Z"
+                    fill="#459639" />
+                </svg>
+              </i>
+              <a href="mailto:info@clean-hedge.com">
+                <p><span class="__cf_email__">info@clean-hedge.com</span></p>
+              </a>
+            </div>
+            <div class="d-flex align-items-center">
+              <i>
+                <svg width="20" height="20" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.7917 4.23926C10.1532 4.23926 9.6355 4.75693 9.6355 5.39551V31.6038C9.6355 32.2424 10.1532 32.7601 10.7917 32.7601H26.2084C26.847 32.7601 27.3647 32.2424 27.3647 31.6038V5.39551C27.3647 4.75693 26.847 4.23926 26.2084 4.23926H10.7917ZM7.323 5.39551C7.323 3.47977 8.87601 1.92676 10.7917 1.92676H26.2084C28.1241 1.92676 29.6772 3.47977 29.6772 5.39551V31.6038C29.6772 33.5195 28.1241 35.0726 26.2084 35.0726H10.7917C8.87601 35.0726 7.323 33.5195 7.323 31.6038V5.39551Z"
+                    fill="#459639"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.8022 7.70801C15.8022 7.06943 16.3199 6.55176 16.9585 6.55176H20.0418C20.6804 6.55176 21.1981 7.06943 21.1981 7.70801C21.1981 8.34658 20.6804 8.86426 20.0418 8.86426H16.9585C16.3199 8.86426 15.8022 8.34658 15.8022 7.70801Z"
+                    fill="#459639"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14.2605 29.291C14.2605 28.6525 14.7782 28.1348 15.4167 28.1348H21.5834C22.222 28.1348 22.7397 28.6525 22.7397 29.291C22.7397 29.9296 22.222 30.4473 21.5834 30.4473H15.4167C14.7782 30.4473 14.2605 29.9296 14.2605 29.291Z"
+                    fill="#459639"></path>
+                </svg>
+              </i>
+              <a href="callto:+91-73 044 06 336">
+                <p>+91-73 044 06 336</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Item  -->
+    <div class="container">
+      <div class="menu-bar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/img/used/clean-hedge-logo-black-1.png" alt="" style="width: 300px;" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul class="navbar-links">
+            <li class="navbar-dropdown">
+              <a href="index.html" class="active-link">Home</a>
+            </li>
+            <li class="navbar-dropdown has-children">
+              <a href="javascript:void(0)" style="cursor: auto;">About</a>
+              <ul class="dropdown">
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="team-members.html">Team Members</a></li>
+              </ul>
+            </li>
+            <li class="navbar-dropdown has-children">
+              <a href="javascript:void(0)" style="cursor: auto;">Services</a>
+              <ul class="dropdown">
+                <li><a href="open-access.html">Solar Open Access</a></li>
+                <li><a href="solar-rooftop.html">Solar Rooftop</a></li>
+                <li><a href="solar-inroof.html">Solar InRoof</a></li>
+                <li><a href="bess.html">Solar + BESS</a></li>
+                <li><a href="green-certification.html">Green Certification</a></li>
+              </ul>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="contact.html">Contact Us</a>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="https://blog.clean-hedge.com/" target="_blank">Blogs</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="search-style d-flex align-items-center">
+          <a href="javascript:void(0)" class="search-btn">
+            <svg height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
+              <g id="_12" data-name="12">
+                <path
+                  d="m21.71 20.29-2.83-2.82a9.52 9.52 0 1 0 -1.41 1.41l2.82 2.83a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zm-17.71-8.79a7.5 7.5 0 1 1 7.5 7.5 7.5 7.5 0 0 1 -7.5-7.5z">
+                </path>
+              </g>
+            </svg>
+          </a>
+          <a class="header-button newsbox button" href="#">Request a Quote</a>
+        </div>
+        <div class="bar-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Header  -->
+    <div class="mobile-nav hmburger-menu" id="mobile-nav" style="display:block;">
+      <div class="res-log">
+        <a href="index.html">
+          <img src="assets/img/used/clean-hedge-logo-black.png" alt="" style="width: 300px;" />
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="menu-item-has-children"><a href="javascript:void(0)" style="cursor: auto;">About</a>
+          <ul class="sub-menu">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="team-members.html">Team Members</a></li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children"><a href="javascript:void(0)" style="cursor: auto;">Services</a>
+          <ul class="sub-menu">
+            <li><a href="open-access.html">Solar Open Access</a></li>
+            <li><a href="solar-rooftop.html">Solar Rooftop</a></li>
+            <li><a href="solar-inroof.html">Solar InRoof</a></li>
+            <li><a href="bess.html">Solar + BESS</a></li>
+            <li><a href="green-certification.html">Green Certification</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="https://blog.clean-hedge.com/" target="_blank">Blogs</a></li>
+      </ul>
+
+      <a href="JavaScript:void(0)" id="res-cross"></a>
+
+      <div class="about-energix">
+        <div class="d-flex align-items-center top-bar-mail">
+          <div class="d-flex align-items-center">
+            <i>
+              <svg width="20" height="20" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M10.7917 4.23926C10.1532 4.23926 9.6355 4.75693 9.6355 5.39551V31.6038C9.6355 32.2424 10.1532 32.7601 10.7917 32.7601H26.2084C26.847 32.7601 27.3647 32.2424 27.3647 31.6038V5.39551C27.3647 4.75693 26.847 4.23926 26.2084 4.23926H10.7917ZM7.323 5.39551C7.323 3.47977 8.87601 1.92676 10.7917 1.92676H26.2084C28.1241 1.92676 29.6772 3.47977 29.6772 5.39551V31.6038C29.6772 33.5195 28.1241 35.0726 26.2084 35.0726H10.7917C8.87601 35.0726 7.323 33.5195 7.323 31.6038V5.39551Z"
+                  fill="white"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15.8022 7.70801C15.8022 7.06943 16.3199 6.55176 16.9585 6.55176H20.0418C20.6804 6.55176 21.1981 7.06943 21.1981 7.70801C21.1981 8.34658 20.6804 8.86426 20.0418 8.86426H16.9585C16.3199 8.86426 15.8022 8.34658 15.8022 7.70801Z"
+                  fill="white"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M14.2605 29.291C14.2605 28.6525 14.7782 28.1348 15.4167 28.1348H21.5834C22.222 28.1348 22.7397 28.6525 22.7397 29.291C22.7397 29.9296 22.222 30.4473 21.5834 30.4473H15.4167C14.7782 30.4473 14.2605 29.9296 14.2605 29.291Z"
+                  fill="white"></path>
+              </svg>
+            </i>
+            <a href="tel:+91-73 044 06 336">
+              <p>+91-73 044 06 336</p>
+            </a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center top-bar-mail">
+          <div class="d-flex align-items-center">
+            <i>
+              <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.833252 10.7083C0.488074 10.7083 0.208252 10.9881 0.208252 11.3333C0.208252 11.6785 0.488074 11.9583 0.833252 11.9583H3.33325C3.67843 11.9583 3.95825 11.6785 3.95825 11.3333C3.95825 10.9881 3.67843 10.7083 3.33325 10.7083H0.833252Z"
+                  fill="white"></path>
+                <path
+                  d="M0.833252 13.2083C0.488074 13.2083 0.208252 13.4881 0.208252 13.8333C0.208252 14.1785 0.488074 14.4583 0.833252 14.4583H5.83325C6.17843 14.4583 6.45825 14.1785 6.45825 13.8333C6.45825 13.4881 6.17843 13.2083 5.83325 13.2083H0.833252Z"
+                  fill="white"></path>
+                <path
+                  d="M2.59071 2.24172L2.5 2.16667C2.757 1.81294 3.0305 1.55276 3.38422 1.29576C4.4795 0.5 6.04189 0.5 9.16667 0.5H10.8333C13.9581 0.5 15.5205 0.5 16.6157 1.29576C16.9695 1.55276 17.2214 1.78443 17.4784 2.13816L17.3737 2.24225L15.4505 4.16551C14.0491 5.56689 13.0416 6.5725 12.1726 7.23558C11.318 7.88758 10.6712 8.14908 9.99992 8.14908C9.3285 8.14908 8.68175 7.88758 7.82717 7.23558C6.95817 6.5725 5.95066 5.56689 4.54927 4.16551L2.92989 2.54612L2.59071 2.24172Z"
+                  fill="white"></path>
+                <path
+                  d="M1.6665 8.00002C1.6665 5.80009 1.6665 4.37457 1.94419 3.34125L2.06971 3.45391L3.69904 5.08322C5.05926 6.44344 6.12525 7.50944 7.06879 8.22936C8.03456 8.96619 8.94517 9.39911 9.99975 9.39911C11.0543 9.39911 11.9649 8.96619 12.9307 8.22936C13.8742 7.50944 14.9402 6.44344 16.3004 5.08324L18.0527 3.33093C18.3332 4.36507 18.3332 5.79277 18.3332 8.00002C18.3332 11.1248 18.3332 12.6872 17.5374 13.7824C17.2804 14.1362 16.9693 14.4473 16.6156 14.7043C15.5203 15.5 13.9579 15.5 10.8332 15.5H9.1665C7.9762 15.5 7.0126 15.5 6.21518 15.456C6.95154 15.2834 7.49984 14.6224 7.49984 13.8334C7.49984 12.9129 6.75365 12.1667 5.83317 12.1667H4.77687C4.91868 11.9215 4.99984 11.6369 4.99984 11.3334C4.99984 10.4129 4.25365 9.66669 3.33317 9.66669H1.67251C1.6665 9.16577 1.6665 8.61294 1.6665 8.00002Z"
+                  fill="white"></path>
+              </svg>
+            </i>
+            <a href="mailto:info@clean-hedge.com">
+              <p><span class="__cf_email__" data-cfemail="">info@clean-hedge.com</span></p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="slider-hero">
+    <div class="slider-home-1 owl-carousel owl-theme">
+
+      <div class="item hero-section" style="background-image: url(assets/img/used/home-page/solar-banner3.jpeg);">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="featured-area-one">
+                <h2>Building Sustainability</h2>
+                <h6>Future Ready Energy Generation</h6>
+                <a href="javascript:void(0)" class="newsbox button">Request a Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item hero-section" style="background-image: url(assets/img/used/iStock/home-page-bnn2-final.webp);">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="featured-area-one">
+                <h2>Energy Security & Independence</h2>
+                <h6>Battery Energy Storage Systems</h6>
+                <a href="javascript:void(0)" class="button newsbox">Request a Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section>
+    <div class="container gap">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mob-gap">
+          <div class="energize-society">
+            <figure>
+              <img alt="img" src="assets/img/used/home-page/about-us-3.webp" class="circle-img">
+            </figure>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="heading">
+            <!-- <p>Empowering Simpler Sustainable Choices</p> -->
+            <!-- <div class="line"></div> -->
+            <!-- <h2>Making Sustainability Simpler, One Watt at a Time</h2> -->
+            <h2>Making Sustainability Simple.</h2>
+          </div>
+          <div class="about-two-content">
+            <p>CleanHedge Verde Pvt Ltd is a leading renewable energy solutions provider headquartered in Mumbai. We
+              specialize in developing energy projects, including Solar + BESS Parks, that help industrial and
+              commercial clients reduce their power cost, generate green energy, and achieve sustainability goals. We
+              provide solutions that work under multiple policies including open access and net metering with grid
+              compatibility. We founded this company with a great belief in India’s future and we work together with our
+              team, partners and clients to provide future ready long term solutions. </p>
+            <div class="d-sm-flex justify-content-between me-sm-5" style="flex-direction: column; gap: 30px">
+              <div class="d-flex mb-sm-0 mb-4">
+                <i>
+                  <img src="assets/img/used/home-page/home-intro1-white.png" alt="Generating Energy"
+                    style="width: 50px">
+                </i>
+                <div>
+
+                  <h6>Since 2022, we have generated over</h6>
+                  <div class="d-flex">
+                    <h2 class="timer count-title count-number small-font" data-to="40000" data-speed="1500">40,000</h2>
+                    <span class="small-font">MWh</span>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex">
+                <i>
+                  <img src="assets/img/used/home-page/home-intro2-white.png" alt="Saving Energy" style="width: 50px">
+                </i>
+                <div>
+                  <div class="d-flex">
+                    <h2 class="timer count-title count-number small-font" data-to="32880" data-speed="1500">32,880</h2>
+                    <span class="small-font">MT</span>
+                  </div>
+                  <!-- <h6>We save approximately</h6> -->
+                  <h6>Approximately - of CO2 emissions avoided</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Button -->
+  <section>
+    <a href="contact.html">
+      <div class="container gap no-top d-flex justify-content-center align-items-center">
+        <button class="button">Know More</button>
+      </div>
+    </a>
+  </section>
+
+  <!-- What we Offer Section -->
+  <section class="recent-projects gap no-bottom">
+    <div class="container">
+      <div class="heading">
+        <p>Our Solutions</p>
+        <div class="line"></div>
+        <h2 style="display: flex;justify-content: center;">What do We&nbsp;<span style="color: #459639;">
+            Offer?</span>
+        </h2>
+      </div>
+
+      <div class="our-projects">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-6">
+              <div class="recent-projects-img">
+                <figure>
+                  <a href="open-access.html">
+                    <img alt="recent-projects" src="assets/img/used/home-page/open-access1.webp" class="what-do-we-img">
+                  </a>
+                </figure>
+                <div class="recent-projects-text">
+                  <a href="open-access.html">
+                    <h5>Open Access</h5>
+                  </a>
+                  <!-- <h6>Stored Energy</h6> -->
+                  <a href="open-access.html">
+                    <h6>Offsite Energy Generation</h6>
+                  </a>
+                  <a href="open-access.html">
+                    <i>
+                      <svg width="14" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M8.37998 0.369629L13.9606 6.16918L8.37998 11.9687V6.86986H0.897949V5.39253H8.37998V0.369629Z" />
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="recent-projects-img">
+                <figure>
+                  <a href="solar-rooftop.html">
+                    <img alt="recent-projects" src="assets/img/used/iStock/home-page-offer2-final.webp"
+                      class="what-do-we-img">
+                  </a>
+                </figure>
+                <div class="recent-projects-text">
+                  <a href="solar-rooftop.html">
+                    <h5>Solar Rooftop</h5>
+                  </a>
+                  <!-- <h6>Solar Infrastructure</h6> -->
+                  <a href="solar-rooftop.html">
+                    <h6>Onsite Solar Generation</h6>
+                  </a>
+                  <a href="solar-rooftop.html">
+                    <i>
+                      <svg width="14" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M8.37998 0.369629L13.9606 6.16918L8.37998 11.9687V6.86986H0.897949V5.39253H8.37998V0.369629Z" />
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="recent-projects-img">
+                <figure>
+                  <a href="solar-inroof.html">
+                    <img alt="recent-projects" src="assets/img/used/home-page/solar-inroof-used.jpeg"
+                      class="what-do-we-img">
+                  </a>
+                </figure>
+                <div class="recent-projects-text">
+                  <a href="solar-inroof.html">
+                    <h5>Solar InRoof</h5>
+                  </a>
+                  <!-- <h6>Smart Energy</h6> -->
+                  <a href="solar-inroof.html">
+                    <h6>Building Integrated Solar</h6>
+                  </a>
+                  <a href="solar-inroof.html">
+                    <i>
+                      <svg width="14" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M8.37998 0.369629L13.9606 6.16918L8.37998 11.9687V6.86986H0.897949V5.39253H8.37998V0.369629Z" />
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="recent-projects-img">
+                <figure>
+                  <a href="bess.html">
+                    <img alt="recent-projects" src="assets/img/used/home-page/what-we-offer-bess.jpeg"
+                      class="what-do-we-img">
+                  </a>
+                </figure>
+                <div class="recent-projects-text">
+                  <a href="bess.html">
+                    <h5>BESS</h5>
+                  </a>
+                  <!-- <h6>Sustainability Compliance</h6> -->
+                  <a href="bess.html">
+                    <h6>Store Power Efficiently</h6>
+                  </a>
+                  <a href="bess.html">
+                    <i>
+                      <svg width="14" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M8.37998 0.369629L13.9606 6.16918L8.37998 11.9687V6.86986H0.897949V5.39253H8.37998V0.369629Z" />
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 fifth-offer">
+              <div class="recent-projects-img">
+                <figure>
+                  <a href="green-certification.html">
+                    <img alt="recent-projects" src="assets/img/used/home-page/what-we-offer-green-energy.png"
+                      class="what-do-we-img">
+                  </a>
+                </figure>
+                <div class="recent-projects-text">
+                  <a href="green-certification.html">
+                    <h5>Green Certification</h5>
+                  </a>
+                  <!-- <h6>Flexible Sourcing</h6> -->
+                  <a href="green-certification.html">
+                    <h6>Meet Statutory Requirements</h6>
+                  </a>
+                  <a href="green-certification.html">
+                    <i>
+                      <svg width="14" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M8.37998 0.369629L13.9606 6.16918L8.37998 11.9687V6.86986H0.897949V5.39253H8.37998V0.369629Z" />
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Explore the process section -->
+  <section class="gap circle-slider">
+    <div class="container">
+
+      <div class="row align-items-center">
+
+        <div class="heading heading1 mob-view">
+          <p class="mob-text">Power process</p>
+          <div class="line left-line"></div>
+          <h2 class="mob-flex">Explore The&nbsp;<span style="color: #459639;">Process</span></h2>
+        </div>
+
+        <div class="col-lg-6 mob-marg">
+
+          <div class="toggle-desk-process">
+            <div class="nav-c-slider">
+
+              <a class="next-slide1 mob-s-1" href="JavaScript:void(0)" data-slide="1"
+                data-main="assets/img/used/iStock/home-page-p1-final.webp" data-title="Land Acquisition"
+                data-tooltip-pos="top">
+                <img class="animate__animated animate__fadeIn" src="assets/img/used/home-page/process1-final.jpg"
+                  alt="img 1">
+              </a>
+
+              <a class="next-slide1 mob-s-2" href="JavaScript:void(0)" data-slide="2"
+                data-main="assets/img/used/home-page/process2-tls.webp" data-title="Transmission Line Setup"
+                data-tooltip-pos="top">
+                <img class="animate__animated animate__fadeIn" src="assets/img/used/home-page/process2-final.jpg"
+                  alt="img 2">
+              </a>
+
+              <a class="next-slide1 thirdelem mob-s-3" href="JavaScript:void(0)" data-slide="3"
+                data-main="assets/img/used/home-page/process6-sagi.webp" data-title="Energy Consumption"
+                data-tooltip-pos="third">
+                <img class="animate__animated animate__fadeIn" src="assets/img/used/home-page/process3-final.jpg"
+                  alt="img 3">
+              </a>
+
+              <a class="next-slide1 mob-s-4" href="JavaScript:void(0)" data-slide="4"
+                data-main="assets/img/used/iStock/home-page-p4-final.webp" data-title="Tailored Solar + BESS Design"
+                data-tooltip-pos="forth">
+                <img class="animate__animated animate__fadeIn" src="assets/img/used/home-page/process4-final.jpg"
+                  alt="img 3">
+              </a>
+
+              <a class="next-slide1 mob-s-5" href="JavaScript:void(0)" data-slide="5"
+                data-main="assets/img/used/iStock/home-page-p5-final.webp" data-title="Project Execution"
+                data-tooltip-pos="fifth">
+                <img class="animate__animated animate__fadeIn" src="assets/img/used/home-page/process5-final.jpg"
+                  alt="img 3">
+              </a>
+
+              <a class="next-slide1 mob-s-6" href="JavaScript:void(0)" data-slide="6"
+                data-main="assets/img/used/home-page/process3-eca-used.jpeg"
+                data-title="System Activation & Grid injection" data-tooltip-pos="bottom">
+                <img class="animate__animated animate__fadeIn" src="assets/img/used/home-page/process6-final.jpg"
+                  alt="img 3">
+              </a>
+
+              <a class="next-slide1 mob-s-7" href="JavaScript:void(0)" data-slide="7"
+                data-main="assets/img/used/home-page/process7-updated.webp" data-title="O&M" data-tooltip-pos="bottom">
+                <img class="animate__animated animate__fadeIn" src="assets/img/used/home-page/process7-final.jpg"
+                  alt="img 3">
+              </a>
+
+              <a class="next-slide8 mob-s-8" href="JavaScript:void(0)" data-slide="8"
+                data-main="assets/img/used/home-page/process7-o&m-no-watermark.png" data-title="O&M"
+                data-tooltip-pos="bottom">
+                <img class="animate__animated  arrow" src="assets/img/used/home-page/arrow.png" alt="img 3">
+              </a>
+
+              <div class="slider-main-img main-top image-center">
+                <img id="main-slider-img" class="image-center" src="assets/img/used/iStock/home-page-p1-final.webp"
+                  alt="img 5">
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+          <div class="heading heading1">
+            <div class="desk-view">
+              <p>Power process</p>
+              <div class="line"></div>
+              <h2>Explore The&nbsp;<span style="color: #459639;">Process</span></h2>
+            </div>
+
+            <div class="c-slider">
+
+              <div>
+                <div class="client-reviews-text mob-center">
+                  <h4 style="margin-bottom: 20px;">Land Acquisition</h4>
+                  <h3>CleanHedge identifies and secures suitable land for the solar plant installation in one of their
+                    solar
+                    parks.</h3>
+                </div>
+              </div>
+
+              <div>
+                <div class="client-reviews-text mob-center">
+                  <h4 style="margin-bottom: 20px;">Transmission Line Setup</h4>
+                  <h3>Infrastructure is developed to connect the solar plant to the grid,ensuring the smooth transfer of
+                    energy.</h3>
+                </div>
+              </div>
+
+              <div>
+                <div class="client-reviews-text mob-center">
+                  <h4 style="margin-bottom: 20px;">Energy Consumption Assessment</h4>
+                  <h3>CleanHedge evaluates the client's past and current power usage to design an optimized solar
+                    solution
+                    tailored to their energy needs.</h3>
+                </div>
+              </div>
+
+              <div>
+                <div class="client-reviews-text mob-center">
+                  <h4 style="margin-bottom: 20px;">Tailored Solar + BESS Design</h4>
+                  <h3>A customized solar and battery storage (BESS) system is engineered based on the client’s energy
+                    profile, site conditions, and future goals.</h3>
+                </div>
+              </div>
+
+              <div>
+                <div class="client-reviews-text mob-center">
+                  <h4 style="margin-bottom: 20px;">Project Execution
+                  </h4>
+                  <h3>CleanHedge manages the end-to-end installation, commissioning, and quality checks to ensure
+                    seamless
+                    execution of the solar project.</h3>
+                </div>
+              </div>
+
+              <div>
+                <div class="client-reviews-text mob-center">
+                  <h4 style="margin-bottom: 20px;">System Activation & Grid injection</h4>
+                  <h3> The solar energy generated is fed into the grid, which is then set off against the clients
+                    electricity bill.
+                  </h3>
+                </div>
+              </div>
+
+              <div>
+                <div class="client-reviews-text mob-center">
+                  <h4 style="margin-bottom: 20px;">O&M</h4>
+                  <h3> Operations and maintenance are undertaken by CleanHedge to ensure optimal system performance,
+                    uptime, and long-term reliability.</h3>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+  <!-- Clientele -->
+  <section class="our-experts gap" style="background-image: url(assets/img/meet-our.jpg);padding-top: 0px !important; ">
+
+    <div class="container partners gap no-bottom">
+      <h3>Clientele</h3>
+
+      <!-- Desktop view (grid logos) -->
+      <div class="sponsors two desktop-view">
+        <img alt="sponsors" src="assets/img/used/home-page/cl-1.png">
+        <img alt="sponsors" src="assets/img/used/home-page/cl-3.png">
+        <img alt="sponsors" src="assets/img/used/home-page/cl-6.png">
+        <img alt="sponsors" src="assets/img/used/home-page/cl-4.png">
+      </div>
+
+      <div class="sponsors three desktop-view mt-5">
+        <img alt="sponsors" src="assets/img/used/home-page/cl-5.png">
+        <img alt="sponsors" src="assets/img/used/home-page/cl-7.png">
+        <img alt="sponsors" src="assets/img/used/home-page/cl-8.png">
+      </div>
+
+      <!-- Mobile view (swiper) -->
+      <div class="swiper mobile-view">
+        <div class="swiper-wrapper" style="padding-bottom: 50px;">
+          <div class="swiper-slide"><img alt="sponsors" src="assets/img/used/home-page/cl-1.png"></div>
+          <div class="swiper-slide"><img alt="sponsors" src="assets/img/used/home-page/cl-3.png"></div>
+          <div class="swiper-slide"><img alt="sponsors" src="assets/img/used/home-page/cl-6.png"></div>
+          <div class="swiper-slide"><img alt="sponsors" src="assets/img/used/home-page/cl-4.png"></div>
+          <div class="swiper-slide"><img alt="sponsors" src="assets/img/used/home-page/cl-5.png"></div>
+          <div class="swiper-slide"><img alt="sponsors" src="assets/img/used/home-page/cl-7.png"></div>
+          <div class="swiper-slide"><img alt="sponsors" src="assets/img/used/home-page/cl-8.png"></div>
+        </div>
+        <!-- Swiper controls -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Trending Articles -->
+  <section class="gap">
+    <div class="container">
+      <div class="row">
+        <div class="heading">
+          <h2 style="display: flex;justify-content: center;">Trending&nbsp; <span style="color: #459639;">
+              Articles</span></h2>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="sectors">
+            <figure>
+              <img alt="sectors-1" src="assets/img/used/iStock/home-page-TA1.webp" style="height: 270px;">
+            </figure>
+            <h5 style="color:#459639;; margin-top: 10px;">How well is India tapping its solar potential?</h5>
+            <p>To meet India’s ambitious target of installing 500GW by 2030, solar alone needs to put in 100GW. The good
+              news is that growth in solar power production has doubled since 2021. India is the 3rd largest producer of
+              solar power in the world.</p>
+            <a href="https://blog.clean-hedge.com/how-well-is-india-tapping-its-solar-potential/" target="_blank"><i
+                class="fa-solid fa-plus"></i>Read More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="sectors">
+            <figure>
+              <img alt="sectors-1" src="assets/img/used/iStock/home-page-TA2.webp" style="height: 270px;">
+            </figure>
+            <h5 style="color:#459639; margin-top: 10px;">Carbon Credits and How They Can Help You Offset Your Emissions
+            </h5>
+            <p class="extra-width-p">34 billion tonnes. That’s the amount of carbon dioxide the world emits in just one
+              year. To put the
+              figure into perspective, 1 billion tonnes (gigatonne) is the mass of approximately 200 million elephants.
+            </p>
+            <a href="https://blog.clean-hedge.com/carbon-credits-and-how-they-can-help-you-offset-your-emissions/"
+              target="_blank"><i class="fa-solid fa-plus"></i>Read More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="sectors mb-0">
+            <figure>
+              <img alt="sectors-1" src="assets/img/used/iStock/home-page-TA3.webp" style="height: 270px;">
+            </figure>
+            <h5 style="color:#459639; margin-top: 10px;">Greenwashing: What it is and How to Prevent it</h5>
+            <p>Greenwashing is a marketing strategy that organizations use to present themselves as environmentally
+              friendly and socially responsible to the consumers, without making any efforts in that direction. </p>
+            <a href="https://blog.clean-hedge.com/greenwashing-what-it-is-and-how-to-prevent-it/" target="_blank"><i
+                class="fa-solid fa-plus"></i>Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact form -->
+  <section class="gap no-top">
+    <div class="container">
+      <div class="request-quote"
+        style="background-image: url(assets/img/used/iStock/home-page-cf-final.webp); background-color: #3b38397a;">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="heading">
+              <p style="color: white;">Request A Quote</p>
+              <div class="line" style="background-color: #459639;"></div>
+              <h2 class="small-heading" style="color: white; font-size: 50px; line-height: 50px;">Are You Ready to Make
+                the Switch to Green
+                Energy?</h2>
+              <p style="color: white; line-height: 25px;">Fill out the form to get tailored solutions that will lower
+                your costs and reduce
+                your carbon
+                footprint.
+              <p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm' style='color: black;max-width: 600px;'>
+              <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+              <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
+              <script src='https://www.google.com/recaptcha/api.js' async defer>
+              </script>
+              <form id='webform868496000000396094' action='https://crm.zoho.in/crm/WebToLeadForm'
+                name=WebToLeads868496000000396094 method='POST'
+                onSubmit='javascript:document.charset="UTF-8"; return checkMandatory868496000002034037()'
+                accept-charset='UTF-8' class="request-quote-form">
+                <input type='text' style='display:none;' name='xnQsjsdp'
+                  value='01919c2f9f9d770e96e543bd1eb6681ec7e03e86ef44c6bf2911bda4c96d3e4b'>
+                </input>
+                <input type='hidden' name='zc_gad' id='zc_gad' value=''>
+                </input>
+                <input type='text' style='display:none;' name='xmIwtLD'
+                  value='83b7b3d050b0f962bc235d93cdf061c4b894d96364fbdb30ace9856161a913dbd65323b9c688f8733951cea3bfd11c07'>
+                </input>
+                <input type='text' style='display:none;' name='actionType' value='TGVhZHM='>
+                </input>
+                <input type='text' style='display:none;' name='returnURL' value='null'>
+                </input>
+
+                <div class="form-row">
+                  <input type="text" name='First Name' placeholder="First Name*" required>
+                  <input type="text" name='Last Name' placeholder="Last Name*" required>
+
+                </div>
+
+                <div class="form-row">
+                  <input type="text" name='Company' placeholder="Company Name*" required>
+
+                  <input type="text" name='Mobile' placeholder="Mobile Number*" required>
+                </div>
+
+                <div class="form-row">
+                  <input type="text" name='Email' placeholder="Email*" required>
+                  <input type="text" name='City' placeholder="City">
+                </div>
+
+                <div class="form-row">
+                  <div class="dropdown-wrapper">
+                    <select class="nice-select" id='LEADCF11' name="LEADCF11"
+                      onChange='addAriaSelected868496000002034037()'>
+                      <!-- <option value="">Electricity Bill
+                      Amount</option> -->
+                      <option value="">Current Electricity Bill Amount</option>
+                      <option>Rs. 1.20 Lakhs - Rs. 6 Lakhs</option>
+                      <option>Rs. 6 Lakhs - Rs. 60 lakhs</option>
+                      <option>Rs. 60 Lakhs+</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <input type="text" class="other-input" id="otherCity1" placeholder="Electricity Bill Amount"
+                    name='LEADCF9' style="margin-top: 0px !important;" />
+                </div>
+
+                <textarea placeholder="Message" name='LEADCF8'></textarea>
+
+                <div class='zcwf_row'>
+                  <div class='zcwf_col_lab'>
+                  </div>
+                  <div class='zcwf_row'>
+                    <div class='zcwf_col_lab'>
+                    </div>
+                    <div class='zcwf_col_fld'>
+                      <div class='g-recaptcha' data-sitekey='6LcUjbErAAAAAFuO86Ym-EieZhIO20Di8c9njRxP'
+                        data-theme='light' data-callback='rccallback868496000002034037' captcha-verified='false'
+                        id='recap868496000002034037'>
+                      </div>
+                      <div id='recapErr868496000002034037' style='font-size:12px;color:red;visibility:hidden;'>Captcha
+                        validation failed. If you are not a robot then please try again.</div>
+                    </div>
+                  </div>
+                </div>
+                <input type='text' type='hidden' style='display: none;' name='aG9uZXlwb3Q' value='' />
+
+                <button class="button foot-btn" name="LEADCF8">Send Message</button>
+
+                <div class='zcwf_row wfrm_fld_dpNn'>
+                  <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'>
+                    <label for='LEADCF10'>Deal Source</label>
+                  </div>
+                  <div class='zcwf_col_fld'>
+                    <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false' aria-haspopup='listbox'
+                      id='LEADCF10' onChange='addAriaSelected868496000002034037 ()' aria-required='false'
+                      aria-label='LEADCF10' name='LEADCF10'>
+                      <option value='-None-'>-None-</option>
+                      <option value='Advertisement'>Advertisement</option>
+                      <option value='Google&#x20;ads'>Google ads</option>
+                      <option value='New&#x20;research'>New research</option>
+                      <option value='Channel&#x20;Partner&#x20;&#x28;CP&#x29;'>Channel Partner &#x28;CP&#x29;</option>
+                      <option value='Ornate'>Ornate</option>
+                      <option value='Online&#x20;Software'>Online Software</option>
+                      <option value='Personal&#x20;Ref'>Personal Ref</option>
+                      <option value='Event'>Event</option>
+                      <option value='Cold&#x20;Call'>Cold Call</option>
+                      <option value='Employee&#x20;Referral'>Employee Referral</option>
+                      <option value='External&#x20;Referral'>External Referral</option>
+                      <option value='Online&#x20;Store'>Online Store</option>
+                      <option value='Partner'>Partner</option>
+                      <option value='Public&#x20;Relations'>Public Relations</option>
+                      <option value='Sales&#x20;Email&#x20;Alias'>Sales Email Alias</option>
+                      <option value='Seminar&#x20;Partner'>Seminar Partner</option>
+                      <option value='Internal&#x20;Seminar'>Internal Seminar</option>
+                      <option value='Trade&#x20;Show'>Trade Show</option>
+                      <option value='Web&#x20;Download'>Web Download</option>
+                      <option value='Web&#x20;Research'>Web Research</option>
+                      <option value='Chat'>Chat</option>
+                      <option selected value='Website&#x20;Form'>Website Form</option>
+                    </select>
+                    <div class='zcwf_col_help'>
+                    </div>
+                  </div>
+                </div>
+
+                <style>
+                  .zcwf_lblLeft .wfrm_fld_dpNn {
+                    display: none;
+                  }
+                </style>
+                <script>
+                  function addAriaSelected868496000002034037() {
+                    var optionElem = event.target;
+                    var previousSelectedOption = optionElem.querySelector('[aria-selected=true]');
+                    if (previousSelectedOption) {
+                      previousSelectedOption.removeAttribute('aria-selected');
+                    }
+                    optionElem.querySelectorAll('option')[optionElem.selectedIndex].ariaSelected = 'true';
+                  }
+                  /* Do not remove this code. */
+                  function rccallback868496000002034037() {
+                    if (document.getElementById('recap868496000002034037') != undefined) {
+                      document.getElementById('recap868496000002034037').setAttribute('captcha-verified', true);
+                    }
+                    if (document.getElementById('recapErr868496000002034037') != undefined && document.getElementById('recapErr868496000002034037').style.visibility == 'visible') {
+                      document.getElementById('recapErr868496000002034037').style.visibility = 'hidden';
+                    }
+                  }
+                  function reCaptchaAlert868496000002034037() {
+                    var recap = document.getElementById('recap868496000002034037');
+                    if (recap != undefined && recap.getAttribute('captcha-verified') == 'false') {
+                      document.getElementById('recapErr868496000002034037').style.visibility = 'visible';
+                      return false;
+                    }
+                    return true;
+                  }
+                  function validateEmail868496000002034037() {
+                    var form = document.forms['WebToLeads868496000002034037'];
+                    var emailFld = form.querySelectorAll('[ftype=email]');
+                    var i;
+                    for (i = 0; i < emailFld.length; i++) {
+                      var emailVal = emailFld[i].value;
+                      if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
+                        var atpos = emailVal.indexOf('@');
+                        var dotpos = emailVal.lastIndexOf('.');
+                        if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
+                          alert('Please enter a valid email address. ');
+                          emailFld[i].focus();
+                          return false;
+                        }
+                      }
+                    }
+                    return true;
+                  }
+                  function checkMandatory868496000002034037() {
+                    var mndFileds = new Array('Company', 'First Name', 'Last Name', 'Email', 'Mobile');
+                    var fldLangVal = new Array('Company', 'First\x20Name', 'Last\x20Name', 'Email', 'Mobile');
+                    for (i = 0; i < mndFileds.length; i++) {
+                      var fieldObj = document.forms['WebToLeads868496000002034037'][mndFileds[i]];
+                      if (fieldObj) {
+                        if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
+                          if (fieldObj.type == 'file') {
+                            alert('Please select a file to upload.');
+                            fieldObj.focus();
+                            return false;
+                          }
+                          alert(fldLangVal[i] + ' cannot be empty.');
+                          fieldObj.focus();
+                          return false;
+                        }
+                        else if (fieldObj.nodeName == 'SELECT') {
+                          if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+                            alert(fldLangVal[i] + ' cannot be none.');
+                            fieldObj.focus();
+                            return false;
+                          }
+                        }
+                        else if (fieldObj.type == 'checkbox') {
+                          if (fieldObj.checked == false) {
+                            alert('Please accept  ' + fldLangVal[i]);
+                            fieldObj.focus();
+                            return false;
+                          }
+                        }
+                        try {
+                          if (fieldObj.name == 'Last Name') {
+                            name = fieldObj.value;
+                          }
+                        }
+                        catch (e) { }
+                      }
+                    }
+                    if (!validateEmail868496000002034037()) {
+                      return false;
+                    }
+                    if (!reCaptchaAlert868496000002034037()) {
+                      return false;
+                    }
+                    var urlparams = new URLSearchParams(window.location.search);
+                    if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) {
+                      var webform = document.getElementById('webform868496000002034037');
+                      var service = urlparams.get('service');
+                      var smarturlfield = document.createElement('input');
+                      smarturlfield.setAttribute('type', 'hidden');
+                      smarturlfield.setAttribute('value', service);
+                      smarturlfield.setAttribute('name', 'service');
+                      webform.appendChild(smarturlfield);
+                    }
+                    document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+                  }
+                  function tooltipShow868496000002034037(el) {
+                    var tooltip = el.nextElementSibling;
+                    var tooltipDisplay = tooltip.style.display;
+                    if (tooltipDisplay == 'none') {
+                      var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+                      for (i = 0; i < allTooltip.length; i++) {
+                        allTooltip[i].style.display = 'none';
+                      }
+                      tooltip.style.display = 'block';
+                    }
+                    else {
+                      tooltip.style.display = 'none';
+                    }
+                  }
+                </script>
+                <!-- Do not remove this --- Analytics Tracking code starts -->
+                <script id='wf_anal'
+                  src='https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=a29f67be431741174368a6b0783008a9becf353585845863ed54e3f73617e04921daaa87a7ee03fbe10d43ee29abe933gida658277852a105cd1779168eb5c7a023c1d595e441b54fad6bb23edbfcb3e70dgidf5c185a1947de50129e4f3af3cb4ce5c6c398df3ba192bcf0af33975f75b641egidabb4f0a0633ae8749a99b17d93c687584b8353ab129a07d8f03511954c7c6189&tw=ad27d2e71e38c5f1f27121e24133f34d9f0a60316978a4227681582d6e294265'>
+                  </script>
+                <!-- Do not remove this --- Analytics Tracking code ends. -->
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="gap no-bottom one" style="background-image:url(assets/img/used/home-page/footer-banner-final.jpeg)">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-md-6">
+          <div class="logo">
+            <a href="javascript:void(0)">
+              <img src="assets/img/used/clean-hedge-logo-white.png" alt="" style="width: 300px;">
+            </a>
+            <p>CleanHedge Verde Private Limited operates at the intersection of solar innovation, energy storage, and
+              sustainable
+              infrastructure—driving India’s transition to a cleaner, smarter energy future.</p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-12">
+          <div class="about-energix">
+            <h6>Resources</h6>
+            <div class="line"></div>
+            <ul class="link-style">
+              <li><i class="fa-solid fa-caret-right"></i><a href="index.html">Home</a></li>
+              <li><i class="fa-solid fa-caret-right"></i><a href="about-us.html">About Us</a></li>
+              <li><i class="fa-solid fa-caret-right"></i><a href="contact.html">Contact Us </a></li>
+              <li><i class="fa-solid fa-caret-right"></i><a href="https://blog.clean-hedge.com/" target="_blank">Blogs
+                </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-5 col-md-6">
+          <div class="about-energix">
+            <h6>Contact Information</h6>
+            <div class="line"></div>
+            <div class="d-flex align-items-center top-bar-mail">
+              <div class="d-flex align-items-center">
+                <i>
+                  <svg width="20" height="20" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.7917 4.23926C10.1532 4.23926 9.6355 4.75693 9.6355 5.39551V31.6038C9.6355 32.2424 10.1532 32.7601 10.7917 32.7601H26.2084C26.847 32.7601 27.3647 32.2424 27.3647 31.6038V5.39551C27.3647 4.75693 26.847 4.23926 26.2084 4.23926H10.7917ZM7.323 5.39551C7.323 3.47977 8.87601 1.92676 10.7917 1.92676H26.2084C28.1241 1.92676 29.6772 3.47977 29.6772 5.39551V31.6038C29.6772 33.5195 28.1241 35.0726 26.2084 35.0726H10.7917C8.87601 35.0726 7.323 33.5195 7.323 31.6038V5.39551Z"
+                      fill="#459639"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.8022 7.70801C15.8022 7.06943 16.3199 6.55176 16.9585 6.55176H20.0418C20.6804 6.55176 21.1981 7.06943 21.1981 7.70801C21.1981 8.34658 20.6804 8.86426 20.0418 8.86426H16.9585C16.3199 8.86426 15.8022 8.34658 15.8022 7.70801Z"
+                      fill="#459639"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M14.2605 29.291C14.2605 28.6525 14.7782 28.1348 15.4167 28.1348H21.5834C22.222 28.1348 22.7397 28.6525 22.7397 29.291C22.7397 29.9296 22.222 30.4473 21.5834 30.4473H15.4167C14.7782 30.4473 14.2605 29.9296 14.2605 29.291Z"
+                      fill="#459639"></path>
+                  </svg>
+                </i>
+                <a href="callto:+91-73 044 06 336">
+                  <p>+91-73 044 06 336</p>
+                </a>
+              </div>
+            </div>
+            <div class="d-flex align-items-center top-bar-mail">
+              <div class="d-flex align-items-center">
+                <i>
+                  <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.833252 10.7083C0.488074 10.7083 0.208252 10.9881 0.208252 11.3333C0.208252 11.6785 0.488074 11.9583 0.833252 11.9583H3.33325C3.67843 11.9583 3.95825 11.6785 3.95825 11.3333C3.95825 10.9881 3.67843 10.7083 3.33325 10.7083H0.833252Z"
+                      fill="#459639"></path>
+                    <path
+                      d="M0.833252 13.2083C0.488074 13.2083 0.208252 13.4881 0.208252 13.8333C0.208252 14.1785 0.488074 14.4583 0.833252 14.4583H5.83325C6.17843 14.4583 6.45825 14.1785 6.45825 13.8333C6.45825 13.4881 6.17843 13.2083 5.83325 13.2083H0.833252Z"
+                      fill="#459639"></path>
+                    <path
+                      d="M2.59071 2.24172L2.5 2.16667C2.757 1.81294 3.0305 1.55276 3.38422 1.29576C4.4795 0.5 6.04189 0.5 9.16667 0.5H10.8333C13.9581 0.5 15.5205 0.5 16.6157 1.29576C16.9695 1.55276 17.2214 1.78443 17.4784 2.13816L17.3737 2.24225L15.4505 4.16551C14.0491 5.56689 13.0416 6.5725 12.1726 7.23558C11.318 7.88758 10.6712 8.14908 9.99992 8.14908C9.3285 8.14908 8.68175 7.88758 7.82717 7.23558C6.95817 6.5725 5.95066 5.56689 4.54927 4.16551L2.92989 2.54612L2.59071 2.24172Z"
+                      fill="#459639"></path>
+                    <path
+                      d="M1.6665 8.00002C1.6665 5.80009 1.6665 4.37457 1.94419 3.34125L2.06971 3.45391L3.69904 5.08322C5.05926 6.44344 6.12525 7.50944 7.06879 8.22936C8.03456 8.96619 8.94517 9.39911 9.99975 9.39911C11.0543 9.39911 11.9649 8.96619 12.9307 8.22936C13.8742 7.50944 14.9402 6.44344 16.3004 5.08324L18.0527 3.33093C18.3332 4.36507 18.3332 5.79277 18.3332 8.00002C18.3332 11.1248 18.3332 12.6872 17.5374 13.7824C17.2804 14.1362 16.9693 14.4473 16.6156 14.7043C15.5203 15.5 13.9579 15.5 10.8332 15.5H9.1665C7.9762 15.5 7.0126 15.5 6.21518 15.456C6.95154 15.2834 7.49984 14.6224 7.49984 13.8334C7.49984 12.9129 6.75365 12.1667 5.83317 12.1667H4.77687C4.91868 11.9215 4.99984 11.6369 4.99984 11.3334C4.99984 10.4129 4.25365 9.66669 3.33317 9.66669H1.67251C1.6665 9.16577 1.6665 8.61294 1.6665 8.00002Z"
+                      fill="#459639"></path>
+                  </svg>
+                </i>
+                <a href="mailto:info@clean-hedge.com">
+                  <p><span class="__cf_email__">info@clean-hedge.com</span></p>
+                </a>
+              </div>
+            </div>
+            <div class="d-flex top-bar-mail align-items-center mb-0">
+              <i class="foot-address-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10 5.58319C8.59053 5.58319 7.44385 6.72991 7.44385 8.13936C7.44385 9.54882 8.59053 10.6955 10 10.6955C11.4095 10.6955 12.5562 9.54882 12.5562 8.13936C12.5562 6.72991 11.4095 5.58319 10 5.58319Z"
+                    fill="#459639"></path>
+                  <path
+                    d="M15.9814 2.47758C14.3837 0.879883 12.2595 0 10 0C7.74055 0 5.61629 0.879883 4.01863 2.47758C2.4209 4.07531 1.54102 6.19953 1.54102 8.45895C1.54102 13.0298 5.86289 16.8315 8.18476 18.874C8.50738 19.1578 8.78602 19.4029 9.00793 19.6102C9.28609 19.8701 9.64297 20 9.99996 20C10.3569 20 10.7139 19.87 10.992 19.6103C11.214 19.4029 11.4926 19.1579 11.8152 18.874C14.1371 16.8316 18.4589 13.0298 18.4589 8.45898C18.4589 6.19953 17.5791 4.07531 15.9814 2.47758ZM10 11.8671C7.94449 11.8671 6.27226 10.1948 6.27226 8.13934C6.27226 6.08383 7.94449 4.4116 10 4.4116C12.0555 4.4116 13.7277 6.08383 13.7277 8.13934C13.7277 10.1948 12.0555 11.8671 10 11.8671Z"
+                    fill="#459639"></path>
+                </svg>
+              </i>
+              <p>88/B, Nariman Bhavan, Nariman Point, <br> Mumbai, Maharashtra 400021
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row contact-footer">
+        <div class="col-lg-12">
+          <div class="contact-info two">
+            <div class="d-flex align-items-center">
+              <i>
+                <svg width="46" height="46" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.833252 10.7083C0.488074 10.7083 0.208252 10.9881 0.208252 11.3333C0.208252 11.6785 0.488074 11.9583 0.833252 11.9583H3.33325C3.67843 11.9583 3.95825 11.6785 3.95825 11.3333C3.95825 10.9881 3.67843 10.7083 3.33325 10.7083H0.833252Z"
+                    fill="#459639"></path>
+                  <path
+                    d="M0.833252 13.2083C0.488074 13.2083 0.208252 13.4881 0.208252 13.8333C0.208252 14.1785 0.488074 14.4583 0.833252 14.4583H5.83325C6.17843 14.4583 6.45825 14.1785 6.45825 13.8333C6.45825 13.4881 6.17843 13.2083 5.83325 13.2083H0.833252Z"
+                    fill="#459639"></path>
+                  <path
+                    d="M2.59071 2.24172L2.5 2.16667C2.757 1.81294 3.0305 1.55276 3.38422 1.29576C4.4795 0.5 6.04189 0.5 9.16667 0.5H10.8333C13.9581 0.5 15.5205 0.5 16.6157 1.29576C16.9695 1.55276 17.2214 1.78443 17.4784 2.13816L17.3737 2.24225L15.4505 4.16551C14.0491 5.56689 13.0416 6.5725 12.1726 7.23558C11.318 7.88758 10.6712 8.14908 9.99992 8.14908C9.3285 8.14908 8.68175 7.88758 7.82717 7.23558C6.95817 6.5725 5.95066 5.56689 4.54927 4.16551L2.92989 2.54612L2.59071 2.24172Z"
+                    fill="#459639"></path>
+                  <path
+                    d="M1.6665 8.00002C1.6665 5.80009 1.6665 4.37457 1.94419 3.34125L2.06971 3.45391L3.69904 5.08322C5.05926 6.44344 6.12525 7.50944 7.06879 8.22936C8.03456 8.96619 8.94517 9.39911 9.99975 9.39911C11.0543 9.39911 11.9649 8.96619 12.9307 8.22936C13.8742 7.50944 14.9402 6.44344 16.3004 5.08324L18.0527 3.33093C18.3332 4.36507 18.3332 5.79277 18.3332 8.00002C18.3332 11.1248 18.3332 12.6872 17.5374 13.7824C17.2804 14.1362 16.9693 14.4473 16.6156 14.7043C15.5203 15.5 13.9579 15.5 10.8332 15.5H9.1665C7.9762 15.5 7.0126 15.5 6.21518 15.456C6.95154 15.2834 7.49984 14.6224 7.49984 13.8334C7.49984 12.9129 6.75365 12.1667 5.83317 12.1667H4.77687C4.91868 11.9215 4.99984 11.6369 4.99984 11.3334C4.99984 10.4129 4.25365 9.66669 3.33317 9.66669H1.67251C1.6665 9.16577 1.6665 8.61294 1.6665 8.00002Z"
+                    fill="#459639"></path>
+                </svg>
+              </i>
+              <h3>Subscribe to our newsletter.</h3>
+            </div>
+            <form>
+              <input type="text" name="email" placeholder="Enter your email address...">
+              <button class="button foot-btn2">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© Copyright 2025 | CleanHedge Verde Private Limited | All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- mobile-search -->
+  <div class="mobile-search">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-11">
+          <form>
+            <label>What are you looking for?</label>
+            <div class="d-flex search-bar">
+              <input type="text" placeholder="Type Here to Search">
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </div>
+        <div class="col-1 d-flex justify-content-end align-items-center">
+          <div class="search-cross-btn">
+            <i class="fa fa-times"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- mobile-search end -->
+
+  <!-- Popup Form Integration -->
+  <div class="latterbox" id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
+    <script src='https://www.google.com/recaptcha/api.js' async defer>
+    </script>
+    <form class="request-quote-form" id='webform868496000001580012' action='https://crm.zoho.in/crm/WebToLeadForm'
+      name=WebToLeads868496000001580012 method='POST'
+      onSubmit='javascript:document.charset="UTF-8"; return checkMandatory868496000001580012()' accept-charset='UTF-8'
+      class="request-quote-form">
+      <input type='text' style='display:none;' name='xnQsjsdp'
+        value='bf8d7be9c2fcc5b9380db2cd7fe7817047ab2de69ca3101113800fac0a914373'>
+      </input>
+      <input type='hidden' name='zc_gad' id='zc_gad' value=''>
+      </input>
+      <input type='text' style='display:none;' name='xmIwtLD'
+        value='0c20e58fc6db7768670c551bea89ef83d86ee647903e7559e58d53227cfb984b0fcc03adaeeea7fd0d0229a5981dfd5f'>
+      </input>
+      <input type='text' style='display:none;' name='actionType' value='TGVhZHM='>
+      </input>
+      <input type='text' style='display:none;' name='returnURL' value='null'>
+      </input>
+
+      <h3>Request a Quote</h3>
+      <input type="text" name="First Name" placeholder="First Name*" required>
+      <input type="text" name="Last Name" placeholder="Last Name*" required>
+      <input type="text" name="Company" placeholder="Company Name*" required>
+      <input type="text" name="Mobile" placeholder="Mobile Number*" required>
+      <input type="text" name="Email" placeholder="Email Address*" required>
+      <input type="text" name='City' placeholder="City">
+      <div class="dropdown-wrapper">
+        <select class="nice-select dw" id='LEADCF12' name="LEADCF11" onChange='addAriaSelected868496000001580012()'>
+          <option value="">Current Electricity Bill Amount</option>
+          <option>Rs. 1.20 Lakhs - Rs. 6 Lakhs</option>
+          <option>Rs. 6 Lakhs - Rs. 60 lakhs</option>
+          <option>Rs. 60 Lakhs+</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <input type="text" class="other-input" id="otherCity2" placeholder="Electricity Bill Amount"
+        style="margin-top: 0px !important;" />
+      <textarea placeholder="Message"></textarea>
+
+      <div class='zcwf_row'>
+        <div class='zcwf_col_lab'>
+        </div>
+        <div class='zcwf_col_fld'>
+          <div class='g-recaptcha' data-sitekey='6LcUjbErAAAAAFuO86Ym-EieZhIO20Di8c9njRxP' data-theme='light'
+            data-callback='rccallback868496000001580012' captcha-verified='false' id='recap868496000001580012'>
+          </div>
+          <div id='recapErr868496000001580012' style='font-size:12px;color:red;visibility:hidden;'>Captcha validation
+            failed. If you are not a robot then please try again.</div>
+        </div>
+      </div>
+      <input type='text' type='hidden' style='display: none;' name='aG9uZXlwb3Q' value='' />
+
+      <button class="button" name="LEADCF8">Send Message</button>
+
+      <div class='zcwf_row wfrm_fld_dpNn'>
+        <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'>
+          <label for='LEADCF10'>Deal Source</label>
+        </div>
+        <div class='zcwf_col_fld'>
+          <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false' aria-haspopup='listbox' id='LEADCF10'
+            onChange='addAriaSelected868496000001580012()' aria-required='false' aria-label='LEADCF10' name='LEADCF10'>
+            <option value='-None-'>-None-</option>
+            <option value='Advertisement'>Advertisement</option>
+            <option value='Google&#x20;ads'>Google ads</option>
+            <option value='New&#x20;research'>New research</option>
+            <option value='Channel&#x20;Partner&#x20;&#x28;CP&#x29;'>Channel Partner &#x28;CP&#x29;</option>
+            <option value='Ornate'>Ornate</option>
+            <option value='Online&#x20;Software'>Online Software</option>
+            <option value='Personal&#x20;Ref'>Personal Ref</option>
+            <option value='Event'>Event</option>
+            <option value='Cold&#x20;Call'>Cold Call</option>
+            <option value='Employee&#x20;Referral'>Employee Referral</option>
+            <option value='External&#x20;Referral'>External Referral</option>
+            <option value='Online&#x20;Store'>Online Store</option>
+            <option value='Partner'>Partner</option>
+            <option value='Public&#x20;Relations'>Public Relations</option>
+            <option value='Sales&#x20;Email&#x20;Alias'>Sales Email Alias</option>
+            <option value='Seminar&#x20;Partner'>Seminar Partner</option>
+            <option value='Internal&#x20;Seminar'>Internal Seminar</option>
+            <option value='Trade&#x20;Show'>Trade Show</option>
+            <option value='Web&#x20;Download'>Web Download</option>
+            <option value='Web&#x20;Research'>Web Research</option>
+            <option value='Chat'>Chat</option>
+            <option selected value='Website&#x20;Form'>Website Form</option>
+          </select>
+          <div class='zcwf_col_help'>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .wfrm_fld_dpNn {
+          display: none;
+        }
+
+        .dw {
+          background-color: #fafafa !important;
+          padding-left: 30px !important;
+          border: 1px solid #c1c1c1 !important;
+          position: relative !important;
+        }
+      </style>
+
+      <script>
+        function addAriaSelected868496000001580012() {
+          var optionElem = event.target;
+          var previousSelectedOption = optionElem.querySelector('[aria-selected=true]');
+          if (previousSelectedOption) {
+            previousSelectedOption.removeAttribute('aria-selected');
+          }
+          optionElem.querySelectorAll('option')[optionElem.selectedIndex].ariaSelected = 'true';
+        }
+        /* Do not remove this code. */
+        function rccallback868496000001580012() {
+          if (document.getElementById('recap868496000001580012') != undefined) {
+            document.getElementById('recap868496000001580012').setAttribute('captcha-verified', true);
+          }
+          if (document.getElementById('recapErr868496000001580012') != undefined && document.getElementById('recapErr868496000001580012').style.visibility == 'visible') {
+            document.getElementById('recapErr868496000001580012').style.visibility = 'hidden';
+          }
+        }
+        function reCaptchaAlert868496000001580012() {
+          var recap = document.getElementById('recap868496000001580012');
+          if (recap != undefined && recap.getAttribute('captcha-verified') == 'false') {
+            document.getElementById('recapErr868496000001580012').style.visibility = 'visible';
+            return false;
+          }
+          return true;
+        }
+        function validateEmail868496000001580012() {
+          var form = document.forms['WebToLeads868496000001580012'];
+          var emailFld = form.querySelectorAll('[ftype=email]');
+          var i;
+          for (i = 0; i < emailFld.length; i++) {
+            var emailVal = emailFld[i].value;
+            if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
+              var atpos = emailVal.indexOf('@');
+              var dotpos = emailVal.lastIndexOf('.');
+              if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
+                alert('Please enter a valid email address. ');
+                emailFld[i].focus();
+                return false;
+              }
+            }
+          }
+          return true;
+        }
+        function checkMandatory868496000001580012() {
+          var mndFileds = new Array('First Name', 'Last Name', 'Email', 'Mobile');
+          var fldLangVal = new Array('First\x20Name', 'Last\x20Name', 'Email', 'Mobile');
+          for (i = 0; i < mndFileds.length; i++) {
+            var fieldObj = document.forms['WebToLeads868496000001580012'][mndFileds[i]];
+            if (fieldObj) {
+              if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
+                if (fieldObj.type == 'file') {
+                  alert('Please select a file to upload.');
+                  fieldObj.focus();
+                  return false;
+                }
+                alert(fldLangVal[i] + ' cannot be empty.');
+                fieldObj.focus();
+                return false;
+              }
+              else if (fieldObj.nodeName == 'SELECT') {
+                if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+                  alert(fldLangVal[i] + ' cannot be none.');
+                  fieldObj.focus();
+                  return false;
+                }
+              }
+              else if (fieldObj.type == 'checkbox') {
+                if (fieldObj.checked == false) {
+                  alert('Please accept  ' + fldLangVal[i]);
+                  fieldObj.focus();
+                  return false;
+                }
+              }
+              try {
+                if (fieldObj.name == 'Last Name') {
+                  name = fieldObj.value;
+                }
+              }
+              catch (e) { }
+            }
+          }
+          if (!validateEmail868496000001580012()) {
+            return false;
+          }
+          if (!reCaptchaAlert868496000001580012()) {
+            return false;
+          }
+          var urlparams = new URLSearchParams(window.location.search);
+          if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) {
+            var webform = document.getElementById('webform868496000001580012');
+            var service = urlparams.get('service');
+            var smarturlfield = document.createElement('input');
+            smarturlfield.setAttribute('type', 'hidden');
+            smarturlfield.setAttribute('value', service);
+            smarturlfield.setAttribute('name', 'service');
+            webform.appendChild(smarturlfield);
+          }
+          document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+        }
+        function tooltipShow868496000001580012(el) {
+          var tooltip = el.nextElementSibling;
+          var tooltipDisplay = tooltip.style.display;
+          if (tooltipDisplay == 'none') {
+            var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+            for (i = 0; i < allTooltip.length; i++) {
+              allTooltip[i].style.display = 'none';
+            }
+            tooltip.style.display = 'block';
+          }
+          else {
+            tooltip.style.display = 'none';
+          }
+        }
+      </script>
+      <!-- Do not remove this --- Analytics Tracking code starts -->
+      <script id='wf_anal'
+        src='https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=9de97f5e0bd2b245278ec27c9cfabf7bfa84ee5ee4a62ad008c669998ee527af52148917e73dacdc6f5538edfb0728b2gidd5113da09cda64ae1a94f02bdb7dc6f6c10bbb243bd2a293a624c8642c4d7491gid88073b8d1088ecde3328b1aa73ea1b02aadde1abdc56e98896d271480a6ccb56gid4d2825887b48010f811ded7c857920c1257e1380f414199da82570eccbe4622d&tw=8c71e05614ae1fa06aabddc0994bb1116ac9ea3e2aa644abd228c570d9ea033c'>
+        </script>
+      <!-- Do not remove this --- Analytics Tracking code ends. -->
+
+    </form>
+    <div class="latterbox-cross-btn">
+      <i class="fa fa-times"></i>
+    </div>
+  </div>
+
+  <!-- WhatsApp Float -->
+  <!-- <div class="whatsapp-icon" id="whatsappButton">
+    <a href="https://wa.me/917304406336?text=Hello!%0ALets%20connect%20to%20reduce%20my%20electricity%20bill%20by%20half."
+      title="Chat with us on WhatsApp" target="_blank" style="cursor: pointer;">
+      <img src="assets/img/used/whatsapp.svg" alt="WhatsApp icon">
+    </a>
+  </div> -->
+
+  <!-- WhatsApp Widget -->
+  <div class="wa-widget" id="waWidget">
+    <div class="wa-header">
+      <span>CleanHedge</span>
+      <div class="wa-close" onclick="toggleWidget()">×</div>
+    </div>
+
+    <div class="wa-body">
+      <div class="wa-message">
+        Hello! Lets connect to reduce my electricity bill by half.
+      </div>
+    </div>
+
+    <div class="wa-footer">
+      <a href="https://wa.me/917304406336?text=Hello!%0ALets%20connect%20to%20reduce%20my%20electricity%20bill%20by%20half."
+        target="_blank">Open Chat</a>
+    </div>
+  </div>
+
+  <!-- Floating Button -->
+  <div class="wa-float" onclick="toggleWidget()">
+    <img src="assets/img/used/whatsapp.svg" />
+  </div>
+
+  <!-- <style>
+    .whatsapp-icon {
+      position: fixed;
+      right: 12px;
+      bottom: 100px;
+      width: 60px;
+      height: 60px;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+    }
+
+    .whatsapp-icon.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .whatsapp-icon img {
+      width: 70px;
+      height: 70px;
+    }
+
+    @media(min-width: 769px) and (max-width:1199px) {
+      .whatsapp-icon img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .whatsapp-icon {
+        right: 8px;
+        bottom: 80px;
+      }
+    }
+
+    @media(max-width:768px) {
+      .whatsapp-icon img {
+        width: 55px;
+        height: 55px;
+      }
+
+      .whatsapp-icon {
+        right: 8px;
+        bottom: 80px;
+      }
+    }
+  </style> -->
+
+  <style>
+    /* Floating WhatsApp Button */
+    .wa-float {
+      position: fixed;
+      bottom: 100px;
+      right: 15px;
+      background: #25D366;
+      /* background: #459639; */
+      color: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      /* display: none; */
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+      z-index: 9999;
+      opacity: 0;
+      transform: translateY(20px);
+      pointer-events: none;
+      transition: all 0.35s ease;
+    }
+
+    .wa-float.show {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .wa-float img {
+      width: 34px;
+    }
+
+    /* Chat Widget Box */
+    .wa-widget {
+      position: fixed;
+      bottom: 20px;
+      right: 85px;
+      width: 320px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      display: none;
+      z-index: 9999;
+    }
+
+    .wa-header {
+      /* background: #075E54; */
+      background: #459639;
+      color: #fff;
+      padding: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .wa-header span {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .wa-close {
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .wa-body {
+      padding: 16px;
+      background: #ECE5DD;
+    }
+
+    .wa-message {
+      background: #fff;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 14px;
+      line-height: 1.4;
+      display: inline-block;
+      max-width: 90%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .wa-footer {
+      padding: 14px;
+      background: #fff;
+      border-top: 1px solid #eee;
+    }
+
+    .wa-footer a {
+      display: block;
+      /* background: #25D366; */
+      background: #459639;
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media(max-width: 1199px) {
+      .wa-float {
+        width: 50px;
+        height: 50px;
+        bottom: 85px
+      }
+    }
+
+    @media(max-width: 576px) {
+      .wa-widget {
+        width: 250px;
+      }
+
+      .wa-body {
+        padding: 15px 10px;
+      }
+
+      .wa-message {
+        padding: 10px 10px;
+        max-width: 100%;
+      }
+    }
+  </style>
+
+  <!-- progress -->
+  <div id="progress" style="background: #459639 !important">
+    <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
+  </div>
+
+  <!-- Script -->
+
+  <!-- Dynamic Date -->
+  <script>
+    const dateElement = document.getElementById("dynamic-date");
+    const today = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    dateElement.textContent = today.toLocaleDateString('en-US', options);
+  </script>
+  <script>
+    const dateElement1 = document.getElementById("dynamic-date1");
+    const today1 = new Date();
+    const options1 = { year: 'numeric', month: 'long', day: 'numeric' };
+    dateElement1.textContent = today1.toLocaleDateString('en-US', options1);
+  </script>
+  <script>
+    const dateElement2 = document.getElementById("dynamic-date2");
+    const today2 = new Date();
+    const options2 = { year: 'numeric', month: 'long', day: 'numeric' };
+    dateElement2.textContent = today2.toLocaleDateString('en-US', options2);
+  </script>
+
+  <!-- Preloader -->
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        document.querySelector('.preloader').style.opacity = '0';
+        document.querySelector('.preloader').style.visibility = 'hidden';
+      }, 2000); // 2000ms = 2 seconds
+    });
+  </script>
+
+  <!-- Footer Contact Form -->
+  <script>
+    const dropdown1 = document.getElementById('LEADCF11');
+    const otherInput1 = document.getElementById('otherCity1');
+
+    dropdown1.addEventListener('change', function () {
+      if (this.value === 'other') {
+        otherInput1.style.display = 'block';
+      } else {
+        otherInput1.style.display = 'none';
+      }
+    });
+
+    dropdown1.addEventListener('click', function () {
+      this.classList.toggle('up');
+    });
+  </script>
+
+  <!-- Upper Contact Form -->
+  <script>
+    const dropdown2 = document.getElementById('LEADCF');
+    const otherInput2 = document.getElementById('otherCity2');
+
+    dropdown2.addEventListener('change', function () {
+      if (this.value === 'other') {
+        otherInput2.style.display = 'block';
+      } else {
+        otherInput2.style.display = 'none';
+      }
+    });
+
+    dropdown2.addEventListener('click', function () {
+      this.classList.toggle('up');
+    });
+  </script>
+
+  <!-- jQuery -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap Js -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <!-- fancybox -->
+  <script src="assets/js/jquery.fancybox.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Owl Carousel Timing -->
+  <script>
+    $(document).ready(function () {
+      console.log("Owl Carousel initializing...");
+      $('.slider-home-1').owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 10000,
+        nav: true,
+        dots: true
+      });
+    });
+  </script>
+
+  <!-- Clientele Swiper  -->
+  <script>
+    var swiper = new Swiper(".mobile-view", {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+    });
+  </script>
+
+  <!-- After scroll whatsapp widget -->
+  <!-- <script>
+    window.addEventListener('scroll', function () {
+      const whatsappButton = document.getElementById('whatsappButton');
+      if (window.scrollY > 100) {
+        whatsappButton.classList.add('visible');
+      } else {
+        whatsappButton.classList.remove('visible');
+      }
+    });
+  </script> -->
+
+  <script>
+    function toggleWidget() {
+      const widget = document.getElementById("waWidget");
+      widget.style.display = widget.style.display === "block" ? "none" : "block";
+    }
+
+    const waButton = document.querySelector(".wa-float");
+    const showAfter = 120; // px from top where button starts showing
+
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > showAfter) {
+        // Show once user scrolls down enough
+        waButton.classList.add("show");
+      } else {
+        // Hide only when back near top
+        waButton.classList.remove("show");
+      }
+    });
+  </script>
+
+
+</body>
